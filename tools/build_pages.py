@@ -53,7 +53,7 @@ def page_html(p):
                       "url": SITE + "/about/", "knowsAbout": AUTHOR["knows"]})
     graph.append({"@type": "Organization", "@id": SITE + "/#org", "name": "Super Routine",
                   "alternateName": ["SuperRoutine", "Super Routine Supplements", "superroutine.in"],
-                  "url": SITE + "/", "logo": SITE + "/assets/logo-navy.png",
+                  "url": SITE + "/", "logo": SITE + "/assets/logo-square.png",
                   "sameAs": ["https://www.instagram.com/super.routine/", "https://www.linkedin.com/company/super-routine/"]})
     if p.get("faq"):
         graph.append({"@type": "FAQPage", "mainEntity": [
@@ -97,6 +97,7 @@ def page_html(p):
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#0B2654">
 <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Super Routine">
