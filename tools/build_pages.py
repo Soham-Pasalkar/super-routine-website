@@ -45,7 +45,7 @@ def page_html(p):
         node["reviewedBy"] = {"@id": SITE + "/about/#founder"}
         node["lastReviewed"] = TODAY
     if p.get("about"):
-        node["about"] = {"@type": "DietarySupplement", "name": p["about"]}
+        node["about"] = {"@type": "Thing", "name": p["about"]}
     graph.append(node)
     if True:
         graph.append({"@type": "Person", "@id": SITE + "/about/#founder", "name": AUTHOR["name"],
