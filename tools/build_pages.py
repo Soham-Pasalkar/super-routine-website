@@ -51,6 +51,10 @@ def page_html(p):
         graph.append({"@type": "Person", "@id": SITE + "/about/#founder", "name": AUTHOR["name"],
                       "jobTitle": AUTHOR["title"], "worksFor": {"@id": SITE + "/#org"},
                       "url": SITE + "/about/", "knowsAbout": AUTHOR["knows"]})
+    graph.append({"@type": "Organization", "@id": SITE + "/#org", "name": "Super Routine",
+                  "alternateName": ["SuperRoutine", "Super Routine Supplements", "superroutine.in"],
+                  "url": SITE + "/", "logo": SITE + "/assets/logo-navy.png",
+                  "sameAs": ["https://www.instagram.com/super.routine/", "https://www.linkedin.com/company/super-routine/"]})
     if p.get("faq"):
         graph.append({"@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": strip_tags(a)}}
