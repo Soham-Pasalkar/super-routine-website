@@ -21,6 +21,10 @@ S_ASH = ("NIH Office of Dietary Supplements: Ashwagandha fact sheet", ODS + "Ash
 S_MEL = ("NCCIH (NIH): Melatonin, what you need to know", "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know")
 S_SHIL_T = ("Keller et al. (2019), Journal of the International Society of Sports Nutrition: shilajit and muscle strength",
             "https://link.springer.com/article/10.1186/s12970-019-0270-2")
+S_FE = ("NIH Office of Dietary Supplements: Iron fact sheet", ODS + "Iron-HealthProfessional/")
+S_CA = ("NIH Office of Dietary Supplements: Calcium fact sheet", ODS + "Calcium-HealthProfessional/")
+S_HAM = ("Hamedifard et al. (2020), Lipids in Health and Disease: combined magnesium and zinc supplementation, randomised controlled trial",
+         "https://link.springer.com/article/10.1186/s12944-020-01298-4")
 S_SHIL_W = ("WebMD: Shilajit uses, side effects and interactions", "https://www.webmd.com/vitamins-supplements/shilajit")
 
 ING = "/ingredients/"
@@ -138,7 +142,9 @@ PAGES = [
 {cards(DAY)}
 <h2>Night Pack ingredients</h2>
 {cards(NIGHT)}
-<h2>How we choose forms and doses</h2>
+<h2>Which supplements go together</h2>
+<p>For combinations to avoid, read <a href="/science/supplements-not-to-take-together/">7 supplements you should not take together</a>. More guides are in our <a href="/science/">science library</a>.</p>
+<h2>How our doses are set</h2>
 <p>We start from the daily intake levels set by health authorities, and from the doses used in human studies. We choose forms that absorb well, such as chelated minerals, methylcobalamin and rTG omega-3. Every dose stays below the tolerable upper intake level where one exists. Every amount is printed on the pack, with no proprietary blends.</p>
 ''',
  "faq": [
@@ -169,7 +175,7 @@ PAGES = [
 </tbody></table></div>
 <h2>When to take magnesium glycinate</h2>
 <p>You can take it at any time, but most people take it <strong>in the evening</strong> with dinner or before bed. It fits a wind-down routine, and evening is when the Super Routine Night Pack is taken. Evidence that magnesium improves sleep is limited and mixed, and is strongest in people whose intake is low. We do not claim it is a sleep aid.</p>
-<p>We keep magnesium in the Night Pack and {link("zn","zinc")} in the Day Pack. Very high zinc intakes (around 142 mg a day) have been shown to reduce magnesium absorption. Our doses are far lower, but splitting the two removes any competition.</p>
+<p>We keep magnesium in the Night Pack and {link("zn","zinc")} in the Day Pack. Very high zinc intakes (around 142 mg a day) have been shown to reduce magnesium absorption. Our doses are far lower, but splitting the two removes any competition. See <a href="/science/zinc-and-magnesium-together/">taking zinc and magnesium together</a>.</p>
 <h2>Who should be careful</h2>
 <ul>
 <li><strong>Antibiotics</strong> (tetracyclines such as doxycycline; quinolones such as ciprofloxacin): take the antibiotic at least 2 hours before, or 4–6 hours after, magnesium.</li>
@@ -381,6 +387,7 @@ PAGES = [
 <p>The adult RDA is 11 mg for men and 8 mg for women. 12 mg covers that need while staying far below the 40 mg upper limit. Doses of 50 mg or more a day over weeks can lower copper levels, which is why we avoid high-dose zinc.</p>
 <h2>Can I take zinc and magnesium together?</h2>
 <p>At normal supplement doses, yes. The interaction that has been measured involves very high zinc intake (around 142 mg a day), which reduced magnesium absorption. Super Routine still separates them, with zinc in the morning and {link("mg","magnesium glycinate")} at night, so the two minerals never compete.</p>
+<p>Read the full guide: <a href="/science/zinc-and-magnesium-together/">Can you take zinc and magnesium together?</a></p>
 <h2>Best time to take zinc</h2>
 <ul><li>Zinc absorbs well on an empty stomach, but it can cause nausea. Taking it after breakfast, as in the <a href="/day-pack/">Day Pack</a>, is easier on the stomach.</li><li>Keep it away from <strong>iron supplements</strong> of 25 mg or more, which reduce zinc absorption.</li></ul>
 <h2>Who should be careful</h2>
@@ -448,3 +455,164 @@ PAGES = [
  "sources": [],
 },
 ]
+
+# ================================================================ SCIENCE ARTICLES
+# Each article: "blurb" is shown on the /science/ hub. Newest first.
+SCI = "/science/"
+SCI_CRUMB = [("Science", SCI)]
+
+SCIENCE = [
+# ---------------------------------------------------------------- 7 COMBINATIONS
+{
+ "path": SCI + "supplements-not-to-take-together/", "crumb": "Supplements Not to Take Together", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-21",
+ "blurb": "Calcium and iron, iron and zinc, high-dose zinc, melatonin stacks, blood thinners and double-dosing: what to separate and by how long.",
+ "title": "7 Supplements You Should Not Take Together (and What to Do)",
+ "description": "A pharmacist's list of 7 supplement combinations to separate or avoid, with spacing times, upper limits and the medicines that interact with minerals.",
+ "h1": "7 supplements you should not take together",
+ "answer": "The main combinations to separate or avoid are <strong>calcium with iron</strong>, <strong>iron with zinc</strong>, <strong>high-dose zinc with copper or magnesium</strong>, <strong>melatonin with other sleep products</strong>, <strong>omega-3 or vitamin K with blood thinners</strong>, and <strong>two products with the same nutrient</strong>. Most can still be taken on the same day if you space them a few hours apart.",
+ "facts": [("Most common clash", "Calcium + iron"), ("Zinc upper limit", "40 mg/day"), ("Mg upper limit", "350 mg/day (supplements)"), ("Vitamin D upper limit", "4,000 IU/day")],
+ "body": f'''
+<p>"Not together" rarely means "never". For most of the pairs below the problem is competition for absorption in the gut, which you solve by taking them at different times of day. A few are about safety, where the answer is to talk to your doctor first. Here is each combination, why it matters and what to do.</p>
+<h2>Quick reference: which supplements not to take together</h2>
+<div class="tw"><table><thead><tr><th>Combination</th><th>Why</th><th>What to do</th></tr></thead><tbody>
+<tr><td>1. Calcium + iron</td><td>Calcium might reduce iron absorption</td><td>Take at different times of day</td></tr>
+<tr><td>2. Iron (25 mg+) + zinc</td><td>Iron reduces zinc absorption</td><td>Take at different times of day</td></tr>
+<tr><td>3. High-dose zinc + copper status</td><td>50 mg+ zinc for weeks inhibits copper absorption</td><td>Keep zinc under 40 mg a day</td></tr>
+<tr><td>4. Very high-dose zinc + magnesium</td><td>142 mg zinc a day might reduce magnesium absorption</td><td>Normal doses are fine; splitting is optional</td></tr>
+<tr><td>5. Melatonin + other sleep products</td><td>Stacked doses, uncertain label content</td><td>Use one melatonin product only</td></tr>
+<tr><td>6. Omega-3 or vitamin K + blood thinners</td><td>Can change clotting tests (INR)</td><td>Only with your doctor's agreement</td></tr>
+<tr><td>7. Two products with the same nutrient</td><td>Can push you over the upper limit</td><td>Add up every label</td></tr>
+</tbody></table></div>
+<h2>1. Calcium and iron</h2>
+<p>This is the pairing most people have heard of. The NIH Office of Dietary Supplements says calcium <em>might</em> interfere with iron absorption, although the effect has not been definitively established, and experts suggest taking individual calcium and iron supplements at different times of the day. A simple routine is iron in the morning and calcium with dinner, or the other way round.</p>
+<p>Calcium absorbs best in small amounts: absorption from supplements is highest at doses of 500 mg or less. If you take more, split it across meals rather than taking it all at once.</p>
+<h2>2. Iron and zinc</h2>
+<p>Iron tablets of <strong>25 mg of elemental iron or more</strong>, taken at the same time as zinc, can reduce zinc absorption. The iron added to fortified foods does not have a significant effect. If you have been prescribed iron, take it at a different time from any zinc supplement. With Super Routine, that means taking your iron away from the <a href="/day-pack/">Day Pack</a>, which contains {link("zn","12 mg of zinc")}.</p>
+<h2>3. High-dose zinc and copper</h2>
+<p>Zinc and copper share an absorption pathway. Doses of <strong>50 mg of zinc or more over a period of weeks</strong> can inhibit copper absorption and lead to low copper status. This is one reason the adult upper limit for zinc is 40 mg a day. Long courses of high-dose "immunity" zinc are the usual way people get there. Stay under 40 mg a day from all supplements combined unless a doctor has prescribed more.</p>
+<h2>4. Very high-dose zinc and magnesium</h2>
+<p>Very high zinc intakes from supplements, around <strong>142 mg a day</strong>, might interfere with magnesium absorption. That is more than three times the zinc upper limit. At ordinary doses the two are commonly taken together. We cover this in detail in <a href="/science/zinc-and-magnesium-together/">Can you take zinc and magnesium together?</a> Super Routine still keeps them apart, with zinc in the morning and {link("mg","magnesium glycinate")} at night, so the question never comes up.</p>
+<h2>5. Melatonin and other sleep products</h2>
+<p>Melatonin appears in many sleep gummies, drinks and "night" blends, so it is easy to take two products that both contain it. Label accuracy is a real issue: NCCIH reports that in a 2023 study of melatonin gummies, the actual amount ranged from <strong>74% to 347%</strong> of the labelled quantity. Stacking products multiplies that uncertainty.</p>
+<p>Use one melatonin product only. The Super Routine <a href="/night-pack/">Night Pack</a> already contains {link("mel","3 mg of melatonin")}, so do not add a separate melatonin supplement. NCCIH advises anyone taking medicine to speak to their health care provider before using melatonin, and says people with epilepsy and those on blood thinners need medical supervision. {link("ash","Ashwagandha")} might also interact with sedative medicines, so if you take a prescribed sleeping tablet or sedative, ask your doctor before adding either.</p>
+<h2>6. Omega-3 or vitamin K with blood thinners</h2>
+<p>This one is a supplement-and-medicine pairing, but it is the most important on the list.</p>
+<ul>
+<li><strong>Vitamin K and warfarin:</strong> people on warfarin need a consistent vitamin K intake from food and supplements, because sudden changes can increase or decrease the drug's effect. Do not start a product with vitamin K2, such as {link("d3","our vitamin D3 + K2")}, without your doctor's approval.</li>
+<li><strong>Omega-3 and anticoagulants:</strong> fish oil might prolong clotting time (raise INR). Most research found 3–6 g a day does not significantly affect anticoagulant status, but the NIH advises that people taking omega-3 with anticoagulants are monitored periodically. Tell your doctor before taking {link("om","omega-3")}.</li>
+</ul>
+<h2>7. Two products that contain the same nutrient</h2>
+<p>The most common "combination" problem is not two different nutrients. It is the same nutrient from two products: a multivitamin, an immunity tablet and a separate zinc or vitamin D supplement. Vitamin D is the clearest example. The adult upper limit is <strong>4,000 IU a day</strong>, and according to the NIH, vitamin D toxicity is almost always the result of excessive intake from supplements. If your doctor has prescribed high-dose vitamin D, follow that plan and tell them about any other vitamin D you take.</p>
+<div class="tw"><table><thead><tr><th>Nutrient</th><th>Adult upper limit</th><th>Super Routine dose</th></tr></thead><tbody>
+<tr><td>Zinc</td><td>40 mg/day</td><td>12 mg</td></tr>
+<tr><td>Magnesium (from supplements)</td><td>350 mg/day</td><td>140 mg elemental</td></tr>
+<tr><td>Vitamin D</td><td>4,000 IU/day</td><td>600 IU</td></tr>
+<tr><td>Iron</td><td>45 mg/day</td><td>None</td></tr>
+<tr><td>Calcium</td><td>2,000–2,500 mg/day</td><td>None</td></tr>
+</tbody></table></div>
+<h2>Minerals and common medicines</h2>
+<p>Minerals also bind to some medicines in the gut. These timings come from the NIH fact sheets:</p>
+<ul>
+<li><strong>Quinolone and tetracycline antibiotics</strong> (such as ciprofloxacin or doxycycline): take the antibiotic at least 2 hours before, or 4–6 hours after, zinc or magnesium. For calcium and quinolones, 2 hours before or after.</li>
+<li><strong>Levothyroxine (thyroid medicine):</strong> do not take it within 4 hours of calcium carbonate or iron supplements.</li>
+<li><strong>Bisphosphonates</strong> (such as alendronate): separate from magnesium by at least 2 hours.</li>
+<li><strong>Levodopa:</strong> iron supplements reduce its absorption.</li>
+</ul>
+<h2>How Super Routine is built around these rules</h2>
+<p>We designed the two packs so the clashes above do not happen inside the routine. Zinc is in the Day Pack and magnesium in the Night Pack. Neither pack contains iron or calcium, so neither competes with a prescribed iron or calcium tablet if you space them. Melatonin is only in the Night Pack, and every dose stays below its upper limit. See the full list on our <a href="/ingredients/">ingredients page</a>.</p>
+''',
+ "faq": [
+  ("What vitamins should not be taken together?", "The main ones to separate are calcium and iron, iron (25 mg or more) and zinc, and high-dose zinc with copper or magnesium. Also avoid taking two products that both contain vitamin D, zinc or melatonin, because the doses add up."),
+  ("How far apart should I take iron and calcium?", "Experts suggest taking them at different times of day, for example iron in the morning and calcium with dinner."),
+  ("Can I take all my vitamins at once?", "Many can be taken together, but minerals that compete, such as iron with calcium or zinc, are better spaced out. Fat-soluble vitamins such as D and K absorb best with a meal."),
+  ("Which supplements interact with blood thinners?", "Vitamin K can change the effect of warfarin, and fish oil can raise INR. Anyone on a blood thinner should ask their doctor before starting either."),
+ ],
+ "sources": [S_FE, S_CA, S_ZN, S_MG, S_K, S_OM, S_D, S_MEL, S_ASH],
+},
+# ---------------------------------------------------------------- ZINC + MAGNESIUM
+{
+ "path": SCI + "zinc-and-magnesium-together/", "crumb": "Zinc and Magnesium Together", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-21",
+ "blurb": "Yes at normal doses. The 142 mg zinc threshold, safe upper limits, the best time to take each, and the medicines to space them from.",
+ "title": "Can You Take Zinc and Magnesium Together? Pharmacist Answer",
+ "description": "Yes, at normal doses. A pharmacist explains the 142 mg zinc threshold, safe upper limits, the best time to take zinc and magnesium, and medicines to space.",
+ "h1": "Can you take zinc and magnesium together?",
+ "answer": "<strong>Yes.</strong> For most healthy adults, zinc and magnesium can be taken together at normal doses. The interaction that has been measured involves very high zinc intakes of about <strong>142 mg a day</strong>, more than three times the 40 mg upper limit. Keep zinc under 40 mg, supplemental magnesium under 350 mg, and space both from certain antibiotics.",
+ "facts": [("Together?", "Yes, at normal doses"), ("Problem dose", "Zinc ~142 mg/day"), ("Zinc upper limit", "40 mg/day"), ("Mg upper limit", "350 mg/day (supplements)")],
+ "body": f'''
+<h2>Why people worry about zinc and magnesium together</h2>
+<p>Zinc and magnesium are both minerals absorbed in the small intestine, so it is reasonable to ask whether they compete. The NIH Office of Dietary Supplements gives a clear threshold: <strong>very high doses of zinc from supplements (142 mg a day) might interfere with magnesium absorption</strong>. Typical supplements contain 8–25 mg of zinc, nowhere near that level.</p>
+<p>The two are also given together in research. In a 12-week randomised, placebo-controlled trial, 55 adults took 250 mg of magnesium and 30 mg of elemental zinc together every day, and the authors reported no adverse effects from the combination.</p>
+<h2>What zinc and magnesium each do</h2>
+<p>They are often sold together, but they do different jobs.</p>
+<ul>
+<li><strong>Zinc</strong> is a co-factor for hundreds of enzymes. It contributes to normal immune function, protein and DNA synthesis, wound healing and cell division. Whole grains, beans and nuts contain phytates, which bind zinc in the gut and reduce how much is absorbed, a point worth knowing for many Indian vegetarian diets.</li>
+<li><strong>Magnesium</strong> is involved in more than 300 enzyme systems. It contributes to normal muscle and nerve function, protein synthesis and energy production.</li>
+</ul>
+<p>Because their roles do not overlap, there is no reason to choose one over the other. The question is only how much of each, and when.</p>
+<h2>How much zinc and magnesium is safe to take together?</h2>
+<p>Stay within the daily upper limits for both, counting every product you take.</p>
+<div class="tw"><table><thead><tr><th></th><th>Zinc</th><th>Magnesium</th></tr></thead><tbody>
+<tr><td>Adult RDA</td><td>11 mg men, 8 mg women</td><td>400–420 mg men, 310–320 mg women</td></tr>
+<tr><td>Upper limit</td><td>40 mg/day (all sources)</td><td>350 mg/day from supplements and medicines only</td></tr>
+<tr><td>Signs of too much</td><td>Nausea, dizziness, headache, stomach upset, vomiting, loss of appetite</td><td>Diarrhoea, nausea, abdominal cramps</td></tr>
+<tr><td>In Super Routine</td><td>{link("zn","12 mg picolinate")} (Day Pack)</td><td>{link("mg","140 mg elemental, as glycinate")} (Night Pack)</td></tr>
+</tbody></table></div>
+<p>Two details are easy to miss. The magnesium upper limit counts only supplements and medicines, not magnesium from food. And on a label, "1000 mg magnesium glycinate" is the whole compound: the elemental magnesium is about 140 mg. Always compare elemental amounts.</p>
+<h2>Watch for hidden zinc</h2>
+<p>Most people who exceed the zinc limit do it by stacking products: a multivitamin, an immunity tablet and a separate zinc supplement. Some nasal sprays, homeopathic products and denture creams also contain zinc. Long-term intakes of <strong>50 mg of zinc a day or more</strong> can inhibit copper absorption, which is a separate reason to keep total zinc under 40 mg. Read more in <a href="/science/supplements-not-to-take-together/">7 supplements you should not take together</a>.</p>
+<h2>Best time to take zinc and magnesium</h2>
+<div class="tw"><table><thead><tr><th>Option</th><th>How</th><th>Suits</th></tr></thead><tbody>
+<tr><td>Together</td><td>Both with a meal</td><td>The simplest routine. Fine at normal doses.</td></tr>
+<tr><td>Split</td><td>Zinc after breakfast, magnesium in the evening</td><td>Anyone who wants to avoid any competition, or finds zinc hard on the stomach</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>Zinc:</strong> can cause stomach upset and nausea, so many people take it after a meal. Keep it apart from iron supplements of 25 mg or more, which reduce zinc absorption.</li>
+<li><strong>Magnesium:</strong> absorption does not depend on time of day. Many people take it in the evening as part of a wind-down routine. Forms that dissolve well, such as citrate, chloride and lactate, tend to be absorbed better than oxide. Glycinate is gentle on the stomach.</li>
+</ul>
+<h2>Should you split them anyway?</h2>
+<p>You do not have to, but splitting has practical advantages. It removes any question of competition, it keeps a zinc-related upset stomach away from bedtime, and it fits how people already live: one routine in the morning and one in the evening. That is how Super Routine is built. The <a href="/day-pack/">Day Pack</a> holds zinc with vitamin D3 + K2, B12 and shilajit after breakfast. The <a href="/night-pack/">Night Pack</a> holds magnesium glycinate with ashwagandha, omega-3 and melatonin after dinner.</p>
+<h2>Who should be careful</h2>
+<ul>
+<li><strong>Antibiotics</strong> (quinolones such as ciprofloxacin, tetracyclines such as doxycycline): take the antibiotic at least 2 hours before, or 4–6 hours after, zinc or magnesium.</li>
+<li><strong>Penicillamine:</strong> take zinc at least 1 hour apart from it.</li>
+<li><strong>Bisphosphonates</strong> (such as alendronate): separate from magnesium by at least 2 hours.</li>
+<li><strong>Diuretics:</strong> thiazide diuretics increase zinc loss in urine, and loop and thiazide diuretics increase magnesium loss. Potassium-sparing diuretics reduce magnesium excretion. Ask your doctor before adding either mineral.</li>
+<li><strong>Long-term proton pump inhibitors</strong> (usually more than a year) can lower magnesium levels.</li>
+<li>If you are pregnant, breastfeeding, have a medical condition or take any regular medicine, check with your doctor or pharmacist first.</li>
+</ul>
+''',
+ "faq": [
+  ("Is it safe to take zinc and magnesium every day?", "For most healthy adults, yes, if total zinc stays under 40 mg a day and magnesium from supplements stays under 350 mg a day. Check with your doctor if you have a medical condition or take regular medicines."),
+  ("Can I take zinc and magnesium at night?", "Yes. Magnesium is often taken in the evening. Some people find zinc unsettles the stomach, so if that happens, take zinc after breakfast instead."),
+  ("What should you not take with zinc?", "Iron supplements of 25 mg or more, quinolone and tetracycline antibiotics, and penicillamine all need spacing from zinc. Long-term doses of 50 mg or more can lower copper levels."),
+  ("Does zinc block magnesium absorption?", "Only at very high doses. The NIH notes that about 142 mg of zinc a day might interfere with magnesium absorption. Normal supplement doses have not been shown to do this."),
+ ],
+ "sources": [S_ZN, S_MG, S_FE, S_HAM],
+},
+]
+
+
+def _sci_cards():
+    return '<div class="cards">' + "".join(
+        f'<a class="card" href="{a["path"]}"><strong>{a["h1"][0].upper() + a["h1"][1:]}</strong><span>{a["blurb"]}</span></a>'
+        for a in SCIENCE) + "</div>"
+
+
+SCIENCE_HUB = {
+ "path": SCI, "crumb": "Science", "priority": "0.8", "schema_type": "CollectionPage",
+ "title": "Supplement Science: Timing, Combinations & Safety Guides",
+ "description": "Pharmacist-written guides on supplement timing, which supplements to take together or apart, doses, upper limits and interactions, with sources.",
+ "h1": "Supplement science, explained by a pharmacist",
+ "answer": "Practical guides to taking supplements well: which ones go together, which to space apart, when to take them and how much is safe. Every article is written and reviewed by a registered pharmacist and links to its sources, mainly the NIH Office of Dietary Supplements and peer-reviewed studies.",
+ "body": f'''
+<h2>All articles</h2>
+{_sci_cards()}
+<h2>Ingredient guides</h2>
+<p>For dose, form and timing of each Super Routine ingredient, see the <a href="/ingredients/">ingredients hub</a>, the <a href="/day-pack/">Day Pack</a> and the <a href="/night-pack/">Night Pack</a>.</p>
+''',
+ "sources": [],
+}
+
+PAGES = PAGES + [SCIENCE_HUB] + SCIENCE

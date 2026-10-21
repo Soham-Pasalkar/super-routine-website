@@ -80,7 +80,7 @@ def page_html(p):
     join = ('<section class="join"><h2>Join the founding list</h2><p>Get first access and the founding price '
             'when Super Routine launches.</p><a href="/#join">Claim your spot →</a></section>')
     nav = "".join(f'<a href="{u}">{esc(t)}</a>' for t, u in NAV)
-    foot = "".join(f'<a href="{u}">{esc(t)}</a>' for t, u in [("Home", "/")] + NAV)
+    foot = "".join(f'<a href="{u}">{esc(t)}</a>' for t, u in [("Home", "/")] + NAV[:3] + [("Science", "/science/")] + NAV[3:])
 
     return f'''<!DOCTYPE html>
 <html lang="en-IN">
