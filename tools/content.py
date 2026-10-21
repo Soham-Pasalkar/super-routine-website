@@ -55,7 +55,7 @@ PAGES = [
 {
  "path": "/day-pack/", "crumb": "Day Pack", "priority": "0.9", "about": "Super Routine Day Pack",
  "title": "Day Pack: Morning Supplements – D3+K2, B12, Zinc, Shilajit",
- "description": "The Super Routine Day Pack: vitamin D3 + K2, methylcobalamin B12, zinc picolinate and purified shilajit in one morning sachet. Doses, forms and why they go in the morning.",
+ "description": "Vitamin D3 + K2, methylcobalamin B12, zinc picolinate and purified shilajit in one morning sachet. Doses, forms and why they go in the morning.",
  "h1": "Day Pack: your morning supplements in one sachet",
  "answer": "The Day Pack holds four nutrients that suit the morning: <strong>vitamin D3 + K2</strong> (600 IU), <strong>vitamin B12</strong> as methylcobalamin (1 mg), <strong>zinc picolinate</strong> (12 mg) and <strong>purified Himalayan shilajit</strong> (250 mg). Take one sachet after breakfast, ideally with a meal that contains some fat.",
  "facts": [("When", "After breakfast"), ("Sachets", "30 per month"), ("Focus", "Energy · Focus · Immunity · Bone")],
@@ -86,7 +86,7 @@ PAGES = [
 # ---------------------------------------------------------------- NIGHT PACK
 {
  "path": "/night-pack/", "crumb": "Night Pack", "priority": "0.9", "about": "Super Routine Night Pack",
- "title": "Night Pack: Supplements for Sleep & Recovery – Magnesium, Melatonin",
+ "title": "Night Pack: Sleep & Recovery Supplements in One Sachet",
  "description": "The Super Routine Night Pack: magnesium glycinate, ashwagandha KSM-66, omega-3 rTG and 3 mg melatonin in one evening sachet. Doses, forms, timing and safety.",
  "h1": "Night Pack: your evening supplements in one sachet",
  "answer": "The Night Pack holds four nutrients for the evening: <strong>magnesium glycinate</strong> (1000 mg, giving 140 mg elemental magnesium), <strong>ashwagandha KSM-66</strong> (300 mg), <strong>omega-3 in rTG form</strong> (750 mg) and <strong>melatonin</strong> (3 mg). Take one sachet after dinner or 30–60 minutes before bed.",
@@ -120,7 +120,7 @@ PAGES = [
 {
  "path": "/ingredients/", "crumb": "Ingredients", "priority": "0.9", "schema_type": "CollectionPage",
  "title": "The 8 Ingredients: Doses, Forms & Best Time to Take Each",
- "description": "Every Super Routine ingredient with its exact dose, form and timing: D3+K2, B12, zinc picolinate, shilajit, magnesium glycinate, ashwagandha KSM-66, omega-3 rTG, melatonin.",
+ "description": "Exact dose, form and timing for all 8 Super Routine ingredients: D3+K2, B12, zinc, shilajit, magnesium, ashwagandha, omega-3 and melatonin.",
  "h1": "The 8 essentials: forms, doses and timing",
  "answer": "Super Routine has eight ingredients. Four go in the <a href=\"/day-pack/\">Day Pack</a>, taken after breakfast, and four in the <a href=\"/night-pack/\">Night Pack</a>, taken in the evening. Each was chosen for a well-absorbed form and a dose within the range used in published studies.",
  "body": f'''
@@ -150,8 +150,8 @@ PAGES = [
 # ---------------------------------------------------------------- MAGNESIUM
 {
  "path": ING + "magnesium-glycinate/", "crumb": "Magnesium Glycinate", "crumbs": ING_CRUMB, "about": "Magnesium glycinate",
- "title": "Magnesium Glycinate: Benefits, Elemental Dose & When to Take It",
- "description": "Magnesium glycinate explained by a pharmacist: elemental magnesium per dose, benefits, when to take it (morning or night), interactions and how it compares with oxide and citrate.",
+ "title": "Magnesium Glycinate: Benefits, Dose & When to Take It",
+ "description": "Magnesium glycinate by a pharmacist: elemental magnesium per dose, benefits, morning vs night, interactions, and how it compares with oxide and citrate.",
  "h1": "Magnesium glycinate: benefits, dose and when to take it",
  "answer": "Magnesium glycinate is magnesium bound to the amino acid glycine. It is gentle on the stomach and well absorbed. Most people take it <strong>in the evening</strong>. A 1000 mg dose gives about <strong>140 mg of elemental magnesium</strong>, well within the 350 mg daily upper limit for supplements. That is the amount in the Super Routine Night Pack.",
  "facts": [("Our dose", "1000 mg (140 mg elemental)"), ("Pack", "Night"), ("Adult RDA", "310–420 mg/day"), ("Supplement UL", "350 mg/day")],
@@ -191,7 +191,7 @@ PAGES = [
 {
  "path": ING + "ashwagandha-ksm-66/", "crumb": "Ashwagandha KSM-66", "crumbs": ING_CRUMB, "about": "Ashwagandha (Withania somnifera) root extract",
  "title": "Ashwagandha KSM-66: Dose (300 vs 600 mg), Timing & Safety",
- "description": "KSM-66 ashwagandha explained by a pharmacist: what the studies used (250–600 mg), when to take it, how long trials lasted, and who should avoid it (thyroid, pregnancy, liver).",
+ "description": "KSM-66 ashwagandha by a pharmacist: doses studied (250–600 mg), when to take it, trial length, and who should avoid it (thyroid, pregnancy, liver).",
  "h1": "Ashwagandha KSM-66: dose, timing and safety",
  "answer": "KSM-66 is a full-spectrum ashwagandha extract made from the root only. Human trials have used <strong>250–600 mg a day</strong> for stress and sleep, mostly for 8–12 weeks. The Super Routine Night Pack contains <strong>300 mg</strong>, taken in the evening. Avoid it if you are pregnant or breastfeeding, or have thyroid or liver problems, unless your doctor agrees.",
  "facts": [("Our dose", "300 mg KSM-66"), ("Pack", "Night"), ("Studied range", "250–600 mg/day"), ("Typical trial length", "8–12 weeks")],
@@ -302,7 +302,7 @@ PAGES = [
 {
  "path": ING + "vitamin-d3-k2/", "crumb": "Vitamin D3 + K2", "crumbs": ING_CRUMB, "about": "Vitamin D3 (cholecalciferol) and vitamin K2",
  "title": "Vitamin D3 + K2: Dosage, Best Time to Take & Why They Pair",
- "description": "Vitamin D3 with K2 explained by a pharmacist: why 600 IU, the best time to take vitamin D3, why it is paired with K2, and the warfarin interaction you must know.",
+ "description": "Vitamin D3 with K2 by a pharmacist: why 600 IU, the best time to take vitamin D3, why it pairs with K2, and the warfarin interaction to know.",
  "h1": "Vitamin D3 + K2: dose, best time to take it and why they pair",
  "answer": "Take vitamin D3 <strong>with a meal that contains some fat</strong>, ideally at the same time each day. Breakfast works well for most people. D3 is fat-soluble and absorbs best with food. The Super Routine Day Pack contains <strong>600 IU (15 mcg)</strong> of D3, which matches the adult daily recommendation, paired with vitamin K2.",
  "facts": [("Our dose", "600 IU (15 mcg) D3 + K2"), ("Pack", "Day"), ("Adult RDA", "600 IU (800 IU 70+)"), ("UL", "4,000 IU/day")],
@@ -367,7 +367,7 @@ PAGES = [
 # ---------------------------------------------------------------- ZINC
 {
  "path": ING + "zinc-picolinate/", "crumb": "Zinc Picolinate", "crumbs": ING_CRUMB, "about": "Zinc picolinate",
- "title": "Zinc Picolinate: Benefits, Dose & Can You Take It With Magnesium?",
+ "title": "Zinc Picolinate: Dose & Taking Zinc With Magnesium",
  "description": "Zinc picolinate explained by a pharmacist: benefits, why 12 mg, the best time to take zinc, and whether you can take zinc and magnesium together.",
  "h1": "Zinc picolinate: dose, timing and taking it with magnesium",
  "answer": "Yes, <strong>most people can take zinc and magnesium together</strong> at normal doses. Very high zinc intakes (around 142 mg a day) can reduce magnesium absorption, so Super Routine keeps them apart anyway: <strong>12 mg of zinc picolinate</strong> in the Day Pack and magnesium in the Night Pack. Take zinc with food if it upsets your stomach.",
@@ -397,7 +397,7 @@ PAGES = [
 {
  "path": ING + "himalayan-shilajit/", "crumb": "Himalayan Shilajit", "crumbs": ING_CRUMB, "about": "Purified shilajit",
  "title": "Shilajit: Best Time to Take It, Dose & Heavy Metal Testing",
- "description": "Shilajit explained by a pharmacist: the best time to take shilajit (morning or night), the 250 mg dose, what studies show, and why purified, heavy-metal-tested resin matters.",
+ "description": "Shilajit by a pharmacist: best time to take it (morning or night), the 250 mg dose, what studies show, and why heavy-metal-tested resin matters.",
  "h1": "Himalayan shilajit: best time to take it, dose and purity",
  "answer": "Shilajit is traditionally taken <strong>in the morning</strong>, which is how it is used in the Super Routine Day Pack: <strong>250 mg of purified resin</strong> after breakfast. Human research is early and small. The most important thing is purity: raw shilajit can contain heavy metals, so only purified, third-party-tested shilajit should be used.",
  "facts": [("Our dose", "250 mg purified"), ("Pack", "Day"), ("Studied range", "250–500 mg/day"), ("Must have", "Heavy-metal testing")],
@@ -424,7 +424,7 @@ PAGES = [
 {
  "path": "/about/", "crumb": "About", "priority": "0.7", "schema_type": "AboutPage", "person": True, "byline": False,
  "title": "About Super Routine – Founded by a Registered Pharmacist",
- "description": "Super Routine is a day and night supplement system founded by registered pharmacist Shubham Pasalkar. Our standards, how we choose doses and forms, and our testing plan.",
+ "description": "Super Routine was founded by registered pharmacist Shubham Pasalkar. Our standards, how we choose doses and forms, and our testing plan.",
  "h1": "About Super Routine",
  "answer": "Super Routine is a day and night supplement system being built in India by <strong>Shubham Pasalkar, a registered pharmacist</strong> with a background in pharmaceutical research. Eight essentials, two sachets, every dose on the pack, and no proprietary blends.",
  "body": '''
