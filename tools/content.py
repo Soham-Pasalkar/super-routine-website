@@ -6,8 +6,8 @@ SITE = "https://www.superroutine.in"
 
 AUTHOR = {
     "name": "Shubham Pasalkar",
-    "title": "Registered Pharmacist, Founder",
-    "knows": ["Pharmacology", "Dietary supplements", "Nutraceutical formulation", "Drug-nutrient interactions"],
+    "title": "Founder",
+    "knows": ["Dietary supplements", "Nutrition", "Supplement formulation"],
 }
 
 ODS = "https://ods.od.nih.gov/factsheets/"
@@ -157,7 +157,7 @@ PAGES = [
 {
  "path": ING + "magnesium-glycinate/", "crumb": "Magnesium Glycinate", "crumbs": ING_CRUMB, "about": "Magnesium glycinate",
  "title": "Magnesium Glycinate: Benefits, Dose & When to Take It",
- "description": "Magnesium glycinate by a pharmacist: elemental magnesium per dose, benefits, morning vs night, interactions, and how it compares with oxide and citrate.",
+ "description": "Magnesium glycinate explained: elemental magnesium per dose, benefits, morning vs night, interactions, and how it compares with oxide and citrate.",
  "h1": "Magnesium glycinate: benefits, dose and when to take it",
  "answer": "Magnesium glycinate is magnesium bound to the amino acid glycine. It is gentle on the stomach and well absorbed. Most people take it <strong>in the evening</strong>. A 1000 mg dose gives about <strong>140 mg of elemental magnesium</strong>, well within the 350 mg daily upper limit for supplements. That is the amount in the Super Routine Night Pack.",
  "facts": [("Our dose", "1000 mg (140 mg elemental)"), ("Pack", "Night"), ("Adult RDA", "310–420 mg/day"), ("Supplement UL", "350 mg/day")],
@@ -197,7 +197,7 @@ PAGES = [
 {
  "path": ING + "ashwagandha-ksm-66/", "crumb": "Ashwagandha KSM-66", "crumbs": ING_CRUMB, "about": "Ashwagandha (Withania somnifera) root extract",
  "title": "Ashwagandha KSM-66: Dose (300 vs 600 mg), Timing & Safety",
- "description": "KSM-66 ashwagandha by a pharmacist: doses studied (250–600 mg), when to take it, trial length, and who should avoid it (thyroid, pregnancy, liver).",
+ "description": "KSM-66 ashwagandha explained: doses studied (250–600 mg), when to take it, trial length, and who should avoid it (thyroid, pregnancy, liver).",
  "h1": "Ashwagandha KSM-66: dose, timing and safety",
  "answer": "KSM-66 is a full-spectrum ashwagandha extract made from the root only. Human trials have used <strong>250–600 mg a day</strong> for stress and sleep, mostly for 8–12 weeks. The Super Routine Night Pack contains <strong>300 mg</strong>, taken in the evening. Avoid it if you are pregnant or breastfeeding, or have thyroid or liver problems, unless your doctor agrees.",
  "facts": [("Our dose", "300 mg KSM-66"), ("Pack", "Night"), ("Studied range", "250–600 mg/day"), ("Typical trial length", "8–12 weeks")],
@@ -268,7 +268,7 @@ PAGES = [
 {
  "path": ING + "melatonin/", "crumb": "Melatonin", "crumbs": ING_CRUMB, "about": "Melatonin",
  "title": "Melatonin 3 mg: When to Take It, How It Works & Safety",
- "description": "Melatonin explained by a pharmacist: how it works, when to take 3 mg, what the evidence shows for sleep onset and jet lag, and who should not take it.",
+ "description": "Melatonin explained: how it works, when to take 3 mg, what the evidence shows for sleep onset and jet lag, and who should not take it.",
  "h1": "Melatonin 3 mg: when to take it and how it works",
  "answer": "Melatonin is the hormone that tells the body clock it is night. Take it <strong>30–60 minutes before your usual bedtime</strong>. In studies it shortened the time to fall asleep in people with delayed sleep timing, and eased jet lag. The Super Routine Night Pack contains <strong>3 mg</strong>, a common adult dose. It is not for children or for anyone pregnant or breastfeeding.",
  "facts": [("Our dose", "3 mg"), ("Pack", "Night"), ("When", "30–60 min before bed"), ("Not for", "Children, pregnancy")],
@@ -308,7 +308,7 @@ PAGES = [
 {
  "path": ING + "vitamin-d3-k2/", "crumb": "Vitamin D3 + K2", "crumbs": ING_CRUMB, "about": "Vitamin D3 (cholecalciferol) and vitamin K2",
  "title": "Vitamin D3 + K2: Dosage, Best Time to Take & Why They Pair",
- "description": "Vitamin D3 with K2 by a pharmacist: why 600 IU, the best time to take vitamin D3, why it pairs with K2, and the warfarin interaction to know.",
+ "description": "Vitamin D3 with K2 explained: why 600 IU, the best time to take vitamin D3, why it pairs with K2, and the warfarin interaction to know.",
  "h1": "Vitamin D3 + K2: dose, best time to take it and why they pair",
  "answer": "Take vitamin D3 <strong>with a meal that contains some fat</strong>, ideally at the same time each day. Breakfast works well for most people. D3 is fat-soluble and absorbs best with food. The Super Routine Day Pack contains <strong>600 IU (15 mcg)</strong> of D3, which matches the adult daily recommendation, paired with vitamin K2.",
  "facts": [("Our dose", "600 IU (15 mcg) D3 + K2"), ("Pack", "Day"), ("Adult RDA", "600 IU (800 IU 70+)"), ("UL", "4,000 IU/day")],
@@ -341,7 +341,7 @@ PAGES = [
 {
  "path": ING + "vitamin-b12-methylcobalamin/", "crumb": "Vitamin B12", "crumbs": ING_CRUMB, "about": "Vitamin B12 (methylcobalamin)",
  "title": "Methylcobalamin vs Cyanocobalamin: Vitamin B12 Form & Timing",
- "description": "Methylcobalamin vs cyanocobalamin explained by a pharmacist, plus the best time to take vitamin B12, why 1 mg, and who is most at risk of low B12 in India.",
+ "description": "Methylcobalamin vs cyanocobalamin explained, plus the best time to take vitamin B12, why 1 mg, and who is most at risk of low B12 in India.",
  "h1": "Vitamin B12: methylcobalamin vs cyanocobalamin, dose and timing",
  "answer": "Both <strong>methylcobalamin</strong> and <strong>cyanocobalamin</strong> raise vitamin B12 levels. Cyanocobalamin is converted in the body, while methylcobalamin is already an active form. B12 can be taken at any time, though many people take it in the morning. The Super Routine Day Pack contains <strong>1 mg (1,000 mcg) of methylcobalamin</strong>.",
  "facts": [("Our dose", "1 mg methylcobalamin"), ("Pack", "Day"), ("Adult RDA", "2.4 mcg/day"), ("UL", "None set")],
@@ -374,7 +374,7 @@ PAGES = [
 {
  "path": ING + "zinc-picolinate/", "crumb": "Zinc Picolinate", "crumbs": ING_CRUMB, "about": "Zinc picolinate",
  "title": "Zinc Picolinate: Dose & Taking Zinc With Magnesium",
- "description": "Zinc picolinate explained by a pharmacist: benefits, why 12 mg, the best time to take zinc, and whether you can take zinc and magnesium together.",
+ "description": "Zinc picolinate explained: benefits, why 12 mg, the best time to take zinc, and whether you can take zinc and magnesium together.",
  "h1": "Zinc picolinate: dose, timing and taking it with magnesium",
  "answer": "Yes, <strong>most people can take zinc and magnesium together</strong> at normal doses. Very high zinc intakes (around 142 mg a day) can reduce magnesium absorption, so Super Routine keeps them apart anyway: <strong>12 mg of zinc picolinate</strong> in the Day Pack and magnesium in the Night Pack. Take zinc with food if it upsets your stomach.",
  "facts": [("Our dose", "12 mg"), ("Pack", "Day"), ("Adult RDA", "8–11 mg/day"), ("UL", "40 mg/day")],
@@ -404,7 +404,7 @@ PAGES = [
 {
  "path": ING + "himalayan-shilajit/", "crumb": "Himalayan Shilajit", "crumbs": ING_CRUMB, "about": "Purified shilajit",
  "title": "Shilajit: Best Time to Take It, Dose & Heavy Metal Testing",
- "description": "Shilajit by a pharmacist: best time to take it (morning or night), the 250 mg dose, what studies show, and why heavy-metal-tested resin matters.",
+ "description": "Shilajit explained: best time to take it (morning or night), the 250 mg dose, what studies show, and why heavy-metal-tested resin matters.",
  "h1": "Himalayan shilajit: best time to take it, dose and purity",
  "answer": "Shilajit is traditionally taken <strong>in the morning</strong>, which is how it is used in the Super Routine Day Pack: <strong>250 mg of purified resin</strong> after breakfast. Human research is early and small. The most important thing is purity: raw shilajit can contain heavy metals, so only purified, third-party-tested shilajit should be used.",
  "facts": [("Our dose", "250 mg purified"), ("Pack", "Day"), ("Studied range", "250–500 mg/day"), ("Must have", "Heavy-metal testing")],
@@ -430,13 +430,13 @@ PAGES = [
 # ---------------------------------------------------------------- ABOUT
 {
  "path": "/about/", "crumb": "About", "priority": "0.7", "schema_type": "AboutPage", "person": True, "byline": False,
- "title": "About Super Routine – Founded by a Registered Pharmacist",
- "description": "Super Routine was founded by registered pharmacist Shubham Pasalkar. Our standards, how we choose doses and forms, and our testing plan.",
+ "title": "About Super Routine – Founded by Shubham Pasalkar",
+ "description": "Super Routine was founded by Shubham Pasalkar. Our standards, how we choose doses and forms, and our testing plan.",
  "h1": "About Super Routine",
- "answer": "Super Routine is a day and night supplement system being built in India by <strong>Shubham Pasalkar, a registered pharmacist</strong> with a background in pharmaceutical research. Eight essentials, two sachets, every dose on the pack, and no proprietary blends.",
+ "answer": "Super Routine is a day and night supplement system being built in India by founder <strong>Shubham Pasalkar</strong>. Eight essentials, two sachets, every dose on the pack, and no proprietary blends.",
  "body": '''
 <h2 id="founder">The founder</h2>
-<p>Shubham Pasalkar is a registered pharmacist with experience in pharmaceutical research and strategy. Super Routine started from a simple problem: people trying to look after their health were buying eight separate jars, guessing at doses and timing, and paying around ₹3,000 a month to do it. Super Routine puts the same essentials into one Day sachet and one Night sachet, at clear, studied doses.</p>
+<p>Shubham Pasalkar started Super Routine to solve a simple problem: people trying to look after their health were buying eight separate jars, guessing at doses and timing, and paying around ₹3,000 a month to do it. Super Routine puts the same essentials into one Day sachet and one Night sachet, at clear, studied doses.</p>
 <p>Shubham writes and reviews every ingredient page on this site.</p>
 <h2>Our standards</h2>
 <ul>
@@ -468,7 +468,7 @@ SCIENCE = [
  "schema_type": "Article", "published": "2026-10-21",
  "blurb": "Calcium and iron, iron and zinc, high-dose zinc, melatonin stacks, blood thinners and double-dosing: what to separate and by how long.",
  "title": "7 Supplements You Should Not Take Together (and What to Do)",
- "description": "A pharmacist's list of 7 supplement combinations to separate or avoid, with spacing times, upper limits and the medicines that interact with minerals.",
+ "description": "A list of 7 supplement combinations to separate or avoid, with spacing times, upper limits and the medicines that interact with minerals.",
  "h1": "7 supplements you should not take together",
  "answer": "The main combinations to separate or avoid are <strong>calcium with iron</strong>, <strong>iron with zinc</strong>, <strong>high-dose zinc with copper or magnesium</strong>, <strong>melatonin with other sleep products</strong>, <strong>omega-3 or vitamin K with blood thinners</strong>, and <strong>two products with the same nutrient</strong>. Most can still be taken on the same day if you space them a few hours apart.",
  "facts": [("Most common clash", "Calcium + iron"), ("Zinc upper limit", "40 mg/day"), ("Mg upper limit", "350 mg/day (supplements)"), ("Vitamin D upper limit", "4,000 IU/day")],
@@ -535,8 +535,8 @@ SCIENCE = [
  "path": SCI + "zinc-and-magnesium-together/", "crumb": "Zinc and Magnesium Together", "crumbs": SCI_CRUMB,
  "schema_type": "Article", "published": "2026-10-21",
  "blurb": "Yes at normal doses. The 142 mg zinc threshold, safe upper limits, the best time to take each, and the medicines to space them from.",
- "title": "Can You Take Zinc and Magnesium Together? Pharmacist Answer",
- "description": "Yes, at normal doses. A pharmacist explains the 142 mg zinc threshold, safe upper limits, the best time to take zinc and magnesium, and medicines to space.",
+ "title": "Can You Take Zinc and Magnesium Together? Doses & Timing",
+ "description": "Yes, at normal doses. We explain the 142 mg zinc threshold, safe upper limits, the best time to take zinc and magnesium, and medicines to space.",
  "h1": "Can you take zinc and magnesium together?",
  "answer": "<strong>Yes.</strong> For most healthy adults, zinc and magnesium can be taken together at normal doses. The interaction that has been measured involves very high zinc intakes of about <strong>142 mg a day</strong>, more than three times the 40 mg upper limit. Keep zinc under 40 mg, supplemental magnesium under 350 mg, and space both from certain antibiotics.",
  "facts": [("Together?", "Yes, at normal doses"), ("Problem dose", "Zinc ~142 mg/day"), ("Zinc upper limit", "40 mg/day"), ("Mg upper limit", "350 mg/day (supplements)")],
@@ -603,9 +603,9 @@ def _sci_cards():
 SCIENCE_HUB = {
  "path": SCI, "crumb": "Science", "priority": "0.8", "schema_type": "CollectionPage",
  "title": "Supplement Science: Timing, Combinations & Safety Guides",
- "description": "Pharmacist-written guides on supplement timing, which supplements to take together or apart, doses, upper limits and interactions, with sources.",
- "h1": "Supplement science, explained by a pharmacist",
- "answer": "Practical guides to taking supplements well: which ones go together, which to space apart, when to take them and how much is safe. Every article is written and reviewed by a registered pharmacist and links to its sources, mainly the NIH Office of Dietary Supplements and peer-reviewed studies.",
+ "description": "Guides on supplement timing, which supplements to take together or apart, doses, upper limits and interactions, with sources.",
+ "h1": "Supplement science, explained simply",
+ "answer": "Practical guides to taking supplements well: which ones go together, which to space apart, when to take them and how much is safe. Every article is written and reviewed by founder Shubham Pasalkar and links to its sources, mainly the NIH Office of Dietary Supplements and peer-reviewed studies.",
  "body": f'''
 <h2>All articles</h2>
 {_sci_cards()}
