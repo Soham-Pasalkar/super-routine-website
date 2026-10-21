@@ -3,7 +3,10 @@
 ## Project Structure
 
 - `index.html` — Complete one-page website, including styles, images, and the founding access questionnaire.
-- `assets/` — Logo files and product pack renders for reference or reuse.
+- `assets/` — Logo files, the hero video and product pack renders.
+- `assets/site/` — Optimised WebP images used by `index.html`. Images are loaded from files, never embedded as base64 (Google only reads the first 2 MB of a page).
+- `robots.txt`, `sitemap.xml`, `favicon.ico`, `apple-touch-icon.png` — SEO and browser files. Add every new page to `sitemap.xml`.
+- `vercel.json` — Long cache headers for `/assets`.
 
 ## Run Locally
 
