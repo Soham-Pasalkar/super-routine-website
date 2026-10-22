@@ -112,6 +112,7 @@ PAGES = [
 <ul><li>Take one Night sachet after dinner or 30–60 minutes before bed, with water.</li><li>Do not drive or operate machinery after taking it, because melatonin can make you drowsy.</li><li>Do not combine with other sleep aids or sedatives without asking your doctor.</li><li>Not for children, or for anyone pregnant or breastfeeding.</li></ul>
 <h2>Read the full guide for each nutrient</h2>
 {cards(NIGHT)}
+<p>Comparing options? Read our honest guide to the <a href="/science/best-supplements-for-night/">best supplements to take at night</a>.</p>
 ''',
  "faq": [
   ("Can I take magnesium and melatonin together?", "Yes. They work differently: melatonin signals night to the body clock and magnesium supports normal muscle and nerve function. Both are commonly taken in the evening. Check with your doctor if you take sedatives or blood thinners."),
@@ -462,6 +463,75 @@ SCI = "/science/"
 SCI_CRUMB = [("Science", SCI)]
 
 SCIENCE = [
+# ---------------------------------------------------------------- BEST SUPPLEMENTS FOR NIGHT
+{
+ "path": SCI + "best-supplements-for-night/", "crumb": "Best Supplements for Night", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-22", "about": "Supplements taken at night",
+ "blurb": "Melatonin, magnesium, ashwagandha, L-theanine, valerian and more: what the evidence says, what to avoid, and which nutrients simply suit the evening.",
+ "title": "Best Supplements to Take at Night: An Honest Evidence Guide",
+ "description": "The best supplements to take at night, ranked by evidence: melatonin, magnesium, ashwagandha, L-theanine, valerian, chamomile. Doses, safety and who should avoid them.",
+ "h1": "Best supplements to take at night: an honest evidence guide",
+ "answer": "The best-supported supplements to take at night are <strong>melatonin</strong> (for jet lag and a late body clock), <strong>ashwagandha</strong> (small benefits for sleep quality in trials), <strong>L-theanine</strong> and <strong>magnesium</strong> (limited but promising evidence). Valerian and chamomile have weak evidence, and kava carries a liver risk. Start with sleep habits; supplements are a support, not a fix.",
+ "facts": [("Strongest evidence", "Melatonin (jet lag, late body clock)"), ("Avoid", "Kava (liver injury reports)"), ("Mg upper limit", "350 mg/day (supplements)"), ("First-line for insomnia", "CBT-I, not supplements")],
+ "body": f'''
+<p>Search "best supplements for night" and you will find shopping lists. This guide is different: it ranks the common night-time supplements by what the research actually shows, using the NIH's National Center for Complementary and Integrative Health (NCCIH), the NIH Office of Dietary Supplements and recent meta-analyses. Some popular options do well. Some do not. One is a safety concern.</p>
+<p>A quick word first. If you have had trouble sleeping for months, the recommended first step is not a supplement. NCCIH notes that the American College of Physicians strongly recommends cognitive behavioural therapy for insomnia (CBT-I) as the initial treatment for chronic insomnia. A consistent bedtime, a dark room and fewer late screens help any supplement work better.</p>
+<h2>Best supplements to take at night: the evidence at a glance</h2>
+<div class="tw"><table><thead><tr><th>Supplement</th><th>What the evidence says</th><th>Typical studied dose</th><th>Main caution</th></tr></thead><tbody>
+<tr><td>{link("mel","Melatonin")}</td><td>Helps jet lag and a delayed body clock; weak for chronic insomnia</td><td>Ours is 3 mg, 1 hour or less before bed</td><td>Epilepsy, blood thinners, pregnancy, dementia</td></tr>
+<tr><td>{link("ash","Ashwagandha")}</td><td>Small but significant benefit for sleep in a meta-analysis</td><td>250–600 mg/day root extract, 6–12 weeks</td><td>Pregnancy, thyroid medicine, liver problems</td></tr>
+<tr><td>L-theanine</td><td>Small improvements in self-reported sleep quality and sleep onset</td><td>Varies by study</td><td>Few studies on pure L-theanine</td></tr>
+<tr><td>{link("mg","Magnesium")}</td><td>Very little, low-quality research; may help sleep onset in older adults</td><td>Stay under 350 mg/day from supplements</td><td>Kidney disease, some antibiotics</td></tr>
+<tr><td>Valerian</td><td>Inconsistent trial results; benefit not shown</td><td>Varies</td><td>Long-term safety uncertain</td></tr>
+<tr><td>Chamomile</td><td>No conclusive trial evidence</td><td>Usually as tea</td><td>Ragweed allergy</td></tr>
+<tr><td>Kava</td><td>Very little research for sleep</td><td>Not recommended</td><td>Linked to serious liver injury</td></tr>
+</tbody></table></div>
+<h2>1. Melatonin: best for jet lag and a late body clock</h2>
+<p>Melatonin is the hormone that tells your body clock it is night. It is the most studied night-time supplement, but what it helps with is specific.</p>
+<ul>
+<li><strong>Delayed sleep timing:</strong> in a 2018 trial of 307 people cited by NCCIH, melatonin taken 1 hour before a set bedtime helped people fall asleep about 34 minutes earlier.</li>
+<li><strong>Jet lag:</strong> research suggests it may help, from small studies of eastward and westward travel.</li>
+<li><strong>Chronic insomnia:</strong> NCCIH says there is not enough strong evidence, and sleep medicine guidelines have recommended against it for that use.</li>
+</ul>
+<p>Short-term use appears to be safe for most people; long-term safety is not established. Mild side effects include headache, dizziness, nausea and sleepiness. People with epilepsy and those taking blood thinners need medical supervision, guidelines recommend against it in dementia, and there is little safety research in pregnancy or breastfeeding. Melatonin may stay active longer in older people and cause daytime drowsiness.</p>
+<p>Label accuracy matters too. NCCIH reports that in a 2023 study, 22 of 25 melatonin gummies were inaccurately labelled, with 74% to 347% of the stated amount. Choose one clearly labelled product and never stack two.</p>
+<h2>2. Ashwagandha: modest benefit after several weeks</h2>
+<p>According to the NIH Office of Dietary Supplements, a 2021 meta-analysis of 5 studies (372 adults) found a small but significant benefit of ashwagandha over placebo for sleep. Doses were 250–600 mg a day of KSM-66 root extract (or 120 mg of another extract) for 6–12 weeks. Benefits were greater at 600 mg a day, with at least 8 weeks of use, and in people with insomnia.</p>
+<p>It appears well tolerated for up to about 3 months; long-term safety is unknown. Avoid it in pregnancy and breastfeeding. Rare liver injury has been reported, small studies found changes in thyroid hormone levels, and it may interact with thyroid medicine, sedatives, diabetes and blood pressure medicines, and immunosuppressants. More in our {link("ash","ashwagandha KSM-66 guide")}.</p>
+<h2>3. L-theanine: calm without sedation</h2>
+<p>L-theanine is an amino acid found in tea. A 2025 meta-analysis in <em>Sleep Medicine Reviews</em> (19 articles, 897 participants) found it improved self-reported time to fall asleep, daytime dysfunction and overall sleep quality, though the effects were small and the authors noted a lack of studies on pure L-theanine. Promising, not proven.</p>
+<h2>4. Magnesium: useful nutrient, unproven sleep aid</h2>
+<p>Magnesium is often sold as a sleep supplement, but NCCIH says very little research exists: one review suggested it may help sleep onset in older adults, from low-quality studies, and another found conflicting results. Where magnesium earns its place is as a nutrient. Adults need 310–420 mg a day from food and supplements combined, and many people take it in the evening simply because it fits a wind-down routine.</p>
+<p>Keep supplemental magnesium under <strong>350 mg a day</strong>; high doses often cause diarrhoea. Take tetracycline or quinolone antibiotics at least 2 hours before or 4–6 hours after magnesium, and separate bisphosphonates by 2 hours. People with kidney problems should not take it without medical advice. The glycinate form is gentle on the stomach; see {link("mg","magnesium glycinate explained")}.</p>
+<h2>5. Valerian, chamomile and lavender</h2>
+<p>These are traditional favourites with thin evidence. NCCIH says valerian trial results are inconsistent and its value for insomnia has not been shown. Chamomile has no conclusive trial evidence, and people allergic to ragweed may react to it. Lavender aromatherapy improved sleep quality in a review of 16 studies, but larger, more rigorous trials are needed. A cup of chamomile tea as part of a routine is fine; just do not expect it to do much on its own.</p>
+<h2>Night supplements to avoid or use with care</h2>
+<ul>
+<li><strong>Kava:</strong> NCCIH says it has been linked to liver injury that is sometimes serious or even fatal. We do not recommend it.</li>
+<li><strong>L-tryptophan and 5-HTP:</strong> data for insomnia are very limited, and L-tryptophan may cause serotonin toxicity with medicines that affect serotonin, such as some antidepressants.</li>
+<li><strong>CBD:</strong> there is insufficient evidence for any sleep disorder, and it can cause liver injury and drug interactions.</li>
+<li><strong>Multiple "sleep blends" at once:</strong> many contain melatonin, so doses add up. See <a href="/science/supplements-not-to-take-together/">supplements not to take together</a>.</li>
+</ul>
+<h2>Nutrients that simply suit the evening</h2>
+<p>Not every night-time supplement is about sleep. {link("om","Omega-3")} (EPA and DHA) is a component of every cell membrane and can be taken at any time; taking it with dinner fits many routines. Its usual side effects are mild, such as an unpleasant taste or heartburn, but high doses may cause bleeding problems with warfarin or other anticoagulants, so tell your doctor if you take one.</p>
+<h2>How the Super Routine Night Pack fits</h2>
+<p>We built the <a href="/night-pack/">Night Pack</a> from the evening options with the most sensible evidence and safety profile, at clearly labelled doses, in one sachet taken after dinner or 30–60 minutes before bed:</p>
+{cards(NIGHT)}
+<p>To be clear about what that means: our 3 mg of melatonin is a common adult dose, best suited to resetting a late body clock; our 300 mg of ashwagandha sits inside the studied 250–600 mg range, though the larger trial benefits were seen at 600 mg; and our 140 mg of elemental magnesium is a nutrient top-up well under the 350 mg limit, not a sedative. There is no kava, valerian or proprietary blend. Morning nutrients such as vitamin D3, B12 and zinc are in the separate <a href="/day-pack/">Day Pack</a>, and our <a href="/">Super Routine home page</a> explains the full day and night system.</p>
+<p>Do not take the Night Pack with another melatonin product, and do not drive after taking it. If you are pregnant, breastfeeding, under 18, have epilepsy or a liver, kidney or thyroid condition, or take blood thinners, sedatives or other regular medicines, ask your doctor or pharmacist first.</p>
+''',
+ "faq": [
+  ("What is the best supplement to take at night for sleep?", "Melatonin has the clearest evidence, but mainly for jet lag and a late body clock. For general sleep quality, ashwagandha and L-theanine show small benefits in trials. For long-term insomnia, CBT-I is the recommended first step."),
+  ("Is it good to take magnesium at night?", "Many people take magnesium in the evening because it fits a wind-down routine, and absorption does not depend on time of day. Evidence that it improves sleep is limited. Keep supplemental magnesium under 350 mg a day."),
+  ("Can I take melatonin and ashwagandha together?", "They are often combined in the evening. Both can cause drowsiness, so do not add sedatives or alcohol, and ask your doctor first if you take any regular medicine, have a thyroid condition or are pregnant."),
+  ("Which sleep supplements should I avoid?", "Avoid kava because of reports of serious liver injury, avoid L-tryptophan if you take medicines that affect serotonin, and do not take two products that both contain melatonin."),
+ ],
+ "sources": [S_MEL,
+   ("NCCIH (NIH): Sleep disorders and complementary health approaches", "https://www.nccih.nih.gov/health/sleep-disorders-and-complementary-health-approaches"),
+   S_ASH, S_MG,
+   ("NIH Office of Dietary Supplements: Omega-3 fatty acids (consumer fact sheet)", "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-Consumer/"),
+   ("Bulman et al. (2025), Sleep Medicine Reviews: L-theanine and sleep outcomes, systematic review and meta-analysis", "https://doi.org/10.1016/j.smrv.2025.102076")],
+},
 # ---------------------------------------------------------------- 7 COMBINATIONS
 {
  "path": SCI + "supplements-not-to-take-together/", "crumb": "Supplements Not to Take Together", "crumbs": SCI_CRUMB,
