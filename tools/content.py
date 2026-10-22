@@ -686,3 +686,59 @@ SCIENCE_HUB = {
 }
 
 PAGES = PAGES + [SCIENCE_HUB] + SCIENCE
+
+# ================================================================ BRAND FAQ
+FAQ_PAGE = {
+ "path": "/faq/", "crumb": "FAQ", "priority": "0.9", "schema_type": "WebPage", "about": "Super Routine supplements",
+ "title": "Super Routine FAQ: Price, Sachets & Day and Night Supplements",
+ "description": "Super Routine FAQ: what is in the Super Routine day and night sachets, the Super Routine price (₹1,200/month founding price), how to take them and who should avoid them.",
+ "h1": "Super Routine FAQ: price, sachets and day and night supplements",
+ "answer": "<strong>Super Routine</strong> is an Indian day and night supplement system: one Day sachet after breakfast and one Night sachet after dinner, with eight essentials at clearly labelled doses. The founding <strong>Super Routine price is ₹1,200 a month</strong> for 30 Day and 30 Night sachets. It is in pre-launch, so you can join the founding waitlist now.",
+ "facts": [("Price", "₹1,200/month (founding)"), ("Sachets", "30 Day + 30 Night"), ("Day", "After breakfast"), ("Night", "After dinner / before bed")],
+ "body": f'''
+<p>These are the questions people ask most about Super Routine supplements. If you searched for "superroutine" or "superoutine", you are in the right place: Super Routine is the brand, and superroutine.in is its only official website. Founded by Shubham Pasalkar.</p>
+<h2>What is in the Super Routine day and night sachets?</h2>
+<div class="tw"><table><thead><tr><th>Sachet</th><th>Nutrient</th><th>Dose</th><th>When</th></tr></thead><tbody>
+<tr><td rowspan="4"><a href="/day-pack/">Day sachet</a></td><td>{link("d3","Vitamin D3 + K2")}</td><td>600 IU D3 + K2</td><td rowspan="4">After breakfast</td></tr>
+<tr><td>{link("b12","Vitamin B12 (methylcobalamin)")}</td><td>1 mg</td></tr>
+<tr><td>{link("zn","Zinc picolinate")}</td><td>12 mg</td></tr>
+<tr><td>{link("shil","Purified Himalayan shilajit")}</td><td>250 mg</td></tr>
+<tr><td rowspan="4"><a href="/night-pack/">Night sachet</a></td><td>{link("mg","Magnesium glycinate")}</td><td>1000 mg (140 mg elemental)</td><td rowspan="4">After dinner or 30–60 min before bed</td></tr>
+<tr><td>{link("ash","Ashwagandha KSM-66")}</td><td>300 mg</td></tr>
+<tr><td>{link("om","Omega-3 (rTG)")}</td><td>750 mg</td></tr>
+<tr><td>{link("mel","Melatonin")}</td><td>3 mg</td></tr>
+</tbody></table></div>
+<p>Every dose is printed on the pack, with no proprietary blends. See the full <a href="/ingredients/">Super Routine ingredients list</a>.</p>
+<h2>Super Routine price</h2>
+<p>The founding Super Routine price is <strong>₹1,200 a month</strong> for a full month of daily supplements: 30 Day sachets and 30 Night sachets. Super Routine is in pre-launch. Founding members get first access and the founding price when it launches; 255 people have already joined the founding list. <a href="/#join">Claim your founding spot</a>.</p>
+<h2>How to take Super Routine daily supplements</h2>
+<ul>
+<li><strong>Morning:</strong> one Day sachet after breakfast, with water. Vitamin D3 and K2 are fat-soluble, so a meal helps.</li>
+<li><strong>Evening:</strong> one Night sachet after dinner or 30–60 minutes before bed. It contains melatonin, so do not drive or operate machinery afterwards.</li>
+<li>Take both every day, at about the same times. Do not take more than one of each sachet a day.</li>
+</ul>
+<h2>Why Super Routine is split into day and night</h2>
+<p>Timing matters for some nutrients. Melatonin signals night to the body clock, so it belongs in the evening, and magnesium fits a wind-down routine. Zinc sits in the Day sachet and magnesium in the Night sachet so the two minerals are not taken together. Read more in <a href="/science/zinc-and-magnesium-together/">zinc and magnesium together</a> and our guide to the <a href="/science/best-supplements-for-night/">best supplements to take at night</a>.</p>
+<h2>Who should not take Super Routine</h2>
+<ul>
+<li>Anyone pregnant or breastfeeding, or under 18.</li>
+<li>People with epilepsy, or taking blood thinners such as warfarin: melatonin needs medical supervision, and high doses of omega-3 may cause bleeding problems with anticoagulants.</li>
+<li>People taking thyroid medicine, sedatives, diabetes or blood pressure medicines, or immunosuppressants: ashwagandha may interact with them.</li>
+<li>People with liver problems (rare liver injury has been reported with ashwagandha) or kidney disease (the risk of magnesium build-up is higher).</li>
+<li>If you take antibiotics such as doxycycline or ciprofloxacin, take them at least 2 hours before, or 4–6 hours after, the Night sachet.</li>
+</ul>
+<p>If any of these apply, or you take any regular medicine, ask your doctor before starting.</p>
+''',
+ "faq": [
+  ("What is Super Routine?", "Super Routine is an Indian day and night supplement system founded by Shubham Pasalkar. One Day sachet after breakfast and one Night sachet after dinner deliver eight essentials at clearly labelled doses."),
+  ("What is the Super Routine price?", "The founding price is ₹1,200 a month for 30 Day and 30 Night sachets. Super Routine is in pre-launch; join the founding waitlist on superroutine.in to get first access at that price."),
+  ("What is in Super Routine sachets?", "The Day sachet has vitamin D3 600 IU with K2, vitamin B12 1 mg, zinc picolinate 12 mg and purified shilajit 250 mg. The Night sachet has magnesium glycinate 1000 mg (140 mg elemental), ashwagandha KSM-66 300 mg, omega-3 rTG 750 mg and melatonin 3 mg."),
+  ("Are Super Routine daily vitamins or supplements?", "Both. The Day sachet contains vitamins D3, K2 and B12 plus zinc and shilajit; the Night sachet contains magnesium, ashwagandha, omega-3 and melatonin. Together they are daily food supplements, not medicines."),
+  ("When should I take Super Routine day and night sachets?", "Take the Day sachet after breakfast and the Night sachet after dinner or 30–60 minutes before bed, at about the same times each day."),
+  ("Can I take Super Routine with other supplements?", "Do not add another melatonin product, and check that other supplements do not double up on vitamin D, zinc or magnesium. If you take any medicine, ask your doctor first."),
+  ("Is SuperRoutine the same as Super Routine?", "Yes. SuperRoutine, Super Routine and superroutine.in are the same brand. superroutine.in is the only official website."),
+ ],
+ "sources": [S_MEL, S_ASH, S_MG,
+   ("NIH Office of Dietary Supplements: Omega-3 fatty acids (consumer fact sheet)", "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-Consumer/")],
+}
+PAGES = PAGES + [FAQ_PAGE]

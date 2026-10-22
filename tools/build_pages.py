@@ -52,7 +52,7 @@ def page_html(p):
                       "jobTitle": AUTHOR["title"], "worksFor": {"@id": SITE + "/#org"},
                       "url": SITE + "/about/", "knowsAbout": AUTHOR["knows"]})
     graph.append({"@type": "Organization", "@id": SITE + "/#org", "name": "Super Routine",
-                  "alternateName": ["SuperRoutine", "Super Routine Supplements", "superroutine.in"],
+                  "alternateName": ["SuperRoutine", "Super Routine Supplements", "Super Routine Daily Supplements", "superroutine.in"],
                   "url": SITE + "/", "logo": SITE + "/assets/logo-square.png",
                   "sameAs": ["https://www.instagram.com/super.routine/", "https://www.linkedin.com/company/super-routine/"]})
     if p.get("faq"):
@@ -84,7 +84,7 @@ def page_html(p):
     join = ('<section class="join"><h2>Join the founding list</h2><p>Get first access and the founding price '
             'when Super Routine launches.</p><a href="/#join">Claim your spot →</a></section>')
     nav = "".join(f'<a href="{u}">{esc(t)}</a>' for t, u in NAV)
-    foot = "".join(f'<a href="{u}">{esc(t)}</a>' for t, u in [("Home", "/")] + NAV[:3] + [("Science", "/science/")] + NAV[3:])
+    foot = "".join(f'<a href="{u}">{esc(t)}</a>' for t, u in [("Home", "/")] + NAV[:3] + [("Science", "/science/")] + NAV[3:] + [("FAQ", "/faq/")])
 
     return f'''<!DOCTYPE html>
 <html lang="en-IN">
