@@ -28,6 +28,12 @@ S_HAM = ("Hamedifard et al. (2020), Lipids in Health and Disease: combined magne
 S_NIN = ("ICMR-NIN (2020): A brief note on nutrient requirements for Indians, RDA and EAR", "https://www.nin.res.in/rdabook/brief_note.pdf")
 S_MAYO_MEL = ("Mayo Clinic: Is melatonin a helpful sleep aid? What to know about side effects", "https://www.mayoclinic.org/healthy-lifestyle/adult-health/expert-answers/melatonin-side-effects/faq-20057874")
 S_SHIL_W = ("WebMD: Shilajit uses, side effects and interactions", "https://www.webmd.com/vitamins-supplements/shilajit")
+S_MVMS = ("NIH Office of Dietary Supplements: Multivitamin/mineral supplements fact sheet", ODS + "MVMS-HealthProfessional/")
+S_CDC_FA = ("CDC: Folic acid, facts for clinicians", "https://www.cdc.gov/folic-acid/hcp/clinical-overview/index.html")
+S_MULLIGAN = ("Mulligan & Licata (2010), Journal of Bone and Mineral Research: taking vitamin D with the largest meal improves absorption", "https://doi.org/10.1002/jbmr.67")
+S_RONDANELLI = ("Rondanelli et al. (2011), Journal of the American Geriatrics Society: melatonin, magnesium and zinc in primary insomnia, randomised controlled trial", "https://doi.org/10.1111/j.1532-5415.2010.03232.x")
+S_LOPRESTI = ("Lopresti et al. (2026), Journal of Dietary Supplements: magnesium supplementation for sleep in adults, systematic review", "https://doi.org/10.1080/19390211.2026.2719670")
+S_ACS_MG = ("American Cancer Society: Magnesium for sleep, what you need to know", "https://www.cancer.org/cancer/latest-news/magnesium-for-sleep-what-you-need-to-know.html")
 
 ING = "/ingredients/"
 LINKS = {
@@ -62,7 +68,7 @@ PAGES = [
  "path": "/day-pack/", "crumb": "Day Pack", "priority": "0.9", "about": "Super Routine Day Pack",
  "title": "Super Routine Day Pack: Morning Supplements D3+K2, B12, Zinc",
  "description": "The Super Routine Day Pack: vitamin D3 + K2, B12, zinc picolinate and purified shilajit in one morning sachet. Doses, forms and why they go in the morning.",
- "h1": "Day Pack: your morning supplements in one sachet",
+ "h1": "Super Routine Day Pack: your morning daily vitamins in one sachet",
  "answer": "The Day Pack holds four nutrients that suit the morning: <strong>vitamin D3 + K2</strong> (600 IU), <strong>vitamin B12</strong> as methylcobalamin (1 mg), <strong>zinc picolinate</strong> (12 mg) and <strong>purified Himalayan shilajit</strong> (250 mg). Take one sachet after breakfast, ideally with a meal that contains some fat.",
  "facts": [("When", "After breakfast"), ("Sachets", "30 per month"), ("Focus", "Energy · Focus · Immunity · Bone")],
  "body": f'''
@@ -81,7 +87,7 @@ PAGES = [
 <ul><li>Take one Day sachet after breakfast with water.</li><li>Take one {'<a href="/night-pack/">Night sachet</a>'} after dinner or 30–60 minutes before bed.</li><li>Do not take more than one Day sachet a day.</li><li>If you take iron tablets, antibiotics or thyroid medicine, ask your doctor or pharmacist about spacing them from the Day Pack.</li></ul>
 <h2>Read the full guide for each nutrient</h2>
 {cards(DAY)}
-<p>Comparing options? Read our honest guide to the <a href="/science/best-supplements-to-take-in-the-morning/">best supplements to take in the morning</a>, and see <a href="/science/super-routine-day-and-night-supplements/">how the Super Routine day and night sachets work</a>.</p>
+<p>Comparing options? Read our honest guide to the <a href="/science/best-supplements-to-take-in-the-morning/">best supplements to take in the morning</a>, learn <a href="/science/best-time-to-take-vitamin-d3-and-b12/">the best time to take vitamin D3 and B12</a>, and see <a href="/science/super-routine-day-and-night-supplements/">how the Super Routine day and night sachets work</a>.</p>
 ''',
  "faq": [
   ("Can I take the Day Pack on an empty stomach?", "It is better after breakfast. Vitamin D and K2 absorb best with food that contains fat, and zinc can cause nausea in some people on an empty stomach."),
@@ -95,7 +101,7 @@ PAGES = [
  "path": "/night-pack/", "crumb": "Night Pack", "priority": "0.9", "about": "Super Routine Night Pack",
  "title": "Super Routine Night Pack: Sleep & Recovery Supplement Sachet",
  "description": "The Super Routine Night Pack: magnesium glycinate, ashwagandha KSM-66, omega-3 rTG and 3 mg melatonin in one evening sachet. Doses, forms, timing and safety.",
- "h1": "Night Pack: your evening supplements in one sachet",
+ "h1": "Super Routine Night Pack: your evening supplements in one sachet",
  "answer": "The Night Pack holds four nutrients for the evening: <strong>magnesium glycinate</strong> (1000 mg, giving 140 mg elemental magnesium), <strong>ashwagandha KSM-66</strong> (300 mg), <strong>omega-3 in rTG form</strong> (750 mg) and <strong>melatonin</strong> (3 mg). Take one sachet after dinner or 30–60 minutes before bed.",
  "facts": [("When", "After dinner / before bed"), ("Sachets", "30 per month"), ("Focus", "Recovery · Sleep · Muscle · Wellness")],
  "body": f'''
@@ -115,7 +121,7 @@ PAGES = [
 <ul><li>Take one Night sachet after dinner or 30–60 minutes before bed, with water.</li><li>Do not drive or operate machinery after taking it, because melatonin can make you drowsy.</li><li>Do not combine with other sleep aids or sedatives without asking your doctor.</li><li>Not for children, or for anyone pregnant or breastfeeding.</li></ul>
 <h2>Read the full guide for each nutrient</h2>
 {cards(NIGHT)}
-<p>Comparing options? Read our honest guide to the <a href="/science/best-supplements-for-night/">best supplements to take at night</a>.</p>
+<p>Comparing options? Read our honest guide to the <a href="/science/best-supplements-for-night/">best supplements to take at night</a>, and whether you can take <a href="/science/melatonin-and-magnesium-together/">melatonin and magnesium together</a>.</p>
 ''',
  "faq": [
   ("Can I take magnesium and melatonin together?", "Yes. They work differently: melatonin signals night to the body clock and magnesium supports normal muscle and nerve function. Both are commonly taken in the evening. Check with your doctor if you take sedatives or blood thinners."),
@@ -127,9 +133,9 @@ PAGES = [
 # ---------------------------------------------------------------- HUB
 {
  "path": "/ingredients/", "crumb": "Ingredients", "priority": "0.9", "schema_type": "CollectionPage",
- "title": "The 8 Ingredients: Doses, Forms & Best Time to Take Each",
+ "title": "Super Routine Ingredients: 8 Daily Vitamins & Supplements",
  "description": "Exact dose, form and timing for all 8 Super Routine ingredients: D3+K2, B12, zinc, shilajit, magnesium, ashwagandha, omega-3 and melatonin.",
- "h1": "The 8 essentials: forms, doses and timing",
+ "h1": "Super Routine ingredients: 8 daily vitamins and supplements, with forms, doses and timing",
  "answer": "Super Routine has eight ingredients. Four go in the <a href=\"/day-pack/\">Day Pack</a>, taken after breakfast, and four in the <a href=\"/night-pack/\">Night Pack</a>, taken in the evening. Each was chosen for a well-absorbed form and a dose within the range used in published studies.",
  "body": f'''
 <div class="tw"><table><thead><tr><th>Ingredient</th><th>Form</th><th>Dose</th><th>Pack</th></tr></thead><tbody>
@@ -179,6 +185,7 @@ PAGES = [
 </tbody></table></div>
 <h2>When to take magnesium glycinate</h2>
 <p>You can take it at any time, but most people take it <strong>in the evening</strong> with dinner or before bed. It fits a wind-down routine, and evening is when the Super Routine Night Pack is taken. Evidence that magnesium improves sleep is limited and mixed, and is strongest in people whose intake is low. We do not claim it is a sleep aid.</p>
+<p>Many people pair it with melatonin; see <a href="/science/melatonin-and-magnesium-together/">melatonin and magnesium together</a> for the evidence and safety rules.</p>
 <p>We keep magnesium in the Night Pack and {link("zn","zinc")} in the Day Pack. Very high zinc intakes (around 142 mg a day) have been shown to reduce magnesium absorption. Our doses are far lower, but splitting the two removes any competition. See <a href="/science/zinc-and-magnesium-together/">taking zinc and magnesium together</a>.</p>
 <h2>Who should be careful</h2>
 <ul>
@@ -466,6 +473,176 @@ SCI = "/science/"
 SCI_CRUMB = [("Science", SCI)]
 
 SCIENCE = [
+# ---------------------------------------------------------------- BEST DAILY SUPPLEMENTS IN INDIA
+{
+ "path": SCI + "best-daily-supplements-india/", "crumb": "Best Daily Supplements in India", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-23", "about": "Daily dietary supplements for adults in India",
+ "blurb": "Which daily supplements are worth taking in India and for whom: vitamin D, B12, folic acid, iron, calcium and omega-3, with Indian RDAs, upper limits and safety.",
+ "title": "Best Daily Supplements in India: An Honest Guide",
+ "description": "The best daily supplements in India depend on your diet: vitamin D, B12, folic acid, iron, calcium and omega-3. Who needs them, safe limits, how to choose.",
+ "h1": "Best daily supplements in India: an honest guide",
+ "answer": "The best daily supplements are the ones that fill a real gap in your diet. For many Indian adults that means <strong>vitamin D</strong> (little sun), <strong>vitamin B12</strong> (vegetarians, older adults), <strong>folic acid</strong> for women who could become pregnant, and <strong>iron</strong> or <strong>calcium</strong> only if diet or a blood test shows a need. Food always comes first.",
+ "facts": [("Food first", "Supplements fill gaps"), ("Vitamin D RDA (India)", "600 IU/day"), ("B12 RDA (India)", "2.2 mcg/day"), ("Folic acid (women who could conceive)", "400 mcg/day")],
+ "body": f'''
+<p>Search for the best daily supplements and you get bestseller lists. This guide does it differently: it starts from who actually benefits, using the ICMR-National Institute of Nutrition (ICMR-NIN) requirements for Indians, the NIH Office of Dietary Supplements (ODS) and the US Centers for Disease Control and Prevention (CDC). As the NIH puts it, nutritional needs should be met primarily through the diet. A supplement is for the gap that is left.</p>
+<h2>Best daily supplements at a glance</h2>
+<div class="tw"><table><thead><tr><th>Supplement</th><th>Who is most likely to benefit</th><th>Indian adult RDA (ICMR-NIN 2020)</th><th>Upper limit / main caution</th></tr></thead><tbody>
+<tr><td>{link("d3","Vitamin D3")}</td><td>Limited sun exposure, darker skin, older adults</td><td>600 IU</td><td>4,000 IU/day; statins, orlistat</td></tr>
+<tr><td>{link("b12","Vitamin B12")}</td><td>Vegetarians, adults over 50, metformin or antacid users</td><td>2.2 mcg</td><td>No limit set</td></tr>
+<tr><td>Folic acid</td><td>Women who could become pregnant</td><td>Folate 220 mcg DFE (women)</td><td>CDC: 400 mcg folic acid daily for this group</td></tr>
+<tr><td>Iron</td><td>Heavy periods, pregnancy, vegetarians, only if tested low</td><td>19 mg men, 29 mg women</td><td>45 mg/day; dangerous for children</td></tr>
+<tr><td>Calcium</td><td>Low intake of milk, curd, paneer or ragi</td><td>1,000 mg</td><td>2,500 mg/day (19–50); thyroid medicine</td></tr>
+<tr><td>{link("om","Omega-3")}</td><td>People who rarely eat fish</td><td>No RDA for EPA/DHA</td><td>Warfarin; up to 5 g/day EPA+DHA judged safe by the FDA</td></tr>
+</tbody></table></div>
+<p>The RDAs are totals from food and supplements combined, not the dose a supplement should contain.</p>
+<h2>How to choose daily supplements</h2>
+<ol>
+<li><strong>Look at your diet first.</strong> Vegetarian? Little dairy? Rarely in the sun? Those answers point to specific nutrients.</li>
+<li><strong>Test before you take iron or high-dose vitamin D.</strong> Both can cause harm in excess.</li>
+<li><strong>Add up every product.</strong> The NIH warns that people who combine a multivitamin with other supplements and fortified foods can exceed upper limits.</li>
+<li><strong>Pick products that print exact doses</strong>, so you can check them against the limits above.</li>
+</ol>
+<h2>1. Vitamin D</h2>
+<p>ICMR-NIN sets the adult requirement at <strong>600 IU a day</strong>. The NIH lists people with limited sun exposure, darker skin and older adults among those most likely to be low. Take it with a meal that contains some fat. Keep total intake under 4,000 IU a day unless your doctor prescribes a treatment dose; excess raises blood calcium and can cause nausea, weakness and kidney stones. Timing is covered in <a href="/science/best-time-to-take-vitamin-d3-and-b12/">the best time to take vitamin D3 and B12</a>.</p>
+<h2>2. Vitamin B12</h2>
+<p>B12 occurs naturally only in animal foods, so vegetarians have a higher risk of deficiency, says the NIH. People over 50 are advised to get B12 mainly from fortified foods or supplements, and metformin and acid-reducing medicines can lower B12 levels. The ICMR-NIN requirement is 2.2 mcg a day; supplements contain far more because only a small fraction of a large oral dose is absorbed. No upper limit has been set.</p>
+<h2>3. Folic acid (for women who could become pregnant)</h2>
+<p>The CDC recommends that all women capable of becoming pregnant get <strong>400 mcg of folic acid daily</strong>, because taking it before and in early pregnancy lowers the chance of neural tube defects. If you are planning a pregnancy, talk to your doctor about a prenatal supplement.</p>
+<h2>4. Iron (only if you need it)</h2>
+<p>Women with heavy periods, pregnant women and vegetarians are more likely to run short of iron, according to the NIH. But iron is not a "take it just in case" supplement. The adult upper limit is 45 mg a day, high doses cause constipation and nausea, and accidental iron overdose is a leading cause of fatal poisoning in children under 6, so store it out of reach. Iron reduces absorption of levothyroxine, and calcium may reduce iron absorption, so take them at different times. Vitamin C improves absorption of iron from plant foods.</p>
+<h2>5. Calcium (if your diet is low in dairy)</h2>
+<p>ICMR-NIN sets the adult requirement at 1,000 mg a day. If you eat milk, curd, paneer or ragi daily, you may not need a supplement. If you do, the NIH says absorption is best in doses of 500 mg or less, so split larger amounts, and take calcium carbonate with food. Keep calcium carbonate 4 hours away from levothyroxine.</p>
+<h2>6. Omega-3 (if you rarely eat fish)</h2>
+<p>There is no official requirement for EPA and DHA, the omega-3s in fish. If you eat little fish, a fish oil or, for vegetarians, an algal oil supplement is one option; the NIH notes algal oils usually provide about 100–300 mg of DHA. Side effects are usually mild (fishy taste, heartburn). People on warfarin should have their INR monitored.</p>
+<h2>Do you need a daily multivitamin?</h2>
+<p>For healthy adults, the evidence is modest. The NIH summarises the US Preventive Services Task Force view: there is insufficient evidence to judge the balance of benefits and harms of multivitamins for preventing heart disease or cancer. A multivitamin can still be a convenient way to fill gaps, especially for vegetarians and older adults, but check that it does not double up on vitamin D, zinc or iron you already take. For the most common morning nutrients and how to space them, see the <a href="/science/best-supplements-to-take-in-the-morning/">best supplements to take in the morning</a>.</p>
+<h2>How Super Routine daily supplements fit</h2>
+<p>Super Routine daily supplements are one way to cover several of these gaps in two sachets. The <a href="/day-pack/">Day Pack</a> (after breakfast) contains vitamin D3 600 IU with K2, vitamin B12 1 mg, zinc picolinate 12 mg and purified shilajit 250 mg. The <a href="/night-pack/">Night Pack</a> (after dinner) contains magnesium glycinate (140 mg elemental), ashwagandha KSM-66, omega-3 rTG 750 mg and melatonin 3 mg.</p>
+<p>To be clear about what it does not cover: there is <strong>no iron, calcium or folic acid</strong>, because those depend on individual needs and interact with other nutrients and medicines. Women planning a pregnancy should not use Super Routine; it contains ashwagandha, which some experts advise against in pregnancy, and melatonin, which has not been well studied in pregnancy. If you need only one or two nutrients, single products may suit you better; we compare costs openly in <a href="/science/super-routine-vs-separate-supplements/">Super Routine vs 8 separate supplements</a>. The Super Routine price is ₹1,200 a month at the founding rate; see the <a href="/faq/">Super Routine FAQ</a> or <a href="/">join the founding list</a>.</p>
+<p>Ask your doctor or pharmacist before starting any daily supplement if you are pregnant, breastfeeding, under 18, have a medical condition or take regular medicines.</p>
+''',
+ "faq": [
+  ("What are the best daily supplements to take?", "The ones that fill a real gap. For many Indian adults that means vitamin D, vitamin B12 for vegetarians and older adults, and folic acid for women who could become pregnant. Iron and calcium should be taken only if your diet or a blood test shows a need."),
+  ("Is it OK to take supplements every day?", "Yes, if total intake from all products stays below upper limits, such as 4,000 IU of vitamin D, 40 mg of zinc and 45 mg of iron a day. Check with your doctor if you take regular medicines."),
+  ("Should I take a multivitamin daily?", "It can fill gaps, but for healthy adults the evidence that multivitamins prevent heart disease or cancer is insufficient. Focus on the nutrients your diet lacks and avoid doubling up across products."),
+  ("Which supplements should vegetarians take daily?", "Vitamin B12 is the most important, because it occurs naturally only in animal foods. Vegetarians may also need to watch iron, zinc and omega-3 (algal oil is a plant-based DHA source)."),
+ ],
+ "sources": [S_NIN, S_MVMS, S_D, S_B12, S_CDC_FA, S_FE, S_CA, S_OM, S_ZN],
+},
+# ---------------------------------------------------------------- BEST TIME TO TAKE VITAMIN D3 AND B12
+{
+ "path": SCI + "best-time-to-take-vitamin-d3-and-b12/", "crumb": "Best Time to Take D3 and B12", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-23", "about": "Timing of vitamin D3 and vitamin B12 supplements",
+ "blurb": "When to take vitamin D3 and B12, whether they can go together, food and empty-stomach rules, morning vs night, and the medicines that affect them.",
+ "title": "Best Time to Take Vitamin D3 and B12 (and Can You Combine?)",
+ "description": "The best time to take vitamin D3 and B12: D3 with a meal that has some fat, B12 any time. Can you take them together, morning vs night, and interactions.",
+ "h1": "Best time to take vitamin D3 and B12, and can you take them together?",
+ "answer": "Take <strong>vitamin D3</strong> with a meal that contains some fat, because fat helps absorption; for most people that is breakfast or their main meal. <strong>Vitamin B12</strong> can be taken any time, with or without food. You can take vitamin D3 and B12 together: the NIH lists no interaction, so one dose after breakfast works well.",
+ "facts": [("Vitamin D3", "With a meal containing fat"), ("Vitamin B12", "Any time, food optional"), ("Together?", "Yes"), ("Indian RDA", "D 600 IU · B12 2.2 mcg")],
+ "body": f'''
+<p>Vitamin D3 and B12 are two of the supplements Indian adults are most often advised to take, and they are commonly prescribed together. Their timing rules are different, though: one depends on food, the other does not. This guide explains both, using the NIH Office of Dietary Supplements (ODS), the ICMR-National Institute of Nutrition (ICMR-NIN) and published research.</p>
+<h2>Vitamin D3 and B12 timing at a glance</h2>
+<div class="tw"><table><thead><tr><th></th><th>{link("d3","Vitamin D3")}</th><th>{link("b12","Vitamin B12")}</th></tr></thead><tbody>
+<tr><td>Type</td><td>Fat-soluble</td><td>Water-soluble</td></tr>
+<tr><td>Best time</td><td>With a meal that contains fat</td><td>Any time that suits your routine</td></tr>
+<tr><td>Needs food?</td><td>Yes, absorption is better with fat</td><td>No; supplement B12 is already in free form</td></tr>
+<tr><td>Adult requirement (ICMR-NIN 2020)</td><td>600 IU/day</td><td>2.2 mcg/day</td></tr>
+<tr><td>Upper limit</td><td>4,000 IU/day</td><td>None set</td></tr>
+<tr><td>Medicines to note</td><td>Statins, orlistat, steroids, thiazide diuretics</td><td>Metformin, acid-reducing medicines</td></tr>
+</tbody></table></div>
+<h2>Best time to take vitamin D3: with your meal, not on an empty stomach</h2>
+<p>Vitamin D is fat-soluble. The NIH states that the presence of fat in the gut enhances vitamin D absorption, although some is absorbed without it. So the rule is about the meal, not the clock: take vitamin D3 with breakfast, lunch or dinner, as long as the meal contains some fat (milk, curd, eggs, nuts, ghee or oil in cooking).</p>
+<p>One often-quoted study supports taking it with your largest meal. In 2010, Mulligan and Licata asked 17 patients at a US bone clinic, who were not responding to vitamin D treatment, to take their usual dose with the largest meal of the day. After 2–3 months their blood vitamin D levels were on average about 50% higher. It was a small study without a control group, so treat it as a useful hint rather than proof, but it fits the fat-absorption mechanism.</p>
+<p>In practice, the best meal is the one you eat every day. For many people that is breakfast, which makes the dose easy to remember.</p>
+<h2>Best time to take vitamin B12: whenever you will remember it</h2>
+<p>B12 in food is bound to protein and needs stomach acid to release it. The NIH explains that B12 in supplements is already in free form, so it does not need that step, which means you can take a B12 supplement with or without food. The NIH fact sheet does not recommend any time of day.</p>
+<p>The morning is popular simply because it is easy to build into a routine. Large oral doses are standard because absorption through the normal route is limited: the NIH says only about 2% of a 500 mcg dose and 1.3% of a 1,000 mcg dose is absorbed, since the intrinsic factor pathway is saturated at about 1–2 mcg. No upper limit has been set. The NIH also states there is no evidence that absorption differs between supplement forms such as methylcobalamin and cyanocobalamin.</p>
+<h2>Can you take vitamin D3 and B12 together?</h2>
+<p>Yes. The NIH fact sheets for vitamin D and vitamin B12 list no interaction between them, and they are absorbed by different routes. Taking them together after breakfast covers both rules: the meal helps vitamin D, and B12 does not mind either way. Combining them also means one habit instead of two, which matters more for results than the exact hour.</p>
+<h2>Morning or night?</h2>
+<p>For both vitamins, the evidence we found is about food, not time of day. If your main meal is dinner, taking vitamin D3 then is fine. The one practical reason to prefer the morning is consistency: a breakfast routine is easier to keep than a late-night one.</p>
+<h2>Who needs to be careful</h2>
+<ul>
+<li><strong>Vitamin D:</strong> keep total intake under 4,000 IU a day unless a doctor prescribes more. Too much raises blood calcium, which can cause nausea, vomiting, muscle weakness and kidney stones. Orlistat, statins, steroids and thiazide diuretics interact with vitamin D. If you were prescribed a weekly high-dose sachet, follow your doctor's schedule.</li>
+<li><strong>Vitamin K2 with D3:</strong> no upper limit is set for vitamin K, but it can interact seriously with warfarin. Anyone on warfarin should not start K2 without their doctor.</li>
+<li><strong>Vitamin B12:</strong> metformin and proton pump inhibitors can lower B12 levels. Vegetarians and older adults are at higher risk of low B12, because natural sources are animal foods and absorption from food falls with age.</li>
+</ul>
+<p>If you think you may be low in either vitamin, ask your doctor for a blood test rather than guessing a dose.</p>
+<h2>How the Super Routine Day Pack fits</h2>
+<p>The <a href="/day-pack/">Super Routine Day Pack</a> puts vitamin D3 and B12 in one sachet, taken after breakfast:</p>
+{cards(DAY)}
+<p>It contains 600 IU of vitamin D3 with K2, matching the ICMR-NIN adult requirement and far below the 4,000 IU limit, and 1 mg of B12 as methylcobalamin, which allows for low oral absorption. Breakfast provides the meal vitamin D needs, and zinc is taken after food to limit nausea. For the other morning nutrients and what to space apart, see the <a href="/science/best-supplements-to-take-in-the-morning/">best supplements to take in the morning</a>. Price and sachet questions are answered in the <a href="/faq/">Super Routine FAQ</a>.</p>
+''',
+ "faq": [
+  ("Can I take vitamin D3 and B12 together?", "Yes. The NIH lists no interaction between them. Take them together after a meal that contains some fat, which helps vitamin D absorption; B12 absorbs with or without food."),
+  ("Should vitamin B12 be taken on an empty stomach?", "It does not need to be. B12 in supplements is already in free form, so it does not depend on stomach acid to be released from food. Take it whenever you will remember it."),
+  ("Is it better to take vitamin D in the morning or at night?", "Absorption depends on fat in the meal, not on the time. Take it with whichever meal you eat most consistently; for many people that is breakfast."),
+  ("Should I take vitamin D3 with K2?", "Many products pair them. Vitamin K has no upper limit, but it interacts with warfarin, so anyone on warfarin should speak to their doctor first."),
+ ],
+ "sources": [S_D, S_MULLIGAN, S_B12, S_K, S_NIN],
+},
+# ---------------------------------------------------------------- MELATONIN AND MAGNESIUM TOGETHER
+{
+ "path": SCI + "melatonin-and-magnesium-together/", "crumb": "Melatonin and Magnesium Together", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-23", "about": "Taking melatonin and magnesium together for sleep",
+ "blurb": "Is it safe to take melatonin and magnesium together, what the one combined trial found, how they differ, doses, timing and who should avoid the pair.",
+ "title": "Melatonin and Magnesium Together for Sleep: Safety & Timing",
+ "description": "Can you take melatonin and magnesium together? How they differ, what the evidence shows for sleep, safe doses, best timing and who should avoid them.",
+ "h1": "Melatonin and magnesium together for sleep: is it safe, and does it help?",
+ "answer": "Yes, most healthy adults can take <strong>melatonin and magnesium together</strong>: the NIH fact sheets list no interaction between them, and they work differently. Melatonin signals night to your body clock; magnesium supports normal nerve and muscle function. Keep supplemental magnesium under 350 mg a day, take melatonin 30–60 minutes before bed, and do not drive afterwards.",
+ "facts": [("Interaction between them", "None listed by NIH"), ("Magnesium limit (supplements)", "350 mg/day"), ("Melatonin timing", "30–60 min before bed"), ("After taking", "No driving for 5 hours")],
+ "body": f'''
+<p>Melatonin and magnesium are two of the most common evening supplements, and many sleep products combine them. This guide explains what each one does, what the research on the pair shows (less than marketing suggests), and how to take them safely. It draws on the NIH National Center for Complementary and Integrative Health (NCCIH), the NIH Office of Dietary Supplements (ODS), Mayo Clinic and published trials.</p>
+<h2>Melatonin vs magnesium: how they differ</h2>
+<div class="tw"><table><thead><tr><th></th><th>{link("mel","Melatonin")}</th><th>{link("mg","Magnesium")}</th></tr></thead><tbody>
+<tr><td>What it is</td><td>A hormone the brain makes in response to darkness</td><td>An essential mineral needed by hundreds of enzymes</td></tr>
+<tr><td>What it does for sleep</td><td>Signals night to the body clock; best studied for sleep timing and jet lag</td><td>Supports normal nerve and muscle function; sleep evidence is mixed</td></tr>
+<tr><td>Daily limit</td><td>No official limit; long-term safety data are lacking</td><td>350 mg/day from supplements (adults)</td></tr>
+<tr><td>Common side effects</td><td>Headache, dizziness, nausea, sleepiness</td><td>Diarrhoea, nausea, cramping at high doses</td></tr>
+<tr><td>Main cautions</td><td>Epilepsy, blood thinners, dementia, pregnancy</td><td>Kidney disease, some antibiotics, bisphosphonates</td></tr>
+</tbody></table></div>
+<h2>Is it safe to take melatonin and magnesium together?</h2>
+<p>For most healthy adults, yes. The NIH fact sheets on magnesium and melatonin do not list an interaction between the two, and they act on different systems. The risks of the pair are the risks of each one on its own, so the safety rules below still apply.</p>
+<p>The bigger risk is doubling up. Many "sleep blends" already contain melatonin, and some antacids and laxatives contain magnesium. Check every label so you are not taking two melatonin products, and count all supplemental magnesium towards the 350 mg limit. See <a href="/science/supplements-not-to-take-together/">supplements not to take together</a>.</p>
+<h2>What the research shows for sleep</h2>
+<h3>Melatonin</h3>
+<p>The NCCIH says there is <strong>not enough strong evidence</strong> to recommend melatonin for chronic insomnia. It is better supported for sleep timing: in people with delayed sleep-wake phase disorder, a 2016 review found melatonin shortened the time to fall asleep by about 22 minutes compared with placebo. Reviews also found it may reduce jet lag symptoms after eastward flights. Short-term use appears safe for most people; long-term safety is not known.</p>
+<h3>Magnesium</h3>
+<p>The evidence for magnesium alone is weaker. A 2026 systematic review of 12 randomised trials found inconsistent results and rated the certainty of evidence low to very low. Its conclusion: current evidence does not support oral magnesium as a routine treatment for insomnia, though some adults may notice modest benefits. The American Cancer Society likewise describes the results as mixed, and notes that magnesium glycinate is a common choice because it is easily absorbed and gentle on the stomach.</p>
+<h3>Melatonin and magnesium together</h3>
+<p>We found one placebo-controlled trial of the combination. In 2011, Rondanelli and colleagues gave 43 long-term care residents in Italy (average age about 78) with primary insomnia either a supplement of <strong>5 mg melatonin, 225 mg magnesium and 11.25 mg zinc</strong>, or placebo, one hour before bed for 8 weeks. The supplement group had better sleep quality scores and longer total sleep time.</p>
+<p>The limits matter. It was a small study in older adults in care, the supplement also contained zinc, and the design cannot show how much each ingredient contributed. It suggests the combination is reasonable to study further; it does not prove that the pair works better than melatonin alone for younger adults.</p>
+<h2>How to take melatonin and magnesium together</h2>
+<ul>
+<li><strong>Magnesium:</strong> take it with dinner or in the evening. A meal reduces stomach upset. Glycinate and other chelated forms are less likely to loosen stools than oxide.</li>
+<li><strong>Melatonin:</strong> take it 30–60 minutes before your planned bedtime. The Rondanelli trial used one hour before bed.</li>
+<li><strong>Keep the dose modest.</strong> Mayo Clinic notes that over-the-counter products vary widely in how much melatonin they contain; the NCCIH reports that a 2017 study found most of 31 products did not match their label. Choose a product that states an exact dose.</li>
+<li><strong>Do not drive or use machinery within five hours</strong> of taking melatonin (Mayo Clinic).</li>
+<li>Use both alongside good sleep habits: a regular wake time, a dark room and less screen time late at night.</li>
+</ul>
+<h2>Who should not take melatonin and magnesium together</h2>
+<ul>
+<li><strong>Pregnant or breastfeeding women:</strong> melatonin has not been well studied in pregnancy or breastfeeding.</li>
+<li><strong>People with epilepsy or taking blood thinners:</strong> the NCCIH says they need medical supervision to take melatonin.</li>
+<li><strong>People with dementia:</strong> the American Academy of Sleep Medicine recommends against melatonin for them.</li>
+<li><strong>People taking</strong> diabetes, blood pressure, seizure or immunosuppressant medicines, or birth control pills: Mayo Clinic lists these as possible melatonin interactions.</li>
+<li><strong>People with kidney disease:</strong> the risk of magnesium build-up is higher when the kidneys clear it less well.</li>
+<li><strong>Antibiotics and bone medicines:</strong> take tetracyclines or quinolones (such as doxycycline or ciprofloxacin) at least 2 hours before or 4–6 hours after magnesium, and keep bisphosphonates such as alendronate 2 hours apart from it.</li>
+</ul>
+<p>Persistent trouble sleeping deserves a doctor's visit. Supplements are not a substitute for diagnosing the cause.</p>
+<h2>How the Super Routine Night Pack fits</h2>
+<p>The <a href="/night-pack/">Super Routine Night Pack</a> puts melatonin and magnesium in one evening sachet, with two other nutrients:</p>
+{cards(NIGHT)}
+<p>The magnesium glycinate provides <strong>140 mg of elemental magnesium</strong>, well under the 350 mg supplemental limit, and the melatonin dose is 3 mg. The sachet also contains {link("ash","ashwagandha")}, which the NIH notes can cause drowsiness and may interact with sedatives, thyroid, diabetes and blood pressure medicines, so the safety list above applies to it too. Zinc is in the separate <a href="/day-pack/">Day Pack</a>, taken after breakfast, so the minerals are not taken together (see <a href="/science/zinc-and-magnesium-together/">zinc and magnesium together</a>). Do not add another melatonin product. For other evening options, read our guide to the <a href="/science/best-supplements-for-night/">best supplements to take at night</a>, and see the <a href="/faq/">Super Routine FAQ</a> for price and sachet details.</p>
+''',
+ "faq": [
+  ("Can I take magnesium and melatonin together every night?", "Many adults do, and the NIH lists no interaction between them. Melatonin appears safe short term, but long-term safety is not known, so if you need help sleeping for more than a few weeks, see a doctor."),
+  ("Which is better for sleep, melatonin or magnesium?", "They do different things. Melatonin has better evidence for sleep timing and jet lag; evidence for magnesium is mixed and of low certainty. Neither is recommended as a routine treatment for chronic insomnia."),
+  ("When should I take magnesium and melatonin?", "Take magnesium with dinner or in the evening, and melatonin 30 to 60 minutes before bed. Do not drive or use machinery within five hours of melatonin."),
+  ("Can I take magnesium glycinate, melatonin and ashwagandha together?", "They are often combined in the evening, but ashwagandha and melatonin can both cause drowsiness. Avoid alcohol and sedatives with them, and ask your doctor first if you take any regular medicine or are pregnant."),
+ ],
+ "sources": [S_MEL, S_MAYO_MEL, S_MG, S_ACS_MG, S_LOPRESTI, S_RONDANELLI, S_ASH],
+},
 # ---------------------------------------------------------------- BEST SUPPLEMENTS IN THE MORNING
 {
  "path": SCI + "best-supplements-to-take-in-the-morning/", "crumb": "Best Supplements for the Morning", "crumbs": SCI_CRUMB,
@@ -489,6 +666,7 @@ SCIENCE = [
 </tbody></table></div>
 <p>The RDA figures above are the totals you need from food and supplements combined, not the dose a supplement should contain.</p>
 <h2>1. Vitamin D: best with a breakfast that contains some fat</h2>
+<p>For the full timing rules, including whether to combine it with B12, see <a href="/science/best-time-to-take-vitamin-d3-and-b12/">the best time to take vitamin D3 and B12</a>.</p>
 <p>Vitamin D needs a meal, and breakfast is the most regular one. The NIH fact sheet states that the presence of fat in the gut enhances vitamin D absorption, although some is absorbed without it. ICMR-NIN sets the adult requirement at <strong>600 IU a day</strong>, the same figure the NIH uses for adults up to 70 (800 IU over 70).</p>
 <p>The NIH lists people with darker skin, those who spend little time in the sun and older adults among the groups most at risk of low vitamin D. The adult upper limit is <strong>4,000 IU a day</strong>, and too much can raise blood calcium, with nausea, weakness and kidney stones. High vitamin D intakes may also reduce the effect of atorvastatin, lovastatin and simvastatin, and orlistat can lower vitamin D absorption. If your doctor prescribed a weekly high-dose sachet, follow that plan instead.</p>
 <h2>2. Vitamin K2: a natural partner for vitamin D</h2>
@@ -595,7 +773,7 @@ SCIENCE = [
 <li><strong>You cannot take one of our ingredients,</strong> for example melatonin because of epilepsy or blood thinners, ashwagandha because of pregnancy or a thyroid condition, or vitamin K because you take warfarin.</li>
 <li><strong>You are vegetarian and want no fish oil.</strong> Our omega-3 is from fish; algal oil is the vegetarian alternative.</li>
 </ul>
-<p>If none of these apply and you would otherwise buy most of the eight, the two-sachet routine is usually simpler, and the price comparison above tells you whether it is cheaper for you. Compare also our guide to <a href="/science/supplements-not-to-take-together/">supplements not to take together</a>.</p>
+<p>If none of these apply and you would otherwise buy most of the eight, the two-sachet routine is usually simpler, and the price comparison above tells you whether it is cheaper for you. Compare also our guide to <a href="/science/supplements-not-to-take-together/">supplements not to take together</a>, and our honest guide to the <a href="/science/best-daily-supplements-india/">best daily supplements in India</a> if you are still deciding which nutrients you need.</p>
 ''',
  "faq": [
   ("How much does Super Routine cost?", "The founding Super Routine price is ₹1,200 a month for 30 Day and 30 Night sachets, which is ₹40 a day. Super Routine is in pre-launch; join the founding list on superroutine.in for that price."),
@@ -705,7 +883,7 @@ SCIENCE = [
 <p>L-theanine is an amino acid found in tea. A 2025 meta-analysis in <em>Sleep Medicine Reviews</em> (19 articles, 897 participants) found it improved self-reported time to fall asleep, daytime dysfunction and overall sleep quality, though the effects were small and the authors noted a lack of studies on pure L-theanine. Promising, not proven.</p>
 <h2>4. Magnesium: useful nutrient, unproven sleep aid</h2>
 <p>Magnesium is often sold as a sleep supplement, but NCCIH says very little research exists: one review suggested it may help sleep onset in older adults, from low-quality studies, and another found conflicting results. Where magnesium earns its place is as a nutrient. Adults need 310–420 mg a day from food and supplements combined, and many people take it in the evening simply because it fits a wind-down routine.</p>
-<p>Keep supplemental magnesium under <strong>350 mg a day</strong>; high doses often cause diarrhoea. Take tetracycline or quinolone antibiotics at least 2 hours before or 4–6 hours after magnesium, and separate bisphosphonates by 2 hours. People with kidney problems should not take it without medical advice. The glycinate form is gentle on the stomach; see {link("mg","magnesium glycinate explained")}.</p>
+<p>Keep supplemental magnesium under <strong>350 mg a day</strong>; high doses often cause diarrhoea. Take tetracycline or quinolone antibiotics at least 2 hours before or 4–6 hours after magnesium, and separate bisphosphonates by 2 hours. People with kidney problems should not take it without medical advice. The glycinate form is gentle on the stomach; see {link("mg","magnesium glycinate explained")}. Thinking of combining it with melatonin? Read <a href="/science/melatonin-and-magnesium-together/">melatonin and magnesium together for sleep</a>.</p>
 <h2>5. Valerian, chamomile and lavender</h2>
 <p>These are traditional favourites with thin evidence. NCCIH says valerian trial results are inconsistent and its value for insomnia has not been shown. Chamomile has no conclusive trial evidence, and people allergic to ragweed may react to it. Lavender aromatherapy improved sleep quality in a review of 16 studies, but larger, more rigorous trials are needed. A cup of chamomile tea as part of a routine is fine; just do not expect it to do much on its own.</p>
 <h2>Night supplements to avoid or use with care</h2>
@@ -899,7 +1077,7 @@ FAQ_PAGE = {
  "answer": "<strong>Super Routine</strong> is an Indian day and night supplement system: one Day sachet after breakfast and one Night sachet after dinner, with eight essentials at clearly labelled doses. The founding <strong>Super Routine price is ₹1,200 a month</strong> for 30 Day and 30 Night sachets. It is in pre-launch, so you can join the founding waitlist now.",
  "facts": [("Price", "₹1,200/month (founding)"), ("Sachets", "30 Day + 30 Night"), ("Day", "After breakfast"), ("Night", "After dinner / before bed")],
  "body": f'''
-<p>These are the questions people ask most about Super Routine supplements. If you searched for "superroutine" or "superoutine", you are in the right place: Super Routine is the brand, and superroutine.in is its only official website. Founded by Shubham Pasalkar.</p>
+<p>These are the questions people ask most about Super Routine supplements. If you searched for "superroutine" or "superoutine", you are in the right place: Super Routine is the brand, and superroutine.in is its only official website. Founded by Shubham Pasalkar. Still deciding which nutrients you need? Start with our honest guide to the <a href="/science/best-daily-supplements-india/">best daily supplements in India</a>.</p>
 <h2>What is in the Super Routine day and night sachets?</h2>
 <div class="tw"><table><thead><tr><th>Sachet</th><th>Nutrient</th><th>Dose</th><th>When</th></tr></thead><tbody>
 <tr><td rowspan="4"><a href="/day-pack/">Day sachet</a></td><td>{link("d3","Vitamin D3 + K2")}</td><td>600 IU D3 + K2</td><td rowspan="4">After breakfast</td></tr>
