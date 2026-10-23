@@ -25,6 +25,8 @@ S_FE = ("NIH Office of Dietary Supplements: Iron fact sheet", ODS + "Iron-Health
 S_CA = ("NIH Office of Dietary Supplements: Calcium fact sheet", ODS + "Calcium-HealthProfessional/")
 S_HAM = ("Hamedifard et al. (2020), Lipids in Health and Disease: combined magnesium and zinc supplementation, randomised controlled trial",
          "https://link.springer.com/article/10.1186/s12944-020-01298-4")
+S_NIN = ("ICMR-NIN (2020): A brief note on nutrient requirements for Indians, RDA and EAR", "https://www.nin.res.in/rdabook/brief_note.pdf")
+S_MAYO_MEL = ("Mayo Clinic: Is melatonin a helpful sleep aid? What to know about side effects", "https://www.mayoclinic.org/healthy-lifestyle/adult-health/expert-answers/melatonin-side-effects/faq-20057874")
 S_SHIL_W = ("WebMD: Shilajit uses, side effects and interactions", "https://www.webmd.com/vitamins-supplements/shilajit")
 
 ING = "/ingredients/"
@@ -58,8 +60,8 @@ PAGES = [
 # ---------------------------------------------------------------- DAY PACK
 {
  "path": "/day-pack/", "crumb": "Day Pack", "priority": "0.9", "about": "Super Routine Day Pack",
- "title": "Day Pack: Morning Supplements – D3+K2, B12, Zinc, Shilajit",
- "description": "Vitamin D3 + K2, methylcobalamin B12, zinc picolinate and purified shilajit in one morning sachet. Doses, forms and why they go in the morning.",
+ "title": "Super Routine Day Pack: Morning Supplements D3+K2, B12, Zinc",
+ "description": "The Super Routine Day Pack: vitamin D3 + K2, B12, zinc picolinate and purified shilajit in one morning sachet. Doses, forms and why they go in the morning.",
  "h1": "Day Pack: your morning supplements in one sachet",
  "answer": "The Day Pack holds four nutrients that suit the morning: <strong>vitamin D3 + K2</strong> (600 IU), <strong>vitamin B12</strong> as methylcobalamin (1 mg), <strong>zinc picolinate</strong> (12 mg) and <strong>purified Himalayan shilajit</strong> (250 mg). Take one sachet after breakfast, ideally with a meal that contains some fat.",
  "facts": [("When", "After breakfast"), ("Sachets", "30 per month"), ("Focus", "Energy · Focus · Immunity · Bone")],
@@ -79,6 +81,7 @@ PAGES = [
 <ul><li>Take one Day sachet after breakfast with water.</li><li>Take one {'<a href="/night-pack/">Night sachet</a>'} after dinner or 30–60 minutes before bed.</li><li>Do not take more than one Day sachet a day.</li><li>If you take iron tablets, antibiotics or thyroid medicine, ask your doctor or pharmacist about spacing them from the Day Pack.</li></ul>
 <h2>Read the full guide for each nutrient</h2>
 {cards(DAY)}
+<p>Comparing options? Read our honest guide to the <a href="/science/best-supplements-to-take-in-the-morning/">best supplements to take in the morning</a>, and see <a href="/science/super-routine-day-and-night-supplements/">how the Super Routine day and night sachets work</a>.</p>
 ''',
  "faq": [
   ("Can I take the Day Pack on an empty stomach?", "It is better after breakfast. Vitamin D and K2 absorb best with food that contains fat, and zinc can cause nausea in some people on an empty stomach."),
@@ -90,7 +93,7 @@ PAGES = [
 # ---------------------------------------------------------------- NIGHT PACK
 {
  "path": "/night-pack/", "crumb": "Night Pack", "priority": "0.9", "about": "Super Routine Night Pack",
- "title": "Night Pack: Sleep & Recovery Supplements in One Sachet",
+ "title": "Super Routine Night Pack: Sleep & Recovery Supplement Sachet",
  "description": "The Super Routine Night Pack: magnesium glycinate, ashwagandha KSM-66, omega-3 rTG and 3 mg melatonin in one evening sachet. Doses, forms, timing and safety.",
  "h1": "Night Pack: your evening supplements in one sachet",
  "answer": "The Night Pack holds four nutrients for the evening: <strong>magnesium glycinate</strong> (1000 mg, giving 140 mg elemental magnesium), <strong>ashwagandha KSM-66</strong> (300 mg), <strong>omega-3 in rTG form</strong> (750 mg) and <strong>melatonin</strong> (3 mg). Take one sachet after dinner or 30–60 minutes before bed.",
@@ -463,13 +466,213 @@ SCI = "/science/"
 SCI_CRUMB = [("Science", SCI)]
 
 SCIENCE = [
+# ---------------------------------------------------------------- BEST SUPPLEMENTS IN THE MORNING
+{
+ "path": SCI + "best-supplements-to-take-in-the-morning/", "crumb": "Best Supplements for the Morning", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-23", "about": "Supplements taken in the morning",
+ "blurb": "Vitamin D, B12, iron, zinc, calcium and a multivitamin: which suit breakfast, which need spacing from tea, thyroid tablets or each other, and what to leave for the evening.",
+ "title": "Best Supplements to Take in the Morning: Timing Guide",
+ "description": "The best supplements to take in the morning: vitamin D with breakfast, B12, zinc, iron and calcium. Indian RDAs, spacing rules and what to keep for night.",
+ "h1": "Best supplements to take in the morning: an honest timing guide",
+ "answer": "The best supplements for the day are the ones you actually need, taken with breakfast: <strong>vitamin D</strong> (fat in the meal helps absorption), <strong>vitamin B12</strong> (important for vegetarians and older adults), and <strong>zinc</strong> or <strong>iron</strong> if your diet or doctor calls for them, with food to limit nausea. Keep iron apart from calcium, and leave melatonin for bedtime.",
+ "facts": [("Vitamin D RDA (India)", "600 IU/day"), ("B12 RDA (India)", "2.2 mcg/day"), ("Take with food", "D, K, zinc, iron, calcium carbonate"), ("Not in the morning", "Melatonin")],
+ "body": f'''
+<p>Most lists of the "best supplements to take in the morning" are shopping lists. This guide asks which nutrients commonly fall short in Indian diets, and which of those are best taken with breakfast. The answers come from the ICMR-National Institute of Nutrition (ICMR-NIN) and the NIH Office of Dietary Supplements (ODS). Food comes first; a supplement only fills a gap.</p>
+<h2>Best supplements for the day at a glance</h2>
+<div class="tw"><table><thead><tr><th>Supplement</th><th>Why the morning works</th><th>Indian adult RDA (ICMR-NIN 2020)</th><th>Main caution</th></tr></thead><tbody>
+<tr><td>{link("d3","Vitamin D3")}</td><td>Fat-soluble; fat in the meal enhances absorption</td><td>600 IU</td><td>Upper limit 4,000 IU/day; statins, orlistat</td></tr>
+<tr><td>Vitamin K2</td><td>Fat-soluble; absorbed with dietary fat</td><td>No Indian RDA listed in the brief note; US AI 90–120 mcg</td><td>Warfarin</td></tr>
+<tr><td>{link("b12","Vitamin B12")}</td><td>Fits a daily routine; no meal needed</td><td>2.2 mcg</td><td>Metformin, acid-reducing medicines</td></tr>
+<tr><td>{link("zn","Zinc")}</td><td>After food, to limit nausea</td><td>17 mg men, 13 mg women</td><td>Upper limit 40 mg/day; antibiotics</td></tr>
+<tr><td>Iron (only if needed)</td><td>With food to reduce stomach upset</td><td>19 mg men, 29 mg women</td><td>Thyroid medicine, calcium, children's safety</td></tr>
+<tr><td>Calcium</td><td>Split doses of 500 mg or less, with meals</td><td>1,000 mg</td><td>Thyroid medicine, quinolone antibiotics</td></tr>
+</tbody></table></div>
+<p>The RDA figures above are the totals you need from food and supplements combined, not the dose a supplement should contain.</p>
+<h2>1. Vitamin D: best with a breakfast that contains some fat</h2>
+<p>Vitamin D needs a meal, and breakfast is the most regular one. The NIH fact sheet states that the presence of fat in the gut enhances vitamin D absorption, although some is absorbed without it. ICMR-NIN sets the adult requirement at <strong>600 IU a day</strong>, the same figure the NIH uses for adults up to 70 (800 IU over 70).</p>
+<p>The NIH lists people with darker skin, those who spend little time in the sun and older adults among the groups most at risk of low vitamin D. The adult upper limit is <strong>4,000 IU a day</strong>, and too much can raise blood calcium, with nausea, weakness and kidney stones. High vitamin D intakes may also reduce the effect of atorvastatin, lovastatin and simvastatin, and orlistat can lower vitamin D absorption. If your doctor prescribed a weekly high-dose sachet, follow that plan instead.</p>
+<h2>2. Vitamin K2: a natural partner for vitamin D</h2>
+<p>Vitamin K is also fat-soluble and is absorbed in the small intestine with dietary fat, so it suits the same breakfast. The NIH notes that MK-7, the form found in natto, is well absorbed and has a longer half-life than vitamin K1. No upper limit has been set because of its low potential for toxicity. The one serious warning is <strong>warfarin</strong>: people taking it need a consistent vitamin K intake, so do not start K2 without your doctor's agreement.</p>
+<h2>3. Vitamin B12: the vegetarian essential</h2>
+<p>B12 is found naturally only in animal foods, and the NIH says vegetarians who avoid meat have a higher risk of deficiency. Older adults are also at risk, because atrophic gastritis, which reduces B12 absorption from food, affects 8% to 9% of adults aged 65 and over. Long-term use of metformin, proton pump inhibitors such as omeprazole, or H2 blockers can lower B12 levels too.</p>
+<p>Time of day is not critical for B12; the morning is simply easy to remember. Absorption of large oral doses is low (about 2% at 500 mcg, says the NIH), which is why supplements contain far more than the 2.2 mcg RDA; no upper limit has been set. The NIH also states there is no evidence that absorption differs between methylcobalamin and cyanocobalamin. See our {link("b12","vitamin B12 guide")}.</p>
+<h2>4. Zinc: after breakfast, never on an empty stomach</h2>
+<p>Zinc can cause nausea, which is why most people take it after a meal. Absorption from food varies widely, from about 5% to over 50%, depending on phytates, compounds in whole grains and legumes that bind zinc. The NIH notes that vegetarians usually have lower zinc intakes and levels, relevant to many Indian diets built on dal, roti and rice. The NIH suggests soaking beans, grains and seeds before cooking and eating fermented foods, such as idli and dosa batter, to improve zinc absorption.</p>
+<p>Keep total zinc under <strong>40 mg a day</strong>; 50 mg or more for weeks can lower copper levels. Take quinolone or tetracycline antibiotics at least 2 hours before or 4–6 hours after zinc, and keep iron tablets of 25 mg or more away from it. More in our {link("zn","zinc picolinate guide")}.</p>
+<h2>5. Iron: only if you need it, and timed carefully</h2>
+<p>Take iron only if a doctor or blood test says you need it. The NIH says taking iron with food can reduce side effects such as nausea and constipation, which are more likely at 45 mg a day or more. Vitamin C enhances absorption of plant (non-heme) iron, while phytates and some plant polyphenols reduce it.</p>
+<ul>
+<li>Do not take iron within <strong>4 hours of levothyroxine</strong> (thyroid medicine), which many people take first thing in the morning.</li>
+<li>Take calcium and iron at different times of day.</li>
+<li>Keep iron supplements locked away from children: accidental iron overdose is a leading cause of fatal poisoning in children under 6.</li>
+</ul>
+<h2>6. Calcium: split it, and match the form to the meal</h2>
+<p>Calcium absorbs best in doses of <strong>500 mg or less</strong>, so a 1,000 mg daily target is better split between breakfast and dinner. Calcium carbonate should be taken with a meal; calcium citrate can be taken with or without food. Levothyroxine should not be taken within 4 hours of calcium carbonate, and quinolone antibiotics need 2 hours either side.</p>
+<h2>What about a multivitamin, omega-3 and ashwagandha?</h2>
+<ul>
+<li><strong>Multivitamin:</strong> many contain fat-soluble vitamins and minerals, so breakfast is a sensible time. Check that it does not double up on vitamin D, zinc or iron you already take.</li>
+<li><strong>{link("ash","Ashwagandha")}:</strong> drowsiness is a reported side effect, which is one reason many people take it in the evening. It should be avoided in pregnancy and may interact with thyroid, diabetes, blood pressure and sedative medicines.</li>
+</ul>
+<h2>What not to take in the morning</h2>
+<p><strong>Melatonin.</strong> It signals night to your body clock, can cause daytime drowsiness, and Mayo Clinic advises not driving or using machinery within five hours of taking it. It belongs at bedtime; see our guide to the <a href="/science/best-supplements-for-night/">best supplements to take at night</a>. Magnesium can be taken at any time, but many people keep it for the evening, and keeping it apart from zinc removes any question of competition (see <a href="/science/zinc-and-magnesium-together/">zinc and magnesium together</a>).</p>
+<h2>How the Super Routine Day Pack fits</h2>
+<p>We built the <a href="/day-pack/">Super Routine Day Pack</a> around the morning nutrients above that most adults can take without a prescription, in one sachet after breakfast:</p>
+{cards(DAY)}
+<p>In numbers: 600 IU of vitamin D3 matches the ICMR-NIN requirement, 12 mg of zinc is well under the 40 mg limit, and 1 mg of B12 allows for low oral absorption. There is <strong>no iron or calcium</strong>, because not everyone needs them and both interact with other nutrients and medicines; if you take them, space them as described above. Shilajit is a traditional Ayurvedic ingredient whose effects are not well defined, so we include a modest 250 mg of purified resin and make no promises about it. Evening nutrients, including melatonin, are in the separate <a href="/night-pack/">Night Pack</a>. Questions about price and sachets are answered in the <a href="/faq/">Super Routine FAQ</a>.</p>
+<p>Ask your doctor or pharmacist before starting if you are pregnant, breastfeeding, under 18, take warfarin, thyroid medicine, statins, metformin or antibiotics, or have a kidney, liver or prostate condition.</p>
+''',
+ "faq": [
+  ("Which vitamins should I take in the morning?", "Vitamin D and K2 are best with breakfast because fat in the meal helps absorption. B12, zinc and, if prescribed, iron also suit the morning, with food to limit nausea. Melatonin should be kept for bedtime."),
+  ("Should I take vitamin D in the morning or at night?", "Absorption depends on having some fat in the meal, not on the clock. Most people take it with breakfast because it is the most regular meal; taking it with dinner also works."),
+  ("Should I take iron in the morning?", "Only if you need iron. Taking it with food can reduce nausea and constipation, but keep it at least 4 hours from levothyroxine and take calcium at a different time of day."),
+  ("Can I take all my morning supplements together?", "Most can, but iron and calcium are better taken at different times of day, iron of 25 mg or more should be kept away from zinc, and thyroid medicine needs a 4-hour gap from iron and calcium carbonate."),
+ ],
+ "sources": [S_NIN, S_D, S_K, S_B12, S_ZN, S_FE, S_CA, S_OM, S_ASH, S_MAYO_MEL, S_SHIL_W],
+},
+# ---------------------------------------------------------------- SUPER ROUTINE VS SEPARATE
+{
+ "path": SCI + "super-routine-vs-separate-supplements/", "crumb": "Super Routine vs Separate Supplements", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-23", "about": "Super Routine supplements compared with separate single-nutrient supplements",
+ "blurb": "Super Routine price per day, what 8 separate bottles involve, how to compare doses on a label, and when separate supplements are the better choice.",
+ "title": "Super Routine vs 8 Separate Supplements: Cost, Doses, Timing",
+ "description": "Super Routine price vs buying 8 separate supplements: ₹40 a day for 2 sachets, how to work out your own cost per day, dose and form checks, and timing.",
+ "h1": "Super Routine vs buying 8 separate supplements: cost, doses and timing",
+ "answer": "The founding <strong>Super Routine price is ₹1,200 a month</strong>, or <strong>₹40 a day</strong> for two sachets and eight nutrients (₹5 per nutrient). Eight separate supplements cost less only if they average under ₹5 per daily serving, and you must match doses, forms and timing yourself. Separate products win if you need just one or two.",
+ "facts": [("Super Routine price", "₹1,200/month (founding)"), ("Per day", "₹40 for 2 sachets"), ("Per nutrient", "₹5/day"), ("Sachets", "30 Day + 30 Night")],
+ "body": f'''
+<p>A fair question before joining any supplement subscription: could I just buy the ingredients separately? This page compares the two routes on cost, doses, forms and timing. We have not listed other brands' prices, because Indian supplement prices change weekly and vary by pack size and discount. Instead you will find a simple method to work out your own number with the products you are considering.</p>
+<h2>What is in the Super Routine sachets</h2>
+<div class="tw"><table><thead><tr><th>Sachet</th><th>Nutrient and form</th><th>Dose</th><th>What to check on a separate product</th></tr></thead><tbody>
+<tr><td rowspan="4"><a href="/day-pack/">Day sachet</a><br>after breakfast</td><td>{link("d3","Vitamin D3 + K2")}</td><td>600 IU D3 + K2</td><td>IU per tablet; weekly high-dose sachets are a different regimen</td></tr>
+<tr><td>{link("b12","Vitamin B12, methylcobalamin")}</td><td>1 mg</td><td>Form and mcg per tablet</td></tr>
+<tr><td>{link("zn","Zinc picolinate")}</td><td>12 mg elemental</td><td>Elemental zinc, not compound weight</td></tr>
+<tr><td>{link("shil","Purified Himalayan shilajit")}</td><td>250 mg</td><td>Purification and heavy-metal testing</td></tr>
+<tr><td rowspan="4"><a href="/night-pack/">Night sachet</a><br>after dinner</td><td>{link("mg","Magnesium glycinate")}</td><td>1000 mg (140 mg elemental)</td><td>Elemental magnesium per serving</td></tr>
+<tr><td>{link("ash","Ashwagandha KSM-66")}</td><td>300 mg</td><td>Root extract, named extract, mg per capsule</td></tr>
+<tr><td>{link("om","Omega-3, rTG")}</td><td>750 mg</td><td>Form (rTG, TG or ethyl ester) and EPA + DHA</td></tr>
+<tr><td>{link("mel","Melatonin")}</td><td>3 mg</td><td>Exact mg; avoid stacking two products</td></tr>
+</tbody></table></div>
+<h2>Super Routine price per day</h2>
+<p>The founding Super Routine price is ₹1,200 a month for 30 Day and 30 Night sachets. That is:</p>
+<ul>
+<li><strong>₹40 a day</strong> for both sachets (₹1,200 ÷ 30)</li>
+<li><strong>₹20 per sachet</strong></li>
+<li><strong>₹5 per nutrient per day</strong> (₹40 ÷ 8)</li>
+</ul>
+<p>Super Routine is in pre-launch. The founding price applies to people on the founding list, which 255 people have joined so far. More detail is on the <a href="/faq/">Super Routine FAQ</a>.</p>
+<h2>How to work out the cost of 8 separate supplements</h2>
+<p>For each product you are considering, take the price you would actually pay and divide by the number of days it lasts at the dose you want:</p>
+<div class="tw"><table><thead><tr><th>Step</th><th>Calculation</th></tr></thead><tbody>
+<tr><td>1. Servings per pack</td><td>Tablets or capsules in the pack ÷ tablets you need per day</td></tr>
+<tr><td>2. Cost per day</td><td>Pack price ÷ days from step 1</td></tr>
+<tr><td>3. Total</td><td>Add the cost per day of all eight products</td></tr>
+<tr><td>4. Monthly</td><td>Total per day × 30</td></tr>
+<tr><td>5. Compare</td><td>Against ₹40 a day (₹1,200 a month)</td></tr>
+</tbody></table></div>
+<p>Two adjustments make the comparison honest. First, if a product's dose is double what you want, you might split it, which halves its cost per day; if it is half, you need two, which doubles it. Second, count the leftovers: buying eight packs at once means a large upfront spend, and packs of different sizes run out at different times.</p>
+<h2>Doses: reading labels the right way</h2>
+<p>Matching doses across eight bottles is harder than it looks, mainly because of minerals. A mineral compound is only partly the mineral itself, so a label that says "magnesium glycinate 1000 mg" is the whole compound; the elemental magnesium is about 140 mg. Always compare elemental amounts.</p>
+<p>Check the totals against the upper limits too, especially if you already take a multivitamin:</p>
+<div class="tw"><table><thead><tr><th>Nutrient</th><th>Adult upper limit (NIH)</th><th>Super Routine</th></tr></thead><tbody>
+<tr><td>Vitamin D</td><td>4,000 IU/day</td><td>600 IU</td></tr>
+<tr><td>Zinc</td><td>40 mg/day</td><td>12 mg</td></tr>
+<tr><td>Magnesium (supplements only)</td><td>350 mg/day</td><td>140 mg elemental</td></tr>
+<tr><td>Vitamin B12 and vitamin K</td><td>No upper limit set</td><td>1 mg B12; K2 included</td></tr>
+</tbody></table></div>
+<h2>Forms: where separate products differ most</h2>
+<ul>
+<li><strong>Omega-3:</strong> the NIH says re-esterified triglycerides (rTG), natural triglycerides and free fatty acids have somewhat higher bioavailability than ethyl esters, although all forms raise blood EPA and DHA.</li>
+<li><strong>Magnesium:</strong> forms that dissolve well in liquid are absorbed more completely, and oxide is among the forms most linked to diarrhoea. Glycinate is gentle on the stomach.</li>
+<li><strong>Vitamin B12:</strong> to be fair, the NIH says there is no evidence that absorption differs by form. We use methylcobalamin, one of the active forms, but cyanocobalamin works too.</li>
+<li><strong>Ashwagandha:</strong> the trials in the NIH summary used specific root extracts such as KSM-66 at 250–600 mg a day; a generic "ashwagandha powder" may not match.</li>
+</ul>
+<h2>Timing: two sachets vs eight bottles</h2>
+<p>The other cost of separate supplements is organisation. Some nutrients suit the morning and some the evening: vitamin D and K are fat-soluble and absorb with a meal, melatonin belongs at bedtime, and very high zinc intakes can reduce magnesium absorption, which is one reason we keep zinc and magnesium in different sachets. With eight bottles you build that schedule yourself; with Super Routine it is one sachet after breakfast and one after dinner. Read <a href="/science/super-routine-day-and-night-supplements/">how the Super Routine day and night sachets work</a> for the full reasoning.</p>
+<h2>When separate supplements are the better choice</h2>
+<ul>
+<li><strong>You need only one or two nutrients.</strong> If a blood test shows only low vitamin D or B12, a single product is cheaper and simpler.</li>
+<li><strong>Your doctor prescribed a different dose,</strong> such as a weekly high-dose vitamin D sachet or iron.</li>
+<li><strong>You cannot take one of our ingredients,</strong> for example melatonin because of epilepsy or blood thinners, ashwagandha because of pregnancy or a thyroid condition, or vitamin K because you take warfarin.</li>
+<li><strong>You are vegetarian and want no fish oil.</strong> Our omega-3 is from fish; algal oil is the vegetarian alternative.</li>
+</ul>
+<p>If none of these apply and you would otherwise buy most of the eight, the two-sachet routine is usually simpler, and the price comparison above tells you whether it is cheaper for you. Compare also our guide to <a href="/science/supplements-not-to-take-together/">supplements not to take together</a>.</p>
+''',
+ "faq": [
+  ("How much does Super Routine cost?", "The founding Super Routine price is ₹1,200 a month for 30 Day and 30 Night sachets, which is ₹40 a day. Super Routine is in pre-launch; join the founding list on superroutine.in for that price."),
+  ("Is it cheaper to buy supplements separately?", "Only if your average cost per daily serving across the eight products is below ₹5, or if you need just one or two of them. Work it out from the pack price and servings of the products you would buy."),
+  ("How many Super Routine sachets do I take a day?", "Two: one Day sachet after breakfast and one Night sachet after dinner or 30–60 minutes before bed."),
+  ("Can I take Super Routine sachets with my multivitamin?", "Check your multivitamin's vitamin D, zinc and magnesium so the totals stay under the upper limits, and do not add another melatonin product. Ask your doctor if you take any regular medicine."),
+ ],
+ "sources": [S_ZN, S_MG, S_D, S_K, S_B12, S_OM, S_ASH],
+},
+# ---------------------------------------------------------------- SUPER ROUTINE DAY AND NIGHT
+{
+ "path": SCI + "super-routine-day-and-night-supplements/", "crumb": "Super Routine Day and Night", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-23", "about": "Super Routine day and night supplements",
+ "blurb": "Why the Day sachet goes after breakfast and the Night sachet after dinner: fat-soluble vitamins, melatonin timing, zinc and magnesium apart, and who should not take them.",
+ "title": "Super Routine Day and Night Supplements: How 2 Sachets Work",
+ "description": "How Super Routine day and night supplements work: what is in each sachet, why some nutrients suit morning and others evening, a daily schedule, safety.",
+ "h1": "Super Routine day and night supplements: how the two sachets work",
+ "answer": "<strong>Super Routine</strong> splits eight nutrients into two sachets by timing. The <strong>Day sachet</strong> (vitamin D3 + K2, B12, zinc, shilajit) is taken after breakfast, because vitamins D and K absorb best with a meal. The <strong>Night sachet</strong> (magnesium glycinate, ashwagandha, omega-3, melatonin) is taken after dinner, because melatonin belongs at bedtime. Splitting also keeps zinc and magnesium apart.",
+ "facts": [("Day sachet", "After breakfast"), ("Night sachet", "After dinner / 30–60 min before bed"), ("Nutrients", "4 + 4"), ("Price", "₹1,200/month (founding)")],
+ "body": f'''
+<p>"Day and night supplements" simply means splitting a supplement routine by time of day, because a few nutrients work better, or are safer, at a particular time. Most of the evidence is about practical things: taking fat-soluble vitamins with a meal, keeping a sleep hormone away from the morning commute, and spacing nutrients that can compete. This page explains how the Super Routine day and night sachets apply those rules, and where timing matters less than marketing suggests.</p>
+<h2>What is in the Super Routine day and night sachets</h2>
+<div class="tw"><table><thead><tr><th>Sachet</th><th>Nutrient</th><th>Dose</th><th>Why that time</th></tr></thead><tbody>
+<tr><td rowspan="4"><a href="/day-pack/">Day</a></td><td>{link("d3","Vitamin D3 + K2")}</td><td>600 IU + K2</td><td>Fat-soluble; absorbs with breakfast</td></tr>
+<tr><td>{link("b12","Vitamin B12")}</td><td>1 mg methylcobalamin</td><td>Fits the morning routine</td></tr>
+<tr><td>{link("zn","Zinc picolinate")}</td><td>12 mg</td><td>After food to limit nausea; apart from magnesium</td></tr>
+<tr><td>{link("shil","Himalayan shilajit")}</td><td>250 mg purified</td><td>Kept with the morning routine</td></tr>
+<tr><td rowspan="4"><a href="/night-pack/">Night</a></td><td>{link("mg","Magnesium glycinate")}</td><td>1000 mg (140 mg elemental)</td><td>Wind-down routine; apart from zinc</td></tr>
+<tr><td>{link("ash","Ashwagandha KSM-66")}</td><td>300 mg</td><td>Studied for sleep; drowsiness is a side effect</td></tr>
+<tr><td>{link("om","Omega-3 (rTG)")}</td><td>750 mg</td><td>Any time; taken with dinner</td></tr>
+<tr><td>{link("mel","Melatonin")}</td><td>3 mg</td><td>Signals night to the body clock</td></tr>
+</tbody></table></div>
+<h2>Why the Day sachet goes after breakfast</h2>
+<p><strong>Vitamins D and K need a meal.</strong> According to the NIH Office of Dietary Supplements, the presence of fat in the gut enhances vitamin D absorption, and vitamin K is absorbed in the small intestine along with dietary fat. Breakfast is the most regular meal for most people, which makes the routine easy to keep. Our 600 IU of vitamin D3 matches the ICMR-NIN adult requirement for Indians and is well below the 4,000 IU upper limit.</p>
+<p><strong>Zinc is easier on a full stomach.</strong> Nausea is a known effect of too much zinc, and many people find even normal doses unsettling on an empty stomach. Our 12 mg is under a third of the 40 mg upper limit.</p>
+<p><strong>B12 has no best time,</strong> but it is part of daily energy metabolism and sits naturally with the morning routine. The NIH notes that absorption of large oral doses is low (about 2% at 500 mcg), which is why supplements usually contain far more than the 2.2 mcg daily requirement, and no upper limit has been set.</p>
+<h2>Why the Night sachet goes after dinner</h2>
+<p><strong>Melatonin only makes sense at night.</strong> It is the hormone that tells the body clock it is night. Mayo Clinic lists daytime drowsiness among its common side effects and advises not driving or using machinery within five hours of a dose, which rules out the morning entirely.</p>
+<p><strong>Ashwagandha fits the evening.</strong> The NIH summarises a 2021 meta-analysis of five studies (372 adults) that found a small but significant benefit for sleep at 250–600 mg a day over 6–12 weeks, with larger effects at 600 mg. Drowsiness is one of its reported side effects. Our 300 mg is within that studied range.</p>
+<p><strong>Magnesium and omega-3 are flexible.</strong> The NIH does not tie magnesium absorption to time of day, and omega-3 can be taken whenever suits you. We put them in the Night sachet because the evening meal is a natural fit and it keeps magnesium away from the morning zinc.</p>
+<h2>Why zinc and magnesium are in different sachets</h2>
+<p>To be accurate: at normal doses most people can take zinc and magnesium together. The interaction the NIH describes involves very high zinc intakes of about 142 mg a day, far above our 12 mg. We split them anyway because minerals are absorbed in the same part of the gut, and putting them in different sachets removes the question completely. The full explanation is in <a href="/science/zinc-and-magnesium-together/">can you take zinc and magnesium together?</a></p>
+<h2>A simple daily schedule</h2>
+<div class="tw"><table><thead><tr><th>Time</th><th>What to do</th></tr></thead><tbody>
+<tr><td>Breakfast (for example 8 am)</td><td>One Day sachet with water, with or after food</td></tr>
+<tr><td>During the day</td><td>Keep iron, calcium, thyroid medicine and antibiotics spaced as your doctor advises</td></tr>
+<tr><td>Dinner (for example 8:30 pm)</td><td>One Night sachet after the meal, or 30–60 minutes before bed</td></tr>
+<tr><td>After the Night sachet</td><td>No driving; no other melatonin or sleep products</td></tr>
+</tbody></table></div>
+<p>Do not take both sachets at the same time, and do not take more than one of each in a day. If you miss a Day sachet at breakfast, take it with your next meal that day rather than at bedtime.</p>
+<h2>Who should not take Super Routine day and night supplements</h2>
+<ul>
+<li>Anyone pregnant or breastfeeding, or under 18.</li>
+<li>People taking <strong>warfarin</strong> or other blood thinners: vitamin K changes warfarin's effect, and melatonin may interact with medicines that slow clotting.</li>
+<li>People with epilepsy or taking seizure medicines, diabetes or blood pressure medicines, immunosuppressants or birth control: Mayo Clinic lists these as possible melatonin interactions.</li>
+<li>People taking thyroid medicine, sedatives, or diabetes or blood pressure medicines, or with a liver or thyroid condition: ashwagandha may interact or carry risks.</li>
+<li>People on <strong>statins</strong> (high vitamin D intakes may reduce the effect of some), <strong>metformin</strong> or long-term acid-reducing medicines (which lower B12), or <strong>quinolone and tetracycline antibiotics</strong> (take them at least 2 hours before or 4–6 hours after zinc or magnesium).</li>
+<li>People with kidney problems (magnesium toxicity risk rises) or kidney, liver or prostate conditions (WebMD advises discussing shilajit first).</li>
+</ul>
+<h2>Day and night sachets vs one multivitamin</h2>
+<p>A once-a-day multivitamin cannot place melatonin at bedtime or keep minerals apart, and many do not contain omega-3 or ashwagandha. On the other hand, it may contain nutrients we leave out, such as iron, calcium and folate. If you are comparing costs and doses, read <a href="/science/super-routine-vs-separate-supplements/">Super Routine vs buying 8 separate supplements</a>. For the evidence on night-time options, see the <a href="/science/best-supplements-for-night/">best supplements to take at night</a>, and for the morning, the <a href="/science/best-supplements-to-take-in-the-morning/">best supplements to take in the morning</a>. The <a href="/">Super Routine home page</a> has the founding offer, and the <a href="/faq/">FAQ</a> covers price and delivery questions.</p>
+''',
+ "faq": [
+  ("What are day and night supplements?", "They split a supplement routine by time of day: nutrients that absorb best with a meal or support the day go in the morning, and nutrients for the evening, such as melatonin, go at night."),
+  ("Can I take the Super Routine day and night sachets at the same time?", "No. The Night sachet contains melatonin, which can cause drowsiness, so it belongs after dinner. Take the Day sachet after breakfast."),
+  ("What if I forget the Day sachet?", "Take it with your next meal the same day, not at bedtime, and never take two Day sachets to catch up."),
+  ("Is Super Routine a multivitamin?", "No. It is two sachets with eight specific nutrients at labelled doses, split between day and night. It does not contain iron, calcium or folate."),
+ ],
+ "sources": [S_D, S_K, S_B12, S_ZN, S_MG, S_OM, S_ASH, S_MAYO_MEL, S_SHIL_W, S_NIN],
+},
 # ---------------------------------------------------------------- BEST SUPPLEMENTS FOR NIGHT
 {
  "path": SCI + "best-supplements-for-night/", "crumb": "Best Supplements for Night", "crumbs": SCI_CRUMB,
  "schema_type": "Article", "published": "2026-10-22", "about": "Supplements taken at night",
  "blurb": "Melatonin, magnesium, ashwagandha, L-theanine, valerian and more: what the evidence says, what to avoid, and which nutrients simply suit the evening.",
  "title": "Best Supplements to Take at Night: An Honest Evidence Guide",
- "description": "The best supplements to take at night, ranked by evidence: melatonin, magnesium, ashwagandha, L-theanine, valerian, chamomile. Doses, safety and who should avoid them.",
+ "description": "The best supplements to take at night, ranked by evidence: melatonin, magnesium, ashwagandha, L-theanine, valerian. Doses, safety and who should avoid them.",
  "h1": "Best supplements to take at night: an honest evidence guide",
  "answer": "The best-supported supplements to take at night are <strong>melatonin</strong> (for jet lag and a late body clock), <strong>ashwagandha</strong> (small benefits for sleep quality in trials), <strong>L-theanine</strong> and <strong>magnesium</strong> (limited but promising evidence). Valerian and chamomile have weak evidence, and kava carries a liver risk. Start with sleep habits; supplements are a support, not a fix.",
  "facts": [("Strongest evidence", "Melatonin (jet lag, late body clock)"), ("Avoid", "Kava (liver injury reports)"), ("Mg upper limit", "350 mg/day (supplements)"), ("First-line for insomnia", "CBT-I, not supplements")],
@@ -690,8 +893,8 @@ PAGES = PAGES + [SCIENCE_HUB] + SCIENCE
 # ================================================================ BRAND FAQ
 FAQ_PAGE = {
  "path": "/faq/", "crumb": "FAQ", "priority": "0.9", "schema_type": "WebPage", "about": "Super Routine supplements",
- "title": "Super Routine FAQ: Price, Sachets & Day and Night Supplements",
- "description": "Super Routine FAQ: what is in the Super Routine day and night sachets, the Super Routine price (₹1,200/month founding price), how to take them and who should avoid them.",
+ "title": "Super Routine FAQ: Price, Sachets, Day and Night Supplements",
+ "description": "Super Routine FAQ: what is in the day and night sachets, the Super Routine price (₹1,200/month founding), how to take them and who should avoid them.",
  "h1": "Super Routine FAQ: price, sachets and day and night supplements",
  "answer": "<strong>Super Routine</strong> is an Indian day and night supplement system: one Day sachet after breakfast and one Night sachet after dinner, with eight essentials at clearly labelled doses. The founding <strong>Super Routine price is ₹1,200 a month</strong> for 30 Day and 30 Night sachets. It is in pre-launch, so you can join the founding waitlist now.",
  "facts": [("Price", "₹1,200/month (founding)"), ("Sachets", "30 Day + 30 Night"), ("Day", "After breakfast"), ("Night", "After dinner / before bed")],
@@ -708,9 +911,9 @@ FAQ_PAGE = {
 <tr><td>{link("om","Omega-3 (rTG)")}</td><td>750 mg</td></tr>
 <tr><td>{link("mel","Melatonin")}</td><td>3 mg</td></tr>
 </tbody></table></div>
-<p>Every dose is printed on the pack, with no proprietary blends. See the full <a href="/ingredients/">Super Routine ingredients list</a>.</p>
+<p>Every dose is printed on the pack, with no proprietary blends. See the full <a href="/ingredients/">Super Routine ingredients list</a> and <a href="/science/super-routine-day-and-night-supplements/">how the Super Routine day and night sachets work</a>.</p>
 <h2>Super Routine price</h2>
-<p>The founding Super Routine price is <strong>₹1,200 a month</strong> for a full month of daily supplements: 30 Day sachets and 30 Night sachets. Super Routine is in pre-launch. Founding members get first access and the founding price when it launches; 255 people have already joined the founding list. <a href="/#join">Claim your founding spot</a>.</p>
+<p>The founding Super Routine price is <strong>₹1,200 a month</strong> for a full month of daily supplements: 30 Day sachets and 30 Night sachets. Super Routine is in pre-launch. Founding members get first access and the founding price when it launches; 255 people have already joined the founding list. <a href="/#join">Claim your founding spot</a>. To compare the Super Routine price with buying each nutrient separately, see <a href="/science/super-routine-vs-separate-supplements/">Super Routine vs 8 separate supplements</a>.</p>
 <h2>How to take Super Routine daily supplements</h2>
 <ul>
 <li><strong>Morning:</strong> one Day sachet after breakfast, with water. Vitamin D3 and K2 are fat-soluble, so a meal helps.</li>
