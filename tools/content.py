@@ -121,7 +121,7 @@ PAGES = [
 <ul><li>Take one Night sachet after dinner or 30–60 minutes before bed, with water.</li><li>Do not drive or operate machinery after taking it, because melatonin can make you drowsy.</li><li>Do not combine with other sleep aids or sedatives without asking your doctor.</li><li>Not for children, or for anyone pregnant or breastfeeding.</li></ul>
 <h2>Read the full guide for each nutrient</h2>
 {cards(NIGHT)}
-<p>Comparing options? Read our honest guide to the <a href="/science/best-supplements-for-night/">best supplements to take at night</a>, and whether you can take <a href="/science/melatonin-and-magnesium-together/">melatonin and magnesium together</a>.</p>
+<p>Comparing options? Read our honest guide to the <a href="/science/best-supplements-for-night/">best supplements to take at night</a>, whether you can take <a href="/science/melatonin-and-magnesium-together/">melatonin and magnesium together</a>, and the evidence on <a href="/science/magnesium-glycinate-and-ashwagandha-together/">magnesium glycinate and ashwagandha together</a>.</p>
 ''',
  "faq": [
   ("Can I take magnesium and melatonin together?", "Yes. They work differently: melatonin signals night to the body clock and magnesium supports normal muscle and nerve function. Both are commonly taken in the evening. Check with your doctor if you take sedatives or blood thinners."),
@@ -173,7 +173,7 @@ PAGES = [
  "facts": [("Our dose", "1000 mg (140 mg elemental)"), ("Pack", "Night"), ("Adult RDA", "310–420 mg/day"), ("Supplement UL", "350 mg/day")],
  "body": f'''
 <h2>Elemental magnesium: read this before comparing labels</h2>
-<p>Labels can be confusing. "1000 mg magnesium glycinate" is the weight of the whole compound, magnesium plus glycine. Only about 14% of that weight is magnesium itself. The figure that matters is <strong>elemental magnesium</strong>: 1000 mg of glycinate gives roughly 140 mg.</p>
+<p>Labels can be confusing. "1000 mg magnesium glycinate" is the weight of the whole compound, magnesium plus glycine. Only about 14% of that weight is magnesium itself. The figure that matters is <strong>elemental magnesium</strong>: 1000 mg of glycinate gives roughly 140 mg. See <a href="/science/elemental-magnesium-explained/">elemental magnesium explained</a> for every common form.</p>
 <p>The adult Recommended Dietary Allowance is 400–420 mg a day for men and 310–320 mg for women, from food and supplements combined. The upper limit for magnesium <em>from supplements</em> is 350 mg a day. 140 mg tops up a diet that falls short without going near that limit.</p>
 <h2>What magnesium does</h2>
 <p>Magnesium is a co-factor in more than 300 enzyme systems. It contributes to normal muscle function, normal nervous system function, energy-yielding metabolism and the reduction of tiredness and fatigue. It also helps regulate calcium movement in nerve and muscle cells.</p>
@@ -318,13 +318,13 @@ PAGES = [
 # ---------------------------------------------------------------- VITAMIN D3 + K2
 {
  "path": ING + "vitamin-d3-k2/", "crumb": "Vitamin D3 + K2", "crumbs": ING_CRUMB, "about": "Vitamin D3 (cholecalciferol) and vitamin K2",
- "title": "Vitamin D3 + K2: Dosage, Best Time to Take & Why They Pair",
- "description": "Vitamin D3 with K2 explained: why 600 IU, the best time to take vitamin D3, why it pairs with K2, and the warfarin interaction to know.",
- "h1": "Vitamin D3 + K2: dose, best time to take it and why they pair",
+ "title": "Vitamin D3 + K2 Benefits, Dosage & Best Time to Take",
+ "description": "Vitamin D3 + K2 benefits explained: why 600 IU, the best time to take vitamin D3, why it pairs with K2, and the warfarin interaction to know.",
+ "h1": "Vitamin D3 + K2: benefits, dose, best time to take it and why they pair",
  "answer": "Take vitamin D3 <strong>with a meal that contains some fat</strong>, ideally at the same time each day. Breakfast works well for most people. D3 is fat-soluble and absorbs best with food. The Super Routine Day Pack contains <strong>600 IU (15 mcg)</strong> of D3, which matches the adult daily recommendation, paired with vitamin K2.",
  "facts": [("Our dose", "600 IU (15 mcg) D3 + K2"), ("Pack", "Day"), ("Adult RDA", "600 IU (800 IU 70+)"), ("UL", "4,000 IU/day")],
  "body": f'''
-<h2>Why vitamin D matters in India</h2>
+<h2>Vitamin D3 + K2 benefits: why they matter in India</h2>
 <p>The skin makes vitamin D from sunlight, but indoor work, pollution, clothing, sunscreen and darker skin all reduce it. Low vitamin D status is common in India despite the sunshine. Vitamin D contributes to the normal absorption of calcium, normal bones and teeth, normal muscle function and normal immune function.</p>
 <h2>Why D3 and not D2</h2>
 <p>Both forms raise blood vitamin D, but D3 (cholecalciferol) raises and maintains levels more effectively than D2 (ergocalciferol) in most studies. D3 is also the form the skin makes.</p>
@@ -472,7 +472,190 @@ PAGES = [
 SCI = "/science/"
 SCI_CRUMB = [("Science", SCI)]
 
+S_MASTROFINI = ("Mastrofini et al. (2026), Journal of the International Society of Sports Nutrition: morning ashwagandha and evening magnesium-based sleep supplement, randomised controlled trial", "https://doi.org/10.1080/15502783.2026.2740227")
+S_MG_REVIEW = ("Magnesium: the forgotten electrolyte, a review on hypomagnesemia (2019), Medical Sciences (Basel): elemental magnesium in each salt (Table 5)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6524065/")
+S_CL_MG = ("ConsumerLab: How much actual magnesium is in a magnesium supplement?", "https://www.consumerlab.com/answers/how-much-actual-magnesium-does-a-supplement-with-500-mg-of-magnesium-citrate-contain/how-much-magnesium-in-my-supplement/")
+
 SCIENCE = [
+# ---------------------------------------------------------------- MAGNESIUM GLYCINATE + ASHWAGANDHA
+{
+ "path": SCI + "magnesium-glycinate-and-ashwagandha-together/", "crumb": "Magnesium Glycinate and Ashwagandha", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-26", "about": "Taking magnesium glycinate and ashwagandha together",
+ "blurb": "Can you take magnesium glycinate and ashwagandha together? What the evidence shows, the best time, safe doses, and who should avoid the pair.",
+ "title": "Magnesium Glycinate and Ashwagandha Together: Is It Safe?",
+ "description": "Can you take magnesium glycinate and ashwagandha together? No known interaction, but each has its own limits. Evidence, timing and who should avoid it.",
+ "h1": "Magnesium glycinate and ashwagandha together: is it safe?",
+ "answer": "Yes, for most healthy adults. NIH fact sheets list <strong>no interaction between magnesium and ashwagandha</strong>. The cautions come from each one separately: keep supplemental magnesium under <strong>350 mg a day</strong>, and avoid ashwagandha if you are pregnant, have thyroid or liver problems, or take sedatives, thyroid, diabetes, blood pressure or immune-suppressing medicines.",
+ "facts": [("Known interaction", "None listed by NIH"), ("Magnesium limit (supplements)", "350 mg/day"), ("Ashwagandha in studies", "240–1,250 mg/day extract"), ("Ashwagandha safety data", "Up to about 3 months")],
+ "body": f'''
+<p>Magnesium glycinate and ashwagandha are two of the most popular evening supplements in India, and they are often sold in the same tablet. This guide covers what each one does, whether taking them together is safe, what the only trial of a similar combination found, and how to time them. Every fact here comes from the NIH Office of Dietary Supplements (ODS), NCCIH or a peer-reviewed study, listed at the end.</p>
+<h2>Can you take magnesium glycinate and ashwagandha together?</h2>
+<p>Yes, for most healthy adults. The NIH ODS fact sheets for magnesium and for ashwagandha each list the medicines they interact with. Neither lists the other. Magnesium's interactions are with certain antibiotics, bisphosphonates, diuretics and acid-reducing medicines; ashwagandha's are with thyroid, diabetes, blood pressure, immunosuppressant and sedative medicines. So the pair has no known interaction of its own, and the safety rules are simply the rules for each ingredient.</p>
+<div class="tw"><table><thead><tr><th></th><th>{link("mg","Magnesium glycinate")}</th><th>{link("ash","Ashwagandha")}</th></tr></thead><tbody>
+<tr><td>What it is</td><td>Magnesium bound to the amino acid glycine</td><td>Root (or root-and-leaf) extract of <em>Withania somnifera</em></td></tr>
+<tr><td>Doses studied or advised</td><td>Adult RDA 400–420 mg (men), 310–320 mg (women) from all sources</td><td>240–1,250 mg/day of extract in stress trials; 250–600 mg/day KSM-66 in sleep trials</td></tr>
+<tr><td>Upper limit or safety window</td><td>350 mg/day from supplements</td><td>Well tolerated for up to about 3 months; long-term safety not known</td></tr>
+<tr><td>Common side effects</td><td>Diarrhoea, nausea, cramping at high doses</td><td>Stomach upset, loose stools, nausea, drowsiness</td></tr>
+<tr><td>Main medicine interactions</td><td>Tetracycline and quinolone antibiotics, bisphosphonates, diuretics, PPIs</td><td>Thyroid, diabetes, blood pressure, immunosuppressant and sedative medicines</td></tr>
+</tbody></table></div>
+<h2>Why people take them together</h2>
+<p>They do different jobs. Magnesium is an essential mineral; it contributes to normal muscle and nervous system function, and many diets fall short of the recommended amount. Ashwagandha is an Ayurvedic herb that has been studied for stress and sleep. The ODS summarises that several small, short trials found it reduced stress and anxiety compared with placebo, and a 2021 meta-analysis of five studies found a small but significant effect on sleep, larger in people with insomnia. Both are commonly taken in the evening as part of a wind-down routine.</p>
+<h2>What the research on the combination shows</h2>
+<p>There are no large trials of magnesium glycinate plus ashwagandha specifically. The closest is a 2026 randomised, double-blind trial in 103 healthy, physically active adults. One group took a morning supplement containing <strong>600 mg ashwagandha</strong> with another adaptogen; another took an evening supplement with <strong>magnesium L-threonate (145 mg magnesium)</strong>, L-theanine and apigenin; a third took both; a fourth took placebos, for two weeks.</p>
+<p>The results were honest and modest. The <strong>morning ashwagandha group alone</strong> showed lower weekly perceived stress and better subjective sleep quality than placebo. The group taking <strong>both</strong> did not do better; on sleep quality, the morning-only group did better than the combination group. The authors note that healthy people over a short period may have little room to improve. The magnesium form was threonate, not glycinate, so the result does not transfer directly. The fair conclusion: the combination is not proven to work better than either alone.</p>
+<h2>Best time to take magnesium glycinate and ashwagandha</h2>
+<ul>
+<li><strong>Magnesium glycinate:</strong> any time of day; most people take it with dinner or in the evening.</li>
+<li><strong>Ashwagandha:</strong> the NIH summary does not set a best time, and the 2026 trial above gave it in the morning. Choose one time and keep to it. Because drowsiness is a possible side effect, the evening suits many people.</li>
+<li><strong>Space magnesium from antibiotics:</strong> take tetracycline or quinolone antibiotics at least 2 hours before, or 4–6 hours after, magnesium. Keep oral bisphosphonates 2 hours apart.</li>
+<li><strong>Taking zinc as well?</strong> Very high zinc doses (around 142 mg a day) can interfere with magnesium absorption. Normal doses are fine; see <a href="/science/zinc-and-magnesium-together/">zinc and magnesium together</a>.</li>
+</ul>
+<p>Adding melatonin? Read <a href="/science/melatonin-and-magnesium-together/">melatonin and magnesium together</a>; it covers the extra drowsiness and driving cautions.</p>
+<h2>Who should not take ashwagandha with magnesium</h2>
+<ul>
+<li><strong>Pregnant women:</strong> some experts advise against ashwagandha in pregnancy, and the French food safety agency ANSES advises against it during pregnancy and breastfeeding.</li>
+<li><strong>Thyroid conditions or thyroid medicine:</strong> ashwagandha might affect thyroid function; cases of thyrotoxicosis that resolved on stopping have been reported.</li>
+<li><strong>Liver problems:</strong> a few cases of liver injury have been reported with ashwagandha.</li>
+<li><strong>Men with hormone-sensitive prostate cancer:</strong> ashwagandha might not be safe, because it may raise testosterone.</li>
+<li><strong>Anyone on diabetes, blood pressure, immunosuppressant or sedative medicines:</strong> ask your doctor first.</li>
+<li><strong>Kidney disease:</strong> the risk of magnesium toxicity rises when kidney function is impaired.</li>
+</ul>
+<h2>How much is too much?</h2>
+<p>Add up magnesium from every product. The 350 mg limit counts magnesium from supplements and medicines (including antacids and laxatives), not from food. Loose stools are the usual first sign of too much. Labels often show the compound weight, not the magnesium itself; our guide to <a href="/science/elemental-magnesium-explained/">elemental magnesium</a> shows how to work it out. For ashwagandha, the NIH notes that benefits in stress trials appeared greater at 500–600 mg a day, and that safety beyond about 3 months is unknown, so review long-term use with your doctor.</p>
+<h2>How the Super Routine Night Pack combines them</h2>
+<p>The Super Routine <a href="/night-pack/">Night Pack</a> contains magnesium glycinate 1000 mg (<strong>140 mg elemental</strong>, well under the 350 mg limit) and <strong>ashwagandha KSM-66 300 mg</strong>, within the range used in sleep studies, together with omega-3 rTG 750 mg and melatonin 3 mg. Take it after dinner or 30–60 minutes before bed. Zinc is in the separate <a href="/day-pack/">Day Pack</a>, after breakfast. Because the Night Pack already contains ashwagandha and magnesium, do not add another ashwagandha or high-dose magnesium product. For price and sachet details see the <a href="/faq/">Super Routine FAQ</a>, and for the wider evidence, our guide to the <a href="/science/best-supplements-for-night/">best supplements to take at night</a>.</p>
+<p>If you take any regular medicine, or have a thyroid, liver or kidney condition, ask your doctor or pharmacist before starting.</p>
+''',
+ "faq": [
+  ("Can I take magnesium glycinate and ashwagandha at night?", "Yes. Many people take both in the evening. Ashwagandha can cause drowsiness, so the evening suits most people. Keep supplemental magnesium under 350 mg a day."),
+  ("Is it safe to take ashwagandha and magnesium every day?", "For most healthy adults, short-term daily use appears safe. Ashwagandha has been studied for up to about 3 months and its long-term safety is not known, so review longer use with your doctor."),
+  ("Does magnesium glycinate interact with ashwagandha?", "No interaction between them is listed in the NIH fact sheets. Each has its own medicine interactions, such as antibiotics for magnesium and thyroid or sedative medicines for ashwagandha."),
+  ("Who should not take magnesium and ashwagandha together?", "Pregnant or breastfeeding women, people with thyroid, liver or kidney conditions, men with hormone-sensitive prostate cancer, and anyone taking thyroid, diabetes, blood pressure, immunosuppressant or sedative medicines without medical advice."),
+ ],
+ "sources": [S_MG, S_ASH, S_MASTROFINI, S_ZN],
+},
+# ---------------------------------------------------------------- ELEMENTAL MAGNESIUM
+{
+ "path": SCI + "elemental-magnesium-explained/", "crumb": "Elemental Magnesium Explained", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-26", "about": "Elemental magnesium in supplements",
+ "blurb": "What elemental magnesium means, how much is in glycinate, citrate and oxide, how to read a magnesium label in India, and the 350 mg limit.",
+ "title": "Elemental Magnesium Explained: How to Read Labels in India",
+ "description": "Elemental magnesium is the magnesium itself, not the whole compound. How much is in glycinate, citrate and oxide, how to read labels, and the 350 mg limit.",
+ "h1": "Elemental magnesium explained: how to read magnesium labels in India",
+ "answer": "<strong>Elemental magnesium</strong> is the weight of the magnesium itself, without the compound it is bound to. \"1000 mg magnesium glycinate\" gives only about <strong>140 mg elemental magnesium</strong>, because glycinate is roughly 14% magnesium. Compare products by elemental magnesium, and keep the total from supplements under <strong>350 mg a day</strong>.",
+ "facts": [("Glycinate", "≈14% magnesium"), ("Citrate", "≈11–16%"), ("Oxide", "≈60%, poorly absorbed"), ("Supplement limit", "350 mg/day elemental")],
+ "body": f'''
+<p>Magnesium never comes alone in a tablet or sachet. It is always bound to something else (glycine, citric acid, oxygen, chloride) to make a stable compound. That compound is what is weighed on many labels, which is why two products that both say "500 mg" can contain very different amounts of magnesium. This guide explains the difference and how to compare products sold in India.</p>
+<h2>What does elemental magnesium mean?</h2>
+<p>Elemental magnesium is the share of a compound's weight that is magnesium. The rest is the carrier. The NIH Office of Dietary Supplements notes that a product's Supplement Facts panel declares the amount of elemental magnesium, and ConsumerLab explains that magnesium can make up less than half the weight of compounds such as citrate, chloride and glycinate. Recommended intakes and upper limits are always given in elemental magnesium.</p>
+<h2>How much elemental magnesium is in each form?</h2>
+<div class="tw"><table><thead><tr><th>Form</th><th>Elemental magnesium (approx.)</th><th>Elemental Mg in 500 mg of compound</th><th>Absorption note (NIH)</th></tr></thead><tbody>
+<tr><td>Oxide</td><td>60%</td><td>≈300 mg</td><td>Lower bioavailability</td></tr>
+<tr><td>Carbonate</td><td>45%</td><td>≈225 mg</td><td>Not compared by NIH</td></tr>
+<tr><td>Hydroxide</td><td>42%</td><td>≈210 mg</td><td>Common in antacids and laxatives</td></tr>
+<tr><td>Citrate</td><td>11–16%</td><td>≈56–80 mg</td><td>Higher bioavailability</td></tr>
+<tr><td>Glycinate (bisglycinate)</td><td>≈14%</td><td>≈70 mg</td><td>Not compared in the NIH summary</td></tr>
+<tr><td>Chloride</td><td>12%</td><td>≈60 mg</td><td>Higher bioavailability</td></tr>
+<tr><td>Lactate</td><td>12%</td><td>≈60 mg</td><td>Higher bioavailability</td></tr>
+<tr><td>Aspartate</td><td>10%</td><td>≈50 mg</td><td>Higher bioavailability</td></tr>
+<tr><td>Sulfate</td><td>10%</td><td>≈50 mg</td><td>Lower bioavailability</td></tr>
+<tr><td>Gluconate</td><td>5%</td><td>≈25 mg</td><td>Not compared by NIH</td></tr>
+</tbody></table></div>
+<p>Percentages for oxide, carbonate, hydroxide, chloride, lactate, aspartate, sulfate and gluconate come from a 2019 review in <em>Medical Sciences</em>. For citrate, ConsumerLab gives 11.2% for magnesium citrate and 16.2% for trimagnesium dicitrate, both of which may be labelled "magnesium citrate". The glycinate figure is calculated from its formula: magnesium (24.3 g/mol) is about 14% of magnesium bisglycinate (about 172 g/mol).</p>
+<h2>More elemental magnesium is not the same as more absorbed</h2>
+<p>Oxide looks best on paper, with 60% magnesium, but the NIH notes that forms which dissolve well in liquid are absorbed more completely, and that the aspartate, citrate, lactate and chloride forms tend to have higher bioavailability than oxide and sulfate. A small glycinate dose may therefore be a better daily top-up than a large oxide one. Absorption also depends on the dose and on your own magnesium status.</p>
+<h2>How to read a magnesium label in India</h2>
+<p>Look for which of these two lines the label uses:</p>
+<ul>
+<li><strong>"Magnesium glycinate 1000 mg"</strong> means the compound. Multiply by the percentage above: about 140 mg of magnesium.</li>
+<li><strong>"Magnesium (as magnesium glycinate) 140 mg"</strong> or <strong>"elemental magnesium 140 mg"</strong> means the magnesium itself. ConsumerLab explains that a line written this way should contain that amount of actual magnesium.</li>
+</ul>
+<p>If a label gives only the compound weight and the brand will not tell you the elemental figure, you cannot compare it fairly with other products. Also check the serving size: a "per serving" figure may mean two or three tablets.</p>
+<h2>How much elemental magnesium do you need?</h2>
+<div class="tw"><table><thead><tr><th></th><th>Men</th><th>Women</th></tr></thead><tbody>
+<tr><td>ICMR-NIN RDA for Indians (2020)</td><td>440 mg</td><td>370 mg</td></tr>
+<tr><td>US RDA, age 31+ (NIH)</td><td>420 mg</td><td>320 mg</td></tr>
+<tr><td>Upper limit from supplements and medicines (NIH)</td><td colspan="2">350 mg</td></tr>
+</tbody></table></div>
+<p>The RDA is your total from food and supplements. The 350 mg upper limit applies only to magnesium from supplements and medicines, not food. A supplement is meant to close the gap between what you eat and what you need, not to supply the whole RDA.</p>
+<h2>Signs you are taking too much</h2>
+<p>The NIH says high doses of magnesium from supplements or medicines often cause diarrhoea, which can be accompanied by nausea and abdominal cramping. Very large doses of magnesium-containing laxatives and antacids (typically over 5,000 mg a day) have caused toxicity, and the risk rises with impaired kidney function. Count antacids and laxatives that contain magnesium in your daily total.</p>
+<h2>Medicines to space from magnesium</h2>
+<ul>
+<li><strong>Tetracycline and quinolone antibiotics</strong> (doxycycline, ciprofloxacin, levofloxacin): take at least 2 hours before or 4–6 hours after magnesium.</li>
+<li><strong>Oral bisphosphonates</strong> (alendronate): keep 2 hours apart.</li>
+<li><strong>Diuretics and long-term proton pump inhibitors:</strong> they can change magnesium levels; ask your doctor.</li>
+</ul>
+<h2>Worked example: the Super Routine Night Pack</h2>
+<p>The Super Routine <a href="/night-pack/">Night Pack</a> contains <strong>magnesium glycinate 1000 mg, giving 140 mg elemental magnesium</strong>. That is 40% of the 350 mg supplemental limit, leaving room for food and other products. We chose {link("mg","magnesium glycinate")} for its gentle profile on the stomach. Zinc is kept in the separate <a href="/day-pack/">Day Pack</a> (see <a href="/science/zinc-and-magnesium-together/">zinc and magnesium together</a>). If you already take another magnesium product, add the elemental amounts together before starting. More questions are answered in the <a href="/faq/">Super Routine FAQ</a>, and the evening evidence is covered in <a href="/science/magnesium-glycinate-and-ashwagandha-together/">magnesium glycinate and ashwagandha together</a>.</p>
+''',
+ "faq": [
+  ("How much elemental magnesium is in 500 mg of magnesium glycinate?", "About 70 mg. Magnesium glycinate is roughly 14% magnesium by weight, so 1000 mg gives about 140 mg."),
+  ("Is 140 mg of elemental magnesium enough?", "It is a top-up, not a full day's need. Indian adults need 370–440 mg a day in total (ICMR-NIN), mostly from food. 140 mg stays well under the 350 mg limit for supplements."),
+  ("Which form of magnesium has the most elemental magnesium?", "Magnesium oxide, at about 60%. But the NIH notes that oxide is absorbed less well than citrate, chloride, lactate or aspartate."),
+  ("Does the 350 mg limit include magnesium from food?", "No. The NIH upper limit of 350 mg covers magnesium from supplements and medicines only. Magnesium from food does not count towards it."),
+ ],
+ "sources": [S_MG, S_MG_REVIEW, S_CL_MG, S_NIN],
+},
+# ---------------------------------------------------------------- MEN'S STACK
+{
+ "path": SCI + "supplements-for-men-india/", "crumb": "Supplements for Men in India", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-26", "about": "Daily supplements for adult men in India",
+ "blurb": "An honest day and night supplement stack for men in India: vitamin D, B12, zinc, magnesium and omega-3, with Indian RDAs, limits and timing.",
+ "title": "Daily Supplements for Men in India: A Day and Night Stack",
+ "description": "Which daily supplements men in India may need: vitamin D, B12, zinc, magnesium and omega-3. Indian RDAs, safe upper limits, morning vs night timing, cautions.",
+ "h1": "Daily supplements for men in India: an honest day and night stack",
+ "answer": "Most men in India do not need a long list of pills. Worth considering: <strong>vitamin D</strong> if you get little sun, <strong>vitamin B12</strong> if you are vegetarian, and <strong>magnesium</strong>, <strong>zinc</strong> or <strong>omega-3</strong> if your diet is short. Take vitamin D, B12 and zinc with breakfast, and magnesium in the evening. Skip iron unless a test shows you need it.",
+ "facts": [("Vitamin D (ICMR-NIN)", "600 IU/day"), ("Magnesium (men, ICMR-NIN)", "440 mg/day"), ("Zinc (men, ICMR-NIN)", "17 mg/day"), ("Iron", "Only if tested low")],
+ "body": f'''
+<p>Most "men's multivitamin" pages are product lists. This guide starts from what Indian men actually need, using the ICMR-National Institute of Nutrition (ICMR-NIN) requirements for Indians and the NIH Office of Dietary Supplements (ODS) for safety limits and interactions. It then sorts the useful nutrients into a simple morning and evening routine. Food comes first; supplements fill the gaps.</p>
+<h2>Daily needs for adult men in India</h2>
+<div class="tw"><table><thead><tr><th>Nutrient</th><th>ICMR-NIN RDA, men (2020)</th><th>Adult upper limit (NIH)</th><th>Who is most likely to fall short</th></tr></thead><tbody>
+<tr><td>{link("d3","Vitamin D")}</td><td>600 IU</td><td>4,000 IU</td><td>Limited sun, darker skin, older age, obesity</td></tr>
+<tr><td>{link("b12","Vitamin B12")}</td><td>2.2 mcg</td><td>None set</td><td>Vegetarians, older adults, metformin or antacid users</td></tr>
+<tr><td>{link("zn","Zinc")}</td><td>17 mg</td><td>40 mg</td><td>Vegetarians (phytates in grains and beans reduce absorption)</td></tr>
+<tr><td>{link("mg","Magnesium")}</td><td>440 mg</td><td>350 mg from supplements</td><td>Diets low in whole grains, pulses, nuts and greens</td></tr>
+<tr><td>{link("om","Omega-3 (EPA/DHA)")}</td><td>No RDA set</td><td>Up to 5 g/day judged safe (FDA)</td><td>Men who rarely eat fish</td></tr>
+</tbody></table></div>
+<p>The RDAs are totals from food and supplements. ICMR-NIN uses a reference body weight of 65 kg for Indian men.</p>
+<h2>The morning stack</h2>
+<p><strong>Vitamin D.</strong> The NIH lists limited sun exposure, darker skin, older age and obesity among the factors that raise the risk of low vitamin D, and these apply to many office-based men in Indian cities. Take it with breakfast or another meal. Stay under 4,000 IU a day unless a doctor prescribes a treatment course; excess raises blood calcium and can cause nausea, weakness, excessive thirst and kidney stones. See <a href="/science/best-time-to-take-vitamin-d3-and-b12/">the best time to take vitamin D3 and B12</a>.</p>
+<p><strong>Vitamin B12.</strong> B12 comes naturally only from animal foods, so vegetarian men are at higher risk, as are men taking metformin or acid-reducing medicines. Oral absorption of large doses is low (about 1.3% of a 1,000 mcg dose), which is why supplements contain far more than the 2.2 mcg RDA. No upper limit has been set.</p>
+<p><strong>Zinc.</strong> Zinc contributes to normal immune function. Men need more than women (17 mg vs 13 mg a day per ICMR-NIN), and vegetarians absorb less because of phytates. Keep total zinc under 40 mg a day: about 50 mg or more for weeks can lower copper status. Take quinolone or tetracycline antibiotics at least 2 hours before or 4–6 hours after zinc.</p>
+<h2>The evening stack</h2>
+<p><strong>Magnesium.</strong> It contributes to normal muscle and nervous system function. Keep supplemental magnesium under 350 mg a day of elemental magnesium; high doses cause diarrhoea. Read the label carefully, because the compound weight is not the magnesium content (see <a href="/science/elemental-magnesium-explained/">elemental magnesium explained</a>).</p>
+<p><strong>Omega-3.</strong> There is no RDA for EPA and DHA. For men who rarely eat fish, a fish oil (or an algal oil, for vegetarians, which usually gives 100–300 mg DHA) is one option. Take it with a meal to reduce fishy aftertaste. Men on warfarin should have their INR monitored, and very high doses (4 g a day for years) slightly increased atrial fibrillation risk in people with heart disease.</p>
+<p><strong>Optional: ashwagandha or melatonin for sleep and stress.</strong> Evidence for ashwagandha on stress and sleep is modest and short-term, and NCCIH notes that guidelines do not recommend melatonin for chronic insomnia. If you try either, see <a href="/science/magnesium-glycinate-and-ashwagandha-together/">magnesium glycinate and ashwagandha together</a> and the <a href="/science/best-supplements-for-night/">best supplements to take at night</a>.</p>
+<h2>What men usually do not need</h2>
+<ul>
+<li><strong>Iron:</strong> it is not a just-in-case supplement. The adult upper limit is 45 mg a day, and iron interacts with zinc, levothyroxine and levodopa. Take it only if a blood test shows a need.</li>
+<li><strong>Stacks of single products that overlap:</strong> a men's multivitamin plus separate zinc and vitamin D can push you over the limits above. Add up every label.</li>
+<li><strong>"Booster" claims:</strong> be wary of any product that promises hormonal or performance results. Supplements support normal nutrition; they are not medicines.</li>
+</ul>
+<h2>Safety notes for men</h2>
+<ul>
+<li><strong>Prostate:</strong> the NIH says ashwagandha might not be safe for men with hormone-sensitive prostate cancer, because it may raise testosterone. WebMD advises men with prostate problems, or on testosterone therapy, to talk to a doctor before taking shilajit.</li>
+<li><strong>Thyroid, diabetes and blood pressure medicines:</strong> ashwagandha may interact with them.</li>
+<li><strong>Melatonin:</strong> people with epilepsy and those on blood thinners need medical supervision. Do not drive after taking it.</li>
+<li><strong>Kidney disease:</strong> do not take magnesium supplements without medical advice.</li>
+</ul>
+<h2>Sample day and night routine</h2>
+<div class="tw"><table><thead><tr><th>When</th><th>What</th><th>Why then</th></tr></thead><tbody>
+<tr><td>After breakfast</td><td>Vitamin D3, B12, zinc</td><td>D3 absorbs best with a meal; easy to remember</td></tr>
+<tr><td>After dinner</td><td>Magnesium, omega-3 (and melatonin only if you use it)</td><td>Fits a wind-down routine; keeps magnesium apart from zinc</td></tr>
+</tbody></table></div>
+<h2>How Super Routine fits this stack</h2>
+<p>Super Routine puts this routine into two sachets. The <a href="/day-pack/">Day Pack</a> (after breakfast) contains vitamin D3 600 IU with K2, vitamin B12 1 mg, zinc picolinate 12 mg and purified Himalayan shilajit 250 mg. The <a href="/night-pack/">Night Pack</a> (after dinner or 30–60 minutes before bed) contains magnesium glycinate 1000 mg (140 mg elemental), ashwagandha KSM-66 300 mg, omega-3 rTG 750 mg and melatonin 3 mg. Every dose is below its upper limit, and there is no iron. It is not for everyone: skip it if you take thyroid, sedative or blood-thinning medicines, or have prostate, liver or kidney conditions, unless your doctor agrees. Compare it honestly with single products in <a href="/science/super-routine-vs-separate-supplements/">Super Routine vs 8 separate supplements</a>, or see the <a href="/faq/">Super Routine FAQ</a> for the ₹1,200/month founding price. For a broader view, read the <a href="/science/best-daily-supplements-india/">best daily supplements in India</a>.</p>
+<p>Ask your doctor or pharmacist before starting any supplement if you have a medical condition or take regular medicines.</p>
+''',
+ "faq": [
+  ("What supplements should a man take daily in India?", "Only those that fill a gap. For many Indian men that is vitamin D (little sun), vitamin B12 (vegetarians) and possibly magnesium, zinc or omega-3 if the diet is short. Iron only if a test shows a need."),
+  ("Should men take a multivitamin every day?", "It can fill gaps, but check that it does not double up on vitamin D, zinc or iron you already take, and keep every nutrient under its upper limit."),
+  ("What is the best time for men to take vitamins?", "Vitamin D, B12 and zinc after breakfast, because vitamin D absorbs best with a meal. Magnesium and, if used, melatonin in the evening."),
+  ("How much zinc should a man take daily?", "ICMR-NIN sets the Indian men's requirement at 17 mg a day from food and supplements combined. Keep the total under 40 mg a day."),
+ ],
+ "sources": [S_NIN, S_D, S_B12, S_ZN, S_MG, S_OM, S_ASH, S_MEL, S_SHIL_W, S_FE],
+},
 # ---------------------------------------------------------------- BEST DAILY SUPPLEMENTS IN INDIA
 {
  "path": SCI + "best-daily-supplements-india/", "crumb": "Best Daily Supplements in India", "crumbs": SCI_CRUMB,
@@ -515,7 +698,7 @@ SCIENCE = [
 <h2>6. Omega-3 (if you rarely eat fish)</h2>
 <p>There is no official requirement for EPA and DHA, the omega-3s in fish. If you eat little fish, a fish oil or, for vegetarians, an algal oil supplement is one option; the NIH notes algal oils usually provide about 100–300 mg of DHA. Side effects are usually mild (fishy taste, heartburn). People on warfarin should have their INR monitored.</p>
 <h2>Do you need a daily multivitamin?</h2>
-<p>For healthy adults, the evidence is modest. The NIH summarises the US Preventive Services Task Force view: there is insufficient evidence to judge the balance of benefits and harms of multivitamins for preventing heart disease or cancer. A multivitamin can still be a convenient way to fill gaps, especially for vegetarians and older adults, but check that it does not double up on vitamin D, zinc or iron you already take. For the most common morning nutrients and how to space them, see the <a href="/science/best-supplements-to-take-in-the-morning/">best supplements to take in the morning</a>.</p>
+<p>For healthy adults, the evidence is modest. The NIH summarises the US Preventive Services Task Force view: there is insufficient evidence to judge the balance of benefits and harms of multivitamins for preventing heart disease or cancer. A multivitamin can still be a convenient way to fill gaps, especially for vegetarians and older adults, but check that it does not double up on vitamin D, zinc or iron you already take. Men can see our guide to <a href="/science/supplements-for-men-india/">daily supplements for men in India</a>. For the most common morning nutrients and how to space them, see the <a href="/science/best-supplements-to-take-in-the-morning/">best supplements to take in the morning</a>.</p>
 <h2>How Super Routine daily supplements fit</h2>
 <p>Super Routine daily supplements are one way to cover several of these gaps in two sachets. The <a href="/day-pack/">Day Pack</a> (after breakfast) contains vitamin D3 600 IU with K2, vitamin B12 1 mg, zinc picolinate 12 mg and purified shilajit 250 mg. The <a href="/night-pack/">Night Pack</a> (after dinner) contains magnesium glycinate (140 mg elemental), ashwagandha KSM-66, omega-3 rTG 750 mg and melatonin 3 mg.</p>
 <p>To be clear about what it does not cover: there is <strong>no iron, calcium or folic acid</strong>, because those depend on individual needs and interact with other nutrients and medicines. Women planning a pregnancy should not use Super Routine; it contains ashwagandha, which some experts advise against in pregnancy, and melatonin, which has not been well studied in pregnancy. If you need only one or two nutrients, single products may suit you better; we compare costs openly in <a href="/science/super-routine-vs-separate-supplements/">Super Routine vs 8 separate supplements</a>. The Super Routine price is ₹1,200 a month at the founding rate; see the <a href="/faq/">Super Routine FAQ</a> or <a href="/">join the founding list</a>.</p>
@@ -975,6 +1158,7 @@ SCIENCE = [
 ''',
  "faq": [
   ("What vitamins should not be taken together?", "The main ones to separate are calcium and iron, iron (25 mg or more) and zinc, and high-dose zinc with copper or magnesium. Also avoid taking two products that both contain vitamin D, zinc or melatonin, because the doses add up."),
+  ("Can you take iron and melatonin together?", "Neither the NIH iron fact sheet nor NCCIH's melatonin guidance lists an interaction between iron and melatonin. Many people take iron in the morning, with vitamin C to help absorption, and melatonin at bedtime, which keeps them apart anyway. Do space iron from calcium, zinc, levothyroxine and levodopa, and ask your doctor if you take any medicine."),
   ("How far apart should I take iron and calcium?", "Experts suggest taking them at different times of day, for example iron in the morning and calcium with dinner."),
   ("Can I take all my vitamins at once?", "Many can be taken together, but minerals that compete, such as iron with calcium or zinc, are better spaced out. Fat-soluble vitamins such as D and K absorb best with a meal."),
   ("Which supplements interact with blood thinners?", "Vitamin K can change the effect of warfarin, and fish oil can raise INR. Anyone on a blood thinner should ask their doctor before starting either."),
@@ -1053,9 +1237,9 @@ def _sci_cards():
 
 SCIENCE_HUB = {
  "path": SCI, "crumb": "Science", "priority": "0.8", "schema_type": "CollectionPage",
- "title": "Supplement Science: Timing, Combinations & Safety Guides",
+ "title": "Super Routine Science: Supplement Timing & Safety Guides",
  "description": "Guides on supplement timing, which supplements to take together or apart, doses, upper limits and interactions, with sources.",
- "h1": "Supplement science, explained simply",
+ "h1": "Super Routine science: supplement guides, explained simply",
  "answer": "Practical guides to taking supplements well: which ones go together, which to space apart, when to take them and how much is safe. Every article is written and reviewed by founder Shubham Pasalkar and links to its sources, mainly the NIH Office of Dietary Supplements and peer-reviewed studies.",
  "body": f'''
 <h2>All articles</h2>
