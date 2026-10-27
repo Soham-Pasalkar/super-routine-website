@@ -331,7 +331,7 @@ PAGES = [
 <h2>Why D3 is paired with K2</h2>
 <p>Vitamin D raises calcium absorption from the gut. Vitamin K is needed to activate proteins such as osteocalcin, which bind calcium into bone. Pairing the two is a common approach, though trials have not shown that the combination prevents fractures. We include K2 because both nutrients contribute to normal bones.</p>
 <h2>Why 600 IU and not 60,000 IU</h2>
-<p>600 IU a day is the adult Recommended Dietary Allowance (800 IU over age 70), and it is used daily to <strong>maintain</strong> levels. High-dose sachets such as 60,000 IU are given weekly by doctors to <strong>correct</strong> a diagnosed deficiency. That is treatment, not daily nutrition. The upper limit for adults is 4,000 IU a day. If you have been told you are deficient, follow your doctor's plan.</p>
+<p>600 IU a day is the adult Recommended Dietary Allowance (800 IU over age 70), and it is used daily to <strong>maintain</strong> levels. High-dose sachets such as 60,000 IU are given weekly by doctors to <strong>correct</strong> a diagnosed deficiency. That is treatment, not daily nutrition (see <a href="/science/vitamin-d-60000-iu-vs-daily-600-iu/">vitamin D 60,000 IU vs daily 600 IU</a>). The upper limit for adults is 4,000 IU a day. If you have been told you are deficient, follow your doctor's plan.</p>
 <h2>Best time to take vitamin D3</h2>
 <p>With a meal that contains some fat, at a consistent time. Breakfast is easiest to remember, which is why D3 + K2 is in the <a href="/day-pack/">Day Pack</a>.</p>
 <h2>Who should be careful</h2>
@@ -427,7 +427,7 @@ PAGES = [
 <h2>Shilajit: morning or night?</h2>
 <p>Traditional use and most brands favour the <strong>morning</strong>, because shilajit is used for energy and vitality. There is no clinical evidence that one time is better, so consistency matters more. In Super Routine it is taken after breakfast in the <a href="/day-pack/">Day Pack</a>, with {link("d3","vitamin D3 + K2")}, {link("b12","B12")} and {link("zn","zinc")}.</p>
 <h2>Purity: the part that matters most</h2>
-<p>Raw or poorly processed shilajit can contain <strong>lead, arsenic, mercury and cadmium</strong>, along with fungal contamination. Our specification for shilajit is no detectable lead, arsenic, mercury, cadmium or thallium. Each batch will be tested by an independent laboratory before release, and the results will be published on this site.</p>
+<p>Raw or poorly processed shilajit can contain <strong>lead, arsenic, mercury and cadmium</strong>, along with fungal contamination. Our specification for shilajit is no detectable lead, arsenic, mercury, cadmium or thallium. Each batch will be tested by an independent laboratory before release, and the results will be published on this site. To check any brand's report, see <a href="/science/shilajit-lab-report-heavy-metals/">how to read a shilajit lab report for heavy metals</a>.</p>
 <h2>Who should avoid it</h2>
 <ul><li>Pregnant or breastfeeding women, and children.</li><li>Anyone with a medical condition, or taking any medicine: ask your doctor first.</li><li>Stop taking it and see a doctor if you notice any unusual symptoms.</li></ul>
 ''',
@@ -441,9 +441,9 @@ PAGES = [
 # ---------------------------------------------------------------- ABOUT
 {
  "path": "/about/", "crumb": "About", "priority": "0.7", "schema_type": "AboutPage", "person": True, "byline": False,
- "title": "About Super Routine – Founded by Shubham Pasalkar",
- "description": "Super Routine was founded by Shubham Pasalkar. Our standards, how we choose doses and forms, and our testing plan.",
- "h1": "About Super Routine",
+ "title": "About Super Routine Supplements | Founder Shubham Pasalkar",
+ "description": "Super Routine day and night supplement sachets, founded by Shubham Pasalkar: our standards, how we choose doses and forms, and our testing plan.",
+ "h1": "About Super Routine supplements",
  "answer": "Super Routine is a day and night supplement system being built in India by founder <strong>Shubham Pasalkar</strong>. Eight essentials, two sachets, every dose on the pack, and no proprietary blends.",
  "body": '''
 <h2 id="founder">The founder</h2>
@@ -476,7 +476,214 @@ S_MASTROFINI = ("Mastrofini et al. (2026), Journal of the International Society 
 S_MG_REVIEW = ("Magnesium: the forgotten electrolyte, a review on hypomagnesemia (2019), Medical Sciences (Basel): elemental magnesium in each salt (Table 5)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6524065/")
 S_CL_MG = ("ConsumerLab: How much actual magnesium is in a magnesium supplement?", "https://www.consumerlab.com/answers/how-much-actual-magnesium-does-a-supplement-with-500-mg-of-magnesium-citrate-contain/how-much-magnesium-in-my-supplement/")
 
+S_FOL = ("NIH Office of Dietary Supplements: Folate fact sheet", ODS + "Folate-HealthProfessional/")
+S_ASH_C = ("NIH Office of Dietary Supplements: Ashwagandha, is it helpful for stress, anxiety, or sleep? (consumer fact sheet)", ODS + "Ashwagandha-Consumer/")
+S_RIZZO = ("Rizzo et al. (2016), Nutrients: vitamin B12 among vegetarians, status, assessment and supplementation", "https://doi.org/10.3390/nu8120767")
+S_HUSSAIN = ("Hussain & Saeed (2024), Biological Trace Element Research: heavy metals and humic substances in shilajit, review", "https://doi.org/10.1007/s12011-024-04109-4")
+S_ALDAKHEEL = ("Aldakheel et al. (2021), Biological Trace Element Research: nutritional and poisonous metals in Indian and Pakistani shilajit", "https://doi.org/10.1007/s12011-021-03014-4")
+S_SAPER = ("Saper et al. (2008), JAMA: lead, mercury and arsenic in US- and Indian-manufactured Ayurvedic medicines sold online", "https://doi.org/10.1001/jama.300.8.915")
+S_OPSS = ("Operation Supplement Safety (US Department of Defense, 2024): Shilajit as a dietary supplement ingredient", "https://www.opss.org/article/shilajit-dietary-supplement-ingredient")
+S_NABL = ("NABL (National Accreditation Board for Testing and Calibration Laboratories): Introduction", "https://nabl-india.org/introduction/")
+S_SANDERS = ("Sanders et al. (2010), JAMA: annual high-dose oral vitamin D and falls and fractures in older women, randomised controlled trial", "https://doi.org/10.1001/jama.2010.594")
+S_JOLLIFFE = ("Jolliffe et al. (2021), Lancet Diabetes & Endocrinology: vitamin D supplementation and acute respiratory infections, meta-analysis", "https://doi.org/10.1016/S2213-8587(21)00051-6")
+S_SELVARAJ = ("Selvaraj et al. (2026), Journal of Orthopaedic Case Reports: daily 1,000 IU vs weekly 60,000 IU vitamin D3, randomised study", "https://doi.org/10.13107/jocr.2026.v16.i05.7314")
+S_SRIVASTAVA = ("Srivastava et al. (2026), Indian Journal of Pediatrics: 60,000 IU weekly vitamin D and maintenance of sufficiency", "https://doi.org/10.1007/s12098-026-06492-3")
+S_JINDAL = ("Jindal et al. (2023), Transplant Immunology: 60,000 IU weekly for 8 weeks then 800 IU/day maintenance", "https://doi.org/10.1016/j.trim.2023.101925")
+S_LAL = ("Lal et al. (2025), Indian Journal of Endocrinology and Metabolism: response to weekly 60,000 IU vitamin D by body weight", "https://doi.org/10.4103/ijem.ijem_162_25")
+S_SULAIMAN = ("Sulaiman et al. (2022), Indian Journal of Endocrinology and Metabolism: causes of hypercalcaemia in hospitalised adults, PGIMER Chandigarh", "https://doi.org/10.4103/ijem.ijem_223_21")
+
+
 SCIENCE = [
+# ---------------------------------------------------------------- VITAMIN D 60,000 IU VS 600 IU
+{
+ "path": SCI + "vitamin-d-60000-iu-vs-daily-600-iu/", "crumb": "Vitamin D 60,000 IU vs 600 IU", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-27", "about": "Vitamin D3 60,000 IU weekly and 600 IU daily doses",
+ "blurb": "What a 60,000 IU vitamin D sachet is for, how it compares with a daily 600 IU dose, the maths behind weekly dosing, blood levels and safety.",
+ "title": "Vitamin D 60,000 IU Weekly vs Daily 600 IU: Which Is Right?",
+ "description": "Vitamin D3 60,000 IU sachets vs a daily 600 IU dose: what each is for, why 60K weekly averages 8,571 IU a day, blood levels, safety and when to test.",
+ "h1": "Vitamin D 60,000 IU weekly vs daily 600 IU: which is right for you?",
+ "answer": "<strong>60,000 IU is a treatment dose</strong>, usually taken once a week for 6–12 weeks to correct a measured deficiency. <strong>600 IU a day is the adult maintenance requirement</strong> (ICMR-NIN and NIH). A weekly 60,000 IU sachet averages about 8,570 IU a day, over twice the 4,000 IU upper limit, so it is not a long-term dose.",
+ "facts": [("Adult requirement", "600 IU/day"), ("Adult upper limit", "4,000 IU/day"), ("60,000 IU weekly", "≈ 8,571 IU/day"), ("Adequate blood level", "20 ng/mL or more")],
+ "body": f'''
+<p>Vitamin D3 60,000 IU sachets and capsules are among the most searched supplements in India, and many people take them without a test, often for months. This guide explains what the two doses are for, using the NIH Office of Dietary Supplements (ODS), the ICMR-National Institute of Nutrition (ICMR-NIN) and Indian clinical studies that used the 60,000 IU regimen.</p>
+<h2>The numbers side by side</h2>
+<div class="tw"><table><thead><tr><th>Dose</th><th>What it is</th><th>Average per day</th></tr></thead><tbody>
+<tr><td>600 IU daily (15 mcg)</td><td>Adult requirement (ICMR-NIN 2020; NIH RDA for ages 19–70)</td><td>600 IU</td></tr>
+<tr><td>800 IU daily (20 mcg)</td><td>NIH RDA for adults over 70</td><td>800 IU</td></tr>
+<tr><td>4,000 IU daily (100 mcg)</td><td>NIH Tolerable Upper Intake Level for adults</td><td>4,000 IU</td></tr>
+<tr><td>60,000 IU once a month</td><td>Sometimes used as maintenance after a course, on a doctor's advice</td><td>≈ 2,000 IU</td></tr>
+<tr><td>60,000 IU once a week</td><td>Short treatment course for a measured deficiency</td><td>≈ 8,571 IU</td></tr>
+</tbody></table></div>
+<p>The daily averages are simple arithmetic (60,000 ÷ 7 and 60,000 ÷ 30). 1 mcg of vitamin D equals 40 IU.</p>
+<h2>What 60,000 IU weekly is used for in India</h2>
+<p>In Indian clinical studies, 60,000 IU appears as a short course for people whose blood test shows low vitamin D, not as an everyday supplement. Examples:</p>
+<ul>
+<li>Women with vitamin D below 20 ng/mL received 60,000 IU weekly for 8 weeks in a Jabalpur study.</li>
+<li>Patients at Tata Memorial Centre with levels of 20 ng/mL or less received 60,000 IU weekly for 8 weeks, <strong>followed by 800 IU a day</strong> as maintenance.</li>
+<li>Children with deficiency received 60,000 IU weekly for 6 weeks at BHU Varanasi. Most reached sufficiency, but only 23% of those who did were still sufficient 3 months after stopping. The authors stress the need for regular monitoring and maintenance.</li>
+</ul>
+<p>The pattern is consistent: a correction course, a re-test, then a lower maintenance dose. A 60,000 IU sachet every week with no end date is not part of that pattern.</p>
+<h2>Weekly or daily: does it matter?</h2>
+<p>Both can raise blood levels. In a 2026 randomised study of 50 vitamin D-deficient adults with long-bone fractures, 60,000 IU weekly for 12 weeks raised blood levels more than 1,000 IU daily (32.8 vs 27.3 ng/mL at 12 weeks), and both were well tolerated. That was a supervised treatment setting with baseline levels below 30 ng/mL.</p>
+<p>For healthy people, regular modest doses look sensible. A 2021 meta-analysis of 43 trials found a small overall reduction in acute respiratory infections with vitamin D; the protective effect was seen with daily doses of 400–1,000 IU, although the formal test for a difference between daily and less frequent dosing was not significant. Very large, infrequent doses can backfire: in a trial of 2,256 women aged 70 or older, a single 500,000 IU dose each year <strong>increased</strong> falls by 15% and fractures by 26% compared with placebo.</p>
+<h2>How much is too much?</h2>
+<p>The NIH uses blood 25-hydroxyvitamin D (25(OH)D) levels to judge status:</p>
+<div class="tw"><table><thead><tr><th>Blood 25(OH)D</th><th>What the NIH says</th></tr></thead><tbody>
+<tr><td>Below 12 ng/mL (30 nmol/L)</td><td>At risk of deficiency</td></tr>
+<tr><td>20 ng/mL (50 nmol/L) or more</td><td>Generally adequate for bone and overall health in healthy people</td></tr>
+<tr><td>Above 50 ng/mL (125 nmol/L)</td><td>Linked to potential adverse effects</td></tr>
+<tr><td>Above 150 ng/mL (375 nmol/L)</td><td>Typical of vitamin D toxicity</td></tr>
+</tbody></table></div>
+<p>Toxicity raises blood calcium. This is not only theoretical in India: at PGIMER Chandigarh, vitamin D intoxication caused 8.7% of the cases of sustained high blood calcium among hospitalised adults.</p>
+<p>People also respond differently. In a Delhi study, children with obesity given 60,000 IU weekly for five doses had a 25% smaller rise in blood levels than children of normal weight, while some normal-weight children briefly went above the normal range. This is why the right dose depends on a test, not on a pack size.</p>
+<h2>Which one should you take?</h2>
+<div class="tw"><table><thead><tr><th>Your situation</th><th>Usual approach</th></tr></thead><tbody>
+<tr><td>Blood test shows deficiency</td><td>Doctor-prescribed course (often 60,000 IU weekly for 6–12 weeks), re-test, then maintenance</td></tr>
+<tr><td>No test, limited sun, want everyday support</td><td>A daily dose around the 600 IU requirement, staying under 4,000 IU a day in total</td></tr>
+<tr><td>Already on a 60,000 IU course</td><td>Do not add other vitamin D products without asking your doctor</td></tr>
+<tr><td>High calcium, kidney stones, sarcoidosis or kidney disease</td><td>Only under medical supervision</td></tr>
+</tbody></table></div>
+<p>Whatever the dose, take it with a meal: the NIH notes that fat in the gut enhances vitamin D absorption. Orlistat can lower vitamin D absorption, and vitamin D can interact with some statins. For timing details, see <a href="/science/best-time-to-take-vitamin-d3-and-b12/">the best time to take vitamin D3 and B12</a>.</p>
+<h2>How the Super Routine Day Pack fits</h2>
+<p>The <a href="/day-pack/">Super Routine Day Pack</a> contains {link("d3","vitamin D3 600 IU with K2")}, taken after breakfast with vitamin B12 1 mg, zinc picolinate 12 mg and purified shilajit 250 mg. That is a daily maintenance amount that matches the adult requirement, not a treatment for deficiency. If your doctor has prescribed 60,000 IU, finish that course and ask them whether a daily 600 IU afterwards suits you. If you take warfarin, speak to your doctor first because the pack contains vitamin K2. Price and pack details are in the <a href="/faq/">Super Routine FAQ</a>, and the full list of what to take when is in <a href="/science/super-routine-day-and-night-supplements/">how the two sachets work</a>.</p>
+<p>Ask your doctor or pharmacist before starting any vitamin D product if you have a medical condition or take regular medicines.</p>
+''',
+ "faq": [
+  ("Is 60,000 IU vitamin D safe to take every week?", "Only as a short course prescribed after a blood test. Taken weekly it averages about 8,570 IU a day, which is above the 4,000 IU adult upper limit, and long-term use without monitoring can raise blood calcium."),
+  ("How long should I take vitamin D 60,000 IU?", "Indian studies typically used 6 to 12 weeks, followed by a re-test and a lower maintenance dose. Follow your doctor's plan rather than continuing indefinitely."),
+  ("Is 600 IU of vitamin D a day enough?", "600 IU is the daily requirement for most adults (800 IU over 70) and is meant to maintain normal levels. It is not designed to correct a diagnosed deficiency."),
+  ("Can I take daily vitamin D after a 60,000 IU course?", "That is the usual pattern in studies: a correction course followed by a daily maintenance dose. Ask your doctor which dose suits your blood level."),
+ ],
+ "sources": [S_D, S_NIN, S_SANDERS, S_JOLLIFFE, S_SELVARAJ, S_SRIVASTAVA, S_JINDAL, S_LAL, S_SULAIMAN],
+},
+# ---------------------------------------------------------------- SHILAJIT LAB REPORT
+{
+ "path": SCI + "shilajit-lab-report-heavy-metals/", "crumb": "Shilajit Lab Report", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-27", "about": "Heavy metal testing of shilajit",
+ "blurb": "How to read a shilajit certificate of analysis: lead, arsenic, mercury and cadmium in ppm, the limits used for herbal products, and red flags.",
+ "title": "How to Read a Shilajit Lab Report for Heavy Metals",
+ "description": "Shilajit lab report explained: lead, arsenic, mercury and cadmium limits in ppm, what a real certificate of analysis shows, red flags and accredited testing.",
+ "h1": "How to read a shilajit lab report for heavy metals",
+ "answer": "A real shilajit lab report (certificate of analysis) names an accredited laboratory, matches your batch number, and gives a measured number in ppm (mg/kg) for <strong>lead, arsenic, mercury and cadmium</strong>. Limits often cited for herbal products are 10 ppm for lead and arsenic, 1 ppm for mercury and about 0.2–0.3 ppm for cadmium. Lower is better.",
+ "facts": [("Lead, arsenic (herbal limit)", "10 ppm"), ("Mercury", "1 ppm"), ("Cadmium", "≈ 0.2–0.3 ppm"), ("1 ppm equals", "1 mg per kg")],
+ "body": f'''
+<p>Shilajit is a mineral-rich resin from mountain rock, so it naturally carries whatever metals are in that rock. Many brands now say "lab tested", but a phrase on a label is not a result. This guide shows what a genuine heavy-metal report contains, how to read the numbers, and the red flags that should make you put the jar down.</p>
+<h2>Why shilajit needs heavy-metal testing</h2>
+<ul>
+<li>A 2024 review in <em>Biological Trace Element Research</em> found around 65 elements reported in shilajit, including toxic metals such as lead, arsenic, cadmium and mercury. Most studies found levels below the permissible limits, but some found them exceeded, and the authors conclude that taking shilajit without knowing its metal levels is not safe.</li>
+<li>A 2021 analysis of Indian and Pakistani shilajit found lead, arsenic and mercury above permissible limits in the samples tested.</li>
+<li>The US Department of Defense's Operation Supplement Safety notes that raw shilajit can contain lead, cadmium, arsenic and mercury, and that "without laboratory testing, there is no way to know the actual ingredients."</li>
+<li>This is not only a shilajit issue. In a 2008 <em>JAMA</em> study, 20.7% of Ayurvedic medicines bought online contained detectable lead, mercury or arsenic, and 75% of those products claimed Good Manufacturing Practices.</li>
+</ul>
+<h2>The parts of a shilajit lab report</h2>
+<div class="tw"><table><thead><tr><th>Field</th><th>What to look for</th></tr></thead><tbody>
+<tr><td>Laboratory name</td><td>An independent lab, not the brand itself. In India, look for NABL accreditation to ISO/IEC 17025 for the test in question.</td></tr>
+<tr><td>Report number and date</td><td>Recent, and from before the batch was sold</td></tr>
+<tr><td>Sample or batch number</td><td>Must match the batch number printed on your pack</td></tr>
+<tr><td>Method</td><td>An instrumental method for trace metals such as ICP-MS or ICP-OES</td></tr>
+<tr><td>Result</td><td>An actual number for each metal, with units</td></tr>
+<tr><td>Limit of quantification (LOQ)</td><td>The smallest amount the lab can measure. "ND" or "BLQ" means not detected or below that level.</td></tr>
+<tr><td>Specification</td><td>The limit the result is judged against, ideally shown next to it</td></tr>
+</tbody></table></div>
+<h2>Reading the numbers</h2>
+<p>Results are usually in <strong>ppm</strong> (parts per million, the same as mg/kg) or <strong>ppb</strong> (parts per billion, µg/kg). 1 ppm = 1,000 ppb. A lead result of 0.5 ppm is the same as 500 ppb.</p>
+<p>The 2024 review summarises the levels recommended by the WHO and the US FDA for herbal products:</p>
+<div class="tw"><table><thead><tr><th>Metal</th><th>Limit often cited for herbal products</th><th>What a good report shows</th></tr></thead><tbody>
+<tr><td>Lead (Pb)</td><td>10 ppm</td><td>A measured value well below the limit, or ND</td></tr>
+<tr><td>Arsenic (As)</td><td>10 ppm</td><td>A measured value well below the limit, or ND</td></tr>
+<tr><td>Mercury (Hg)</td><td>1 ppm</td><td>ND or a very low value</td></tr>
+<tr><td>Cadmium (Cd)</td><td>0.2–0.3 ppm</td><td>ND or a very low value</td></tr>
+</tbody></table></div>
+<p>These are ceilings, not targets. To see what a result means for you, multiply it by the amount you take. Example: shilajit with 1 ppm lead taken at 250 mg (0.25 g) a day gives 0.25 micrograms of lead a day. Smaller is always better, and no one should treat a "passing" result as permission to take more than the label says.</p>
+<h2>Red flags on a shilajit lab report</h2>
+<ul>
+<li><strong>No numbers:</strong> "heavy metals: complies" or "passed" without a value for each metal.</li>
+<li><strong>Missing metals:</strong> only lead tested, with no arsenic, mercury or cadmium.</li>
+<li><strong>No batch match:</strong> the report is for a different batch, or has no batch number at all.</li>
+<li><strong>Old or undated:</strong> a report from years ago does not describe what is in today's jar.</li>
+<li><strong>No units, or the wrong ones:</strong> a result of "0.8" means nothing without ppm or ppb.</li>
+<li><strong>In-house only:</strong> the brand tested its own product, or the lab cannot be found.</li>
+<li><strong>Unverifiable accreditation:</strong> you can check a lab's status with NABL.</li>
+</ul>
+<h2>What else a good report covers</h2>
+<p>Heavy metals are the priority, but a complete certificate usually also shows microbial tests (total plate count, yeast and mould, E. coli, Salmonella) and, for many brands, fulvic acid content. WebMD notes that the FDA has not tested shilajit products to confirm that they contain what their labels state, and that shilajit's contents vary by mountain range, so batch-level testing matters.</p>
+<h2>Who should avoid shilajit</h2>
+<ul>
+<li>Anyone allergic to shilajit (mineral pitch, mumio). Operation Supplement Safety lists possible allergic reactions, raised blood pressure and dizziness.</li>
+<li>Pregnant or breastfeeding women: it is not known whether shilajit is safe.</li>
+<li>People with kidney, liver or prostate problems, or on testosterone therapy: speak to a doctor first.</li>
+<li>Anyone on regular medicines: interactions between shilajit and medicines are not fully understood.</li>
+</ul>
+<h2>How Super Routine handles shilajit testing</h2>
+<p>The <a href="/day-pack/">Super Routine Day Pack</a> contains {link("shil","purified Himalayan shilajit")} 250 mg, taken after breakfast with vitamin D3, B12 and zinc. Our specification is no detectable lead, arsenic, mercury, cadmium or thallium. Super Routine is pre-launch: each batch will be tested by an independent laboratory before release, and the reports will be published on this site, with the batch number, so you can read them using the checklist above. More on why shilajit sits in the morning sachet is in <a href="/science/super-routine-day-and-night-supplements/">how the two Super Routine sachets work</a> and the <a href="/science/best-supplements-to-take-in-the-morning/">best supplements to take in the morning</a>. Common questions are answered in the <a href="/faq/">Super Routine FAQ</a>.</p>
+<p>Ask your doctor or pharmacist before taking shilajit if you have a medical condition or take regular medicines.</p>
+''',
+ "faq": [
+  ("What is a safe level of lead in shilajit?", "Limits often cited for herbal products are 10 ppm for lead and arsenic, 1 ppm for mercury and about 0.2 to 0.3 ppm for cadmium. A good report shows values well below these, or not detected."),
+  ("Is Indian shilajit safe?", "It depends on the batch, not the country. Studies of Indian and Pakistani shilajit have found heavy metals above permissible limits in some samples, so only buy purified shilajit with a batch-matched lab report."),
+  ("What does ND mean on a shilajit lab report?", "ND means not detected: the metal was below the smallest amount the lab can measure. Check the report's limit of quantification to see how low that is."),
+  ("How do I know if a shilajit lab report is real?", "Check that it names an independent lab you can verify, matches your batch number, is recent, and gives a number with units for lead, arsenic, mercury and cadmium."),
+ ],
+ "sources": [S_HUSSAIN, S_ALDAKHEEL, S_SAPER, S_OPSS, S_SHIL_W, S_NABL],
+},
+# ---------------------------------------------------------------- WOMEN'S DAILY VITAMINS
+{
+ "path": SCI + "daily-vitamins-for-women-india/", "crumb": "Daily Vitamins for Women in India", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-27", "about": "Daily vitamins and minerals for adult women in India",
+ "blurb": "Iron, folic acid, vitamin D, calcium and B12 for women in India: ICMR-NIN requirements, upper limits, timing and what to avoid taking together.",
+ "title": "Daily Vitamins for Women in India: What Matters Most",
+ "description": "Which daily vitamins women in India may need: iron, folic acid, vitamin D, calcium and B12. ICMR-NIN requirements, upper limits, timing and cautions.",
+ "h1": "Daily vitamins for women in India: what matters most",
+ "answer": "For most women in India the nutrients that matter most are <strong>iron</strong> (needs are highest during the menstruating years), <strong>folic acid</strong> if you could become pregnant, <strong>vitamin D</strong> and <strong>calcium</strong> for bones, and <strong>vitamin B12</strong> if you are vegetarian. Test before taking iron, keep iron and calcium apart, and stay under each upper limit.",
+ "facts": [("Iron (ICMR-NIN, women)", "29 mg/day"), ("Folic acid if pregnancy possible", "400 mcg/day (NIH)"), ("Calcium (ICMR-NIN)", "1,000 mg/day"), ("Vitamin D", "600 IU/day")],
+ "body": f'''
+<p>Search results for "daily vitamins for women" are mostly product listings with 25 or more ingredients. This guide starts from what Indian women actually need, using the ICMR-National Institute of Nutrition (ICMR-NIN) 2020 requirements for Indians and the NIH Office of Dietary Supplements for upper limits and interactions. Food comes first; supplements fill specific gaps.</p>
+<h2>Daily needs for adult women in India</h2>
+<div class="tw"><table><thead><tr><th>Nutrient</th><th>ICMR-NIN RDA, women (2020)</th><th>Adult upper limit (NIH)</th><th>Who is most likely to fall short</th></tr></thead><tbody>
+<tr><td>Iron</td><td>29 mg</td><td>45 mg</td><td>Heavy periods, pregnancy, vegetarian diets</td></tr>
+<tr><td>Folate</td><td>220 mcg DFE</td><td>1,000 mcg (folic acid from supplements and fortified foods)</td><td>Women who could become pregnant</td></tr>
+<tr><td>Calcium</td><td>1,000 mg</td><td>2,500 mg (19–50), 2,000 mg (51+)</td><td>Low dairy intake, after menopause</td></tr>
+<tr><td>{link("d3","Vitamin D")}</td><td>600 IU</td><td>4,000 IU</td><td>Little sun exposure, mostly indoor work</td></tr>
+<tr><td>{link("b12","Vitamin B12")}</td><td>2.2 mcg</td><td>None set</td><td>Vegetarians and vegans</td></tr>
+</tbody></table></div>
+<p>The RDAs are totals from food and supplements. ICMR-NIN uses a reference body weight of 55 kg for Indian women. Pregnancy and breastfeeding change these needs; follow your doctor's prenatal advice.</p>
+<h2>Iron: important, but test first</h2>
+<p>Women need far more iron than men during the menstruating years: the NIH RDA is 18 mg for women aged 19–50 versus 8 mg for men. The ICMR-NIN requirement for Indian women is higher still, at 29 mg a day. The NIH lists heavy periods and pregnancy as the main risk factors for deficiency, and notes that vegetarian diets need about 1.8 times more iron.</p>
+<p>Iron is still not a just-in-case supplement. The upper limit is 45 mg a day, and doses at or above that commonly cause nausea and constipation. People with haemochromatosis should avoid iron supplements. Ask for a blood test (haemoglobin and ferritin) before starting, and take iron only as advised.</p>
+<ul>
+<li>Vitamin C, for example from lemon, amla or guava, improves absorption of plant iron.</li>
+<li>Take iron and calcium supplements at different times of day.</li>
+<li>Levothyroxine (thyroid medicine) should not be taken within 4 hours of iron.</li>
+<li>Acid-reducing medicines (PPIs) lower iron absorption.</li>
+</ul>
+<h2>Folic acid: for any woman who could become pregnant</h2>
+<p>The NIH states that women of childbearing age should get 400 mcg a day of folic acid from supplements or fortified foods, on top of folate from food. The US Preventive Services Task Force advises starting 400–800 mcg a day at least one month before conception and continuing through the first 2–3 months of pregnancy. Keep folic acid from supplements and fortified foods under 1,000 mcg a day unless a doctor prescribes more. If you take antiepileptic medicines or methotrexate, check with your doctor before taking folate.</p>
+<h2>Vitamin D and calcium: for bones</h2>
+<p>Vitamin D contributes to normal calcium absorption and bones. The adult requirement is 600 IU a day; stay under 4,000 IU unless a doctor prescribes a treatment course (see <a href="/science/vitamin-d-60000-iu-vs-daily-600-iu/">vitamin D 60,000 IU vs daily 600 IU</a>).</p>
+<p>For calcium, food is the best starting point: dairy foods such as milk, curd and paneer. If you supplement, absorption is highest in doses of <strong>500 mg or less</strong>, so split larger amounts. Calcium carbonate is absorbed better with food; calcium citrate can be taken without food. The NIH notes that higher supplemental calcium might increase the risk of kidney stones, and that calcium should be kept 4 hours from levothyroxine and 2 hours from quinolone antibiotics. The NIH RDA rises to 1,200 mg for women over 50.</p>
+<h2>Vitamin B12: essential for vegetarians</h2>
+<p>B12 is found naturally in animal foods and is poorly represented in plants, so vegetarian and vegan women are at higher risk of low levels. Dairy and eggs help, but many vegetarians benefit from a supplement. The ICMR-NIN requirement is 2.2 mcg a day.</p>
+<h2>A simple day and night routine for women</h2>
+<div class="tw"><table><thead><tr><th>When</th><th>What</th><th>Why then</th></tr></thead><tbody>
+<tr><td>Morning, with breakfast</td><td>Vitamin D, B12, folic acid</td><td>Vitamin D absorbs best with a meal containing fat</td></tr>
+<tr><td>Midday, with a vitamin C-rich meal (if prescribed)</td><td>Iron</td><td>Keeps iron away from calcium and thyroid medicine</td></tr>
+<tr><td>Evening, with dinner</td><td>Calcium (500 mg or less at a time), magnesium</td><td>Spaces calcium away from iron</td></tr>
+</tbody></table></div>
+<p>More on which supplements to keep apart is in <a href="/science/supplements-not-to-take-together/">supplements not to take together</a>.</p>
+<h2>Pregnancy and breastfeeding</h2>
+<p>Needs change in pregnancy (the NIH iron RDA rises to 27 mg), and prenatal supplements should be chosen with your doctor. Some popular "women's wellness" herbs are not suitable: the NIH says ashwagandha may not be safe during pregnancy or breastfeeding, and it may affect thyroid function.</p>
+<h2>How Super Routine fits for women</h2>
+<p>The <a href="/day-pack/">Super Routine Day Pack</a> (after breakfast) contains vitamin D3 600 IU with K2, vitamin B12 1 mg, zinc picolinate 12 mg and purified shilajit 250 mg. The <a href="/night-pack/">Night Pack</a> (after dinner or 30–60 minutes before bed) contains magnesium glycinate 1000 mg (140 mg elemental), ashwagandha KSM-66 300 mg, omega-3 rTG 750 mg and melatonin 3 mg. It covers vitamin D, B12 and magnesium, but it deliberately contains <strong>no iron, folic acid or calcium</strong>, so women who need those should take them separately, as advised by their doctor and spaced as above. Super Routine is not for women who are pregnant, trying to conceive or breastfeeding, or who take thyroid, sedative or blood-thinning medicines, unless their doctor agrees. See the <a href="/faq/">Super Routine FAQ</a> for the ₹1,200/month founding price, the <a href="/science/best-daily-supplements-india/">best daily supplements in India</a> for a broader view, and our guide to <a href="/science/supplements-for-men-india/">daily supplements for men in India</a>.</p>
+<p>Ask your doctor or pharmacist before starting any supplement if you have a medical condition or take regular medicines.</p>
+''',
+ "faq": [
+  ("What vitamins should a woman take daily in India?", "Only those that fill a gap. For many women that means vitamin D (little sun), vitamin B12 (vegetarians), folic acid if pregnancy is possible, and iron or calcium if diet or a blood test shows a need."),
+  ("Should women take iron every day?", "Not without a reason. Iron needs are higher during the menstruating years, but get a blood test first and take iron only as advised. The adult upper limit is 45 mg a day."),
+  ("Can I take iron and calcium together?", "It is better to take them at different times of day, because calcium may reduce iron absorption."),
+  ("Do I need folic acid if I am not pregnant?", "The NIH advises 400 mcg a day of folic acid for all women who could become pregnant, because it matters in the earliest weeks, often before a pregnancy is known."),
+ ],
+ "sources": [S_NIN, S_FE, S_FOL, S_CA, S_D, S_RIZZO, S_ASH_C],
+},
 # ---------------------------------------------------------------- MAGNESIUM GLYCINATE + ASHWAGANDHA
 {
  "path": SCI + "magnesium-glycinate-and-ashwagandha-together/", "crumb": "Magnesium Glycinate and Ashwagandha", "crumbs": SCI_CRUMB,
@@ -645,7 +852,7 @@ SCIENCE = [
 <tr><td>After dinner</td><td>Magnesium, omega-3 (and melatonin only if you use it)</td><td>Fits a wind-down routine; keeps magnesium apart from zinc</td></tr>
 </tbody></table></div>
 <h2>How Super Routine fits this stack</h2>
-<p>Super Routine puts this routine into two sachets. The <a href="/day-pack/">Day Pack</a> (after breakfast) contains vitamin D3 600 IU with K2, vitamin B12 1 mg, zinc picolinate 12 mg and purified Himalayan shilajit 250 mg. The <a href="/night-pack/">Night Pack</a> (after dinner or 30–60 minutes before bed) contains magnesium glycinate 1000 mg (140 mg elemental), ashwagandha KSM-66 300 mg, omega-3 rTG 750 mg and melatonin 3 mg. Every dose is below its upper limit, and there is no iron. It is not for everyone: skip it if you take thyroid, sedative or blood-thinning medicines, or have prostate, liver or kidney conditions, unless your doctor agrees. Compare it honestly with single products in <a href="/science/super-routine-vs-separate-supplements/">Super Routine vs 8 separate supplements</a>, or see the <a href="/faq/">Super Routine FAQ</a> for the ₹1,200/month founding price. For a broader view, read the <a href="/science/best-daily-supplements-india/">best daily supplements in India</a>.</p>
+<p>Super Routine puts this routine into two sachets. The <a href="/day-pack/">Day Pack</a> (after breakfast) contains vitamin D3 600 IU with K2, vitamin B12 1 mg, zinc picolinate 12 mg and purified Himalayan shilajit 250 mg. The <a href="/night-pack/">Night Pack</a> (after dinner or 30–60 minutes before bed) contains magnesium glycinate 1000 mg (140 mg elemental), ashwagandha KSM-66 300 mg, omega-3 rTG 750 mg and melatonin 3 mg. Every dose is below its upper limit, and there is no iron. It is not for everyone: skip it if you take thyroid, sedative or blood-thinning medicines, or have prostate, liver or kidney conditions, unless your doctor agrees. Compare it honestly with single products in <a href="/science/super-routine-vs-separate-supplements/">Super Routine vs 8 separate supplements</a>, or see the <a href="/faq/">Super Routine FAQ</a> for the ₹1,200/month founding price. For a broader view, read the <a href="/science/best-daily-supplements-india/">best daily supplements in India</a>, or the women's guide to <a href="/science/daily-vitamins-for-women-india/">daily vitamins for women in India</a>.</p>
 <p>Ask your doctor or pharmacist before starting any supplement if you have a medical condition or take regular medicines.</p>
 ''',
  "faq": [
@@ -698,7 +905,7 @@ SCIENCE = [
 <h2>6. Omega-3 (if you rarely eat fish)</h2>
 <p>There is no official requirement for EPA and DHA, the omega-3s in fish. If you eat little fish, a fish oil or, for vegetarians, an algal oil supplement is one option; the NIH notes algal oils usually provide about 100–300 mg of DHA. Side effects are usually mild (fishy taste, heartburn). People on warfarin should have their INR monitored.</p>
 <h2>Do you need a daily multivitamin?</h2>
-<p>For healthy adults, the evidence is modest. The NIH summarises the US Preventive Services Task Force view: there is insufficient evidence to judge the balance of benefits and harms of multivitamins for preventing heart disease or cancer. A multivitamin can still be a convenient way to fill gaps, especially for vegetarians and older adults, but check that it does not double up on vitamin D, zinc or iron you already take. Men can see our guide to <a href="/science/supplements-for-men-india/">daily supplements for men in India</a>. For the most common morning nutrients and how to space them, see the <a href="/science/best-supplements-to-take-in-the-morning/">best supplements to take in the morning</a>.</p>
+<p>For healthy adults, the evidence is modest. The NIH summarises the US Preventive Services Task Force view: there is insufficient evidence to judge the balance of benefits and harms of multivitamins for preventing heart disease or cancer. A multivitamin can still be a convenient way to fill gaps, especially for vegetarians and older adults, but check that it does not double up on vitamin D, zinc or iron you already take. Men can see our guide to <a href="/science/supplements-for-men-india/">daily supplements for men in India</a>, and women our guide to <a href="/science/daily-vitamins-for-women-india/">daily vitamins for women in India</a>. For the most common morning nutrients and how to space them, see the <a href="/science/best-supplements-to-take-in-the-morning/">best supplements to take in the morning</a>.</p>
 <h2>How Super Routine daily supplements fit</h2>
 <p>Super Routine daily supplements are one way to cover several of these gaps in two sachets. The <a href="/day-pack/">Day Pack</a> (after breakfast) contains vitamin D3 600 IU with K2, vitamin B12 1 mg, zinc picolinate 12 mg and purified shilajit 250 mg. The <a href="/night-pack/">Night Pack</a> (after dinner) contains magnesium glycinate (140 mg elemental), ashwagandha KSM-66, omega-3 rTG 750 mg and melatonin 3 mg.</p>
 <p>To be clear about what it does not cover: there is <strong>no iron, calcium or folic acid</strong>, because those depend on individual needs and interact with other nutrients and medicines. Women planning a pregnancy should not use Super Routine; it contains ashwagandha, which some experts advise against in pregnancy, and melatonin, which has not been well studied in pregnancy. If you need only one or two nutrients, single products may suit you better; we compare costs openly in <a href="/science/super-routine-vs-separate-supplements/">Super Routine vs 8 separate supplements</a>. The Super Routine price is ₹1,200 a month at the founding rate; see the <a href="/faq/">Super Routine FAQ</a> or <a href="/">join the founding list</a>.</p>
@@ -1076,7 +1283,7 @@ SCIENCE = [
 <li><strong>CBD:</strong> there is insufficient evidence for any sleep disorder, and it can cause liver injury and drug interactions.</li>
 <li><strong>Multiple "sleep blends" at once:</strong> many contain melatonin, so doses add up. See <a href="/science/supplements-not-to-take-together/">supplements not to take together</a>.</li>
 </ul>
-<h2>Nutrients that simply suit the evening</h2>
+<h2>Best vitamins to take before bed (that are not sleep aids)</h2>
 <p>Not every night-time supplement is about sleep. {link("om","Omega-3")} (EPA and DHA) is a component of every cell membrane and can be taken at any time; taking it with dinner fits many routines. Its usual side effects are mild, such as an unpleasant taste or heartburn, but high doses may cause bleeding problems with warfarin or other anticoagulants, so tell your doctor if you take one.</p>
 <h2>How the Super Routine Night Pack fits</h2>
 <p>We built the <a href="/night-pack/">Night Pack</a> from the evening options with the most sensible evidence and safety profile, at clearly labelled doses, in one sachet taken after dinner or 30–60 minutes before bed:</p>
