@@ -3,7 +3,7 @@
 Run from the repo root:  python3 tools/build_pages.py
 Page content lives in tools/content.py. Edit it there, then re-run this script.
 """
-import json, os, sys, html, datetime
+import json, os, re, sys, html, datetime
 
 sys.path.insert(0, os.path.dirname(__file__))
 from content import AUTHOR, PAGES, SITE  # noqa: E402
@@ -22,6 +22,30 @@ def esc(s):
 def strip_tags(s):
     import re
     return re.sub(r"<[^>]+>", "", s)
+
+
+def apply_synced(pages):
+    """Pages in tools/synced_pages.json were hand-edited in HTML (e.g. the 25-nutrient formula update).
+    Their stored article HTML takes priority over the structured fields in content.py."""
+    path = os.path.join(ROOT, "tools", "synced_pages.json")
+    if not os.path.exists(path):
+        return pages
+    synced = json.load(open(path, encoding="utf-8"))
+    blurbs = synced.pop("_blurbs", {})
+    out, seen = [], set()
+    import content
+    for a in content.SCIENCE:  # keep hand-edited hub card text for existing articles
+        a["blurb"] = blurbs.get(a["path"], a["blurb"])
+        if a["path"] in synced:
+            a["h1"] = synced[a["path"]]["h1"]
+    for p in pages:
+        if p["path"] == content.SCI:
+            p["body"] = p["body"].replace(re.search(r'<div class="cards">.*?</div>', p["body"], re.S).group(0), content._sci_cards())
+        if p["path"] in synced:
+            p = dict(p, **synced[p["path"]]); seen.add(p["path"])
+        out.append(p)
+    out += [dict(v) for k, v in synced.items() if k not in seen]
+    return out
 
 
 def page_html(p):
@@ -86,6 +110,8 @@ def page_html(p):
     nav = "".join(f'<a href="{u}">{esc(t)}</a>' for t, u in NAV)
     foot = "".join(f'<a href="{u}">{esc(t)}</a>' for t, u in [("Home", "/")] + NAV[:3] + [("Science", "/science/")] + NAV[3:] + [("FAQ", "/faq/")])
 
+    content = p["inner"] if "inner" in p else "\n".join(
+        [answer, facts, p["body"], faq, disclaimer, sources])
     return f'''<!DOCTYPE html>
 <html lang="en-IN">
 <head>
@@ -105,7 +131,7 @@ def page_html(p):
 <meta property="og:url" content="{url}">
 <meta property="og:title" content="{esc(p["title"])}">
 <meta property="og:description" content="{esc(p["description"])}">
-<meta property="og:image" content="{SITE}/assets/pack-render.jpg">
+<meta property="og:image" content="{SITE}/assets/pack-7in1.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -120,12 +146,7 @@ def page_html(p):
 <article>
 <h1>{p["h1"]}</h1>
 {byline}
-{answer}
-{facts}
-{p["body"]}
-{faq}
-{disclaimer}
-{sources}
+{content}
 </article>
 {join}
 </main>
@@ -137,7 +158,7 @@ def page_html(p):
 
 def main():
     urls = [(SITE + "/", "1.0")]
-    for p in PAGES:
+    for p in apply_synced(PAGES):
         out = os.path.join(ROOT, p["path"].strip("/"), "index.html")
         os.makedirs(os.path.dirname(out), exist_ok=True)
         with open(out, "w", encoding="utf-8") as f:

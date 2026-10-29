@@ -66,3 +66,9 @@ The social profile links can also be configured if required.
 ## Important
 
 Configuring the form endpoint does not, by itself, guarantee that submissions are saved. The Apps Script and spreadsheet integration must be tested successfully before launch.
+
+## Content pages (tools/)
+`python3 tools/build_pages.py` regenerates content pages and sitemap.xml. Pages hand-edited directly in HTML
+(25-nutrient formula update, 29 Oct 2026) are stored in `tools/synced_pages.json` and take priority over
+`tools/content.py`; rerun `python3 tools/sync_from_html.py` after any direct HTML edit to keep it in sync.
+New articles: add to SCIENCE in content.py as before.
