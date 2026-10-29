@@ -492,8 +492,215 @@ S_JINDAL = ("Jindal et al. (2023), Transplant Immunology: 60,000 IU weekly for 8
 S_LAL = ("Lal et al. (2025), Indian Journal of Endocrinology and Metabolism: response to weekly 60,000 IU vitamin D by body weight", "https://doi.org/10.4103/ijem.ijem_162_25")
 S_SULAIMAN = ("Sulaiman et al. (2022), Indian Journal of Endocrinology and Metabolism: causes of hypercalcaemia in hospitalised adults, PGIMER Chandigarh", "https://doi.org/10.4103/ijem.ijem_223_21")
 
+S_A = ("NIH Office of Dietary Supplements: Vitamin A and carotenoids fact sheet", ODS + "VitaminA-HealthProfessional/")
+S_GINSENG = ("NCCIH (NIH): Asian ginseng", "https://www.nccih.nih.gov/health/asian-ginseng")
+S_NCCIH_WISE = ("NCCIH (NIH): Using dietary supplements wisely", "https://www.nccih.nih.gov/health/using-dietary-supplements-wisely")
+S_SINGH_B12 = ("Singh et al. (2022), Journal of Family Medicine and Primary Care: vitamin B12 deficiency in northern India tertiary care, 220 cases", "https://doi.org/10.4103/jfmpc.jfmpc_650_21")
+S_NAIK = ("Naik et al. (2018), British Journal of Nutrition: identification of vitamin B12 deficiency in vegetarian Indians", "https://doi.org/10.1017/S0007114518000090")
+S_BARNEY = ("Barney et al. (2020), Indian Journal of Community Medicine: vitamin B12 deficiency among pregnant women in rural South India", "https://doi.org/10.4103/ijcm.IJCM_403_19")
+S_BISWAS = ("Biswas et al. (2024), Maedica: vitamin D and B12 deficiency among older patients in North India (AIIMS Raebareli)", "https://doi.org/10.26574/maedica.2024.19.3.580")
+S_HARRIS_O3 = ("Harris et al. (2025), Prostaglandins, Leukotrienes and Essential Fatty Acids: omega-3 index in vegan, vegetarian and non-vegetarian participants (Adventist Health Study-2)", "https://doi.org/10.1016/j.plefa.2025.102709")
+S_LANE_O3 = ("Lane et al. (2021), Critical Reviews in Food Science and Nutrition: plant-based omega-3 sources for vegetarians and vegans, scoping review", "https://doi.org/10.1080/10408398.2021.1880364")
+S_GEPPERT = ("Geppert et al. (2005), Lipids: microalgae DHA supplementation in vegetarians, randomised trial", "https://doi.org/10.1007/s11745-005-1442-9")
+
 
 SCIENCE = [
+# ---------------------------------------------------------------- IS IT SAFE TO TAKE SUPPLEMENTS EVERY DAY
+{
+ "path": SCI + "is-it-safe-to-take-supplements-every-day/", "crumb": "Is It Safe to Take Supplements Every Day?", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-29", "about": "Safety of taking dietary supplements every day",
+ "blurb": "When daily supplements are safe, the upper limits that matter, how doubling up goes wrong, herbs with limited long-term data, and who should ask a doctor first.",
+ "title": "Is It Safe to Take Supplements Every Day? Limits and Risks",
+ "description": "Is it safe to take supplements every day? Daily doses near the RDA are safe for most adults. See upper limits, doubling-up risks, herbs and interactions.",
+ "h1": "Is it safe to take supplements every day?",
+ "answer": "<strong>For most healthy adults, yes, if the doses stay near the daily requirement.</strong> The NIH says basic multivitamins with nutrients at roughly recommended amounts should be safe for healthy people. The risks come from megadoses, stacking several products until you pass an upper limit, herbs with limited long-term data, and interactions with medicines.",
+ "facts": [("Vitamin D upper limit", "4,000 IU/day"), ("Zinc upper limit", "40 mg/day"), ("Supplemental magnesium limit", "350 mg/day"), ("Vitamin A (retinol) limit", "3,000 mcg RAE/day")],
+ "body": f'''
+<p>Taking a supplement every day is normal: the NIH Office of Dietary Supplements (ODS) estimates that about one-third of US adults take a multivitamin. The real question is not "daily or not", but <strong>how much, of what, and alongside which medicines</strong>. This guide uses NIH and NCCIH safety data to show where the line sits.</p>
+<h2>Why daily doses near the RDA are safe for most people</h2>
+<p>The ODS multivitamin fact sheet says basic multivitamins, with nutrients at about the recommended intakes, should be safe for healthy people, and that studies of users show no adverse effects beyond minor stomach upset seen in placebo groups as well. Daily intake is how nutrients are meant to be taken: the recommended amounts (RDA in the US, set for India by ICMR-NIN) are daily figures.</p>
+<p>Being safe is not the same as being needed. The US Preventive Services Task Force found little or no benefit of vitamin and mineral supplements for preventing cancer, heart disease or death in the general population. Supplements fill gaps; they do not replace food or treat disease.</p>
+<h2>Upper limits: the numbers that matter</h2>
+<p>Each nutrient with known risks has a Tolerable Upper Intake Level (UL), the most you can take every day without likely harm. These are the adult ULs from the NIH fact sheets:</p>
+<div class="tw"><table><thead><tr><th>Nutrient</th><th>Adult UL per day</th><th>What happens above it</th></tr></thead><tbody>
+<tr><td>Vitamin D</td><td>4,000 IU (100 mcg)</td><td>Toxicity, almost always from supplements, raises blood calcium</td></tr>
+<tr><td>Vitamin A (preformed: retinol, retinyl esters)</td><td>3,000 mcg RAE (10,000 IU)</td><td>Liver problems, joint pain; birth defects in pregnancy. Beta-carotene has no UL</td></tr>
+<tr><td>Zinc</td><td>40 mg</td><td>50 mg or more for weeks can cause low copper</td></tr>
+<tr><td>Magnesium (from supplements only)</td><td>350 mg</td><td>Diarrhoea; higher risk with kidney disease</td></tr>
+<tr><td>Iron</td><td>45 mg</td><td>Accidental overdose is a leading cause of fatal poisoning in children under 6</td></tr>
+<tr><td>Vitamin B12</td><td>No UL set</td><td>Low potential for toxicity</td></tr>
+<tr><td>Omega-3 (EPA + DHA)</td><td>No UL; up to about 5 g/day considered safe (EFSA, FDA)</td><td>Possible bleeding effects at high doses; 4 g/day for years slightly raised atrial fibrillation risk in heart patients</td></tr>
+</tbody></table></div>
+<h2>How daily supplement use actually goes wrong</h2>
+<p><strong>1. Doubling up.</strong> The ODS warns that people who combine a multivitamin, single-nutrient products and fortified foods can exceed the UL. A typical Indian example is a weekly vitamin D 60,000 IU sachet on top of a multivitamin; that averages about 8,570 IU a day before the multivitamin is added (see <a href="/science/vitamin-d-60000-iu-vs-daily-600-iu/">vitamin D 60,000 IU vs daily 600 IU</a>).</p>
+<p><strong>2. Megadoses marketed as "extra strength".</strong> A 50 mg zinc tablet is already above the 40 mg adult UL. Supplements dosed many times above the RDA are a different product from a daily maintenance supplement.</p>
+<p><strong>3. Herbs taken for longer than they were studied.</strong> The ODS says ashwagandha appears well tolerated for up to about 3 months, but its long-term safety is not known, and a few cases of liver injury have been reported. NCCIH says Asian (Panax) ginseng appears safe for most people for up to 6 months, while its long-term safety has been questioned; insomnia is its most common side effect.</p>
+<p><strong>4. Interactions with medicines.</strong> NCCIH notes that some supplements make medicines less effective or raise bleeding risk before surgery. Common ones:</p>
+<ul>
+<li><strong>Warfarin:</strong> vitamin K changes its effect; fish oil may raise INR; ginseng may interfere with clotting.</li>
+<li><strong>Antibiotics (tetracyclines, quinolones such as ciprofloxacin):</strong> take them at least 2 hours before or 4–6 hours after zinc or magnesium.</li>
+<li><strong>Thyroid medicine:</strong> ashwagandha may affect thyroid hormones.</li>
+<li><strong>Diabetes, blood pressure, sedative and immunosuppressant medicines:</strong> ashwagandha may interact; ginseng may lower blood sugar.</li>
+</ul>
+<p><strong>5. Quality.</strong> NCCIH warns that what is on a label may not be what is in the product, and that "natural" does not always mean safe. Buy from brands that publish full doses and test results. For a worked example of reading a lab report, see <a href="/science/shilajit-lab-report-heavy-metals/">how to read a shilajit lab report</a>.</p>
+<h2>Who should check with a doctor before daily supplements</h2>
+<ul>
+<li>Anyone pregnant, trying to conceive or breastfeeding (many supplements have not been tested in pregnancy, and preformed vitamin A above the UL can cause birth defects).</li>
+<li>Children and teenagers under 18.</li>
+<li>People with kidney or liver disease.</li>
+<li>Anyone taking regular medicines, especially those listed above.</li>
+<li>Anyone with a planned surgery: tell your surgeon about every supplement, well in advance.</li>
+<li>Smokers and former smokers: avoid products with large amounts of beta-carotene or vitamin A.</li>
+</ul>
+<h2>A simple checklist for safe daily use</h2>
+<ol>
+<li>Add up each nutrient across every product and fortified food you take; stay under the UL.</li>
+<li>Prefer doses near 100% of the daily requirement over megadoses, unless a doctor has prescribed a treatment dose.</li>
+<li>Take one multivitamin, not two.</li>
+<li>Keep minerals that compete apart, and space them from antibiotics (see <a href="/science/supplements-not-to-take-together/">supplements not to take together</a>).</li>
+<li>Tell your doctor or pharmacist everything you take.</li>
+</ol>
+<h2>How the Super Routine Day and Night Packs fit</h2>
+<p>Super Routine daily supplements are designed for everyday use at maintenance doses. The <a href="/day-pack/">Day Pack</a> gives <a href="/ingredients/multivitamins/">13 vitamins</a> and <a href="/ingredients/trace-minerals/">7 trace minerals</a> at about 100% of the daily requirement (vitamin D3 600 IU, zinc 17 mg, vitamin A 900 mcg RAE), all below the adult ULs above, plus <a href="/ingredients/l-theanine-panax-ginseng/">L-theanine and Panax ginseng</a> 200 mg each. The <a href="/night-pack/">Night Pack</a> gives magnesium glycinate with 280 mg elemental magnesium (under the 350 mg supplemental limit), ashwagandha KSM-66 600 mg and 1,000 mg of omega-3 EPA + DHA.</p>
+<p>Because it is a complete daily multivitamin, do not take it with another multivitamin or a separate vitamin D, zinc or magnesium product without asking your doctor. Ashwagandha and ginseng have been studied for months rather than years, so if you plan to take them long term, review that with your doctor. Do not use Super Routine if you are pregnant, breastfeeding or under 18. The full list of who should avoid it is in the <a href="/faq/">Super Routine FAQ</a>.</p>
+''',
+ "faq": [
+  ("Is it OK to take a multivitamin every day?", "For most healthy adults, yes. The NIH says basic multivitamins with nutrients at about the recommended amounts should be safe. Avoid taking two multivitamins, or adding single nutrients that push you above the upper limits."),
+  ("Which vitamins are dangerous in high doses?", "Fat-soluble vitamins A and D build up in the body. Preformed vitamin A above 3,000 mcg RAE a day and vitamin D above 4,000 IU a day can cause harm. Minerals such as zinc (40 mg), iron (45 mg) and supplemental magnesium (350 mg) also have adult upper limits."),
+  ("Should I take a break from supplements?", "Vitamins and minerals at daily-requirement doses do not need breaks. Some herbs, such as ashwagandha (studied for up to about 3 months) and ginseng (up to 6 months), have limited long-term data, so discuss long-term use with your doctor."),
+  ("Can supplements interact with my medicines?", "Yes. Vitamin K affects warfarin, zinc and magnesium bind some antibiotics, and ashwagandha may affect thyroid, diabetes and blood pressure medicines. Tell your doctor or pharmacist about everything you take."),
+ ],
+ "sources": [S_MVMS, S_D, S_A, S_ZN, S_MG, S_FE, S_OM, S_ASH, S_GINSENG, S_NCCIH_WISE],
+},
+# ---------------------------------------------------------------- SIGNS OF LOW B12 IN VEGETARIANS
+{
+ "path": SCI + "low-b12-signs-in-vegetarians/", "crumb": "Signs of Low B12 in Vegetarians", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-29", "about": "Vitamin B12 deficiency in vegetarians",
+ "blurb": "The early and late signs of low vitamin B12, why vegetarians in India are at higher risk, which blood tests to ask for, and how much B12 you need.",
+ "title": "Signs of Low B12 in Vegetarians: Symptoms, Tests, Sources",
+ "description": "Vitamin B12 deficiency symptoms in vegetarians: tiredness, tingling, sore tongue, pale skin. Why Indian vegetarians are at risk, which tests to ask for.",
+ "h1": "Signs of low vitamin B12 in vegetarians",
+ "answer": "<strong>Common signs of low B12 are tiredness, pale skin, a sore or swollen tongue, palpitations, and numbness or tingling in the hands and feet.</strong> Nerve symptoms can appear before anaemia does. Vegetarians are at higher risk because B12 occurs naturally only in animal foods, so milk, curd, paneer, eggs, fortified foods or a supplement matter.",
+ "facts": [("Adult need (ICMR-NIN)", "2.2 mcg/day"), ("Adult RDA (NIH)", "2.4 mcg/day"), ("Upper limit", "None set"), ("Key tests", "B12, MMA, homocysteine")],
+ "body": f'''
+<p>Vitamin B12 helps make red blood cells, DNA and the myelin that protects nerves. Your body cannot make it, and in nature it comes only from animal foods. That is why low B12 is especially common among vegetarians in India. This guide covers the signs, the tests and the realistic sources, using the NIH Office of Dietary Supplements (ODS), ICMR-NIN and Indian studies.</p>
+<h2>Signs and symptoms of low B12</h2>
+<div class="tw"><table><thead><tr><th>Type</th><th>Signs listed by the NIH</th></tr></thead><tbody>
+<tr><td>Blood</td><td>Megaloblastic anaemia (large, abnormal red blood cells), low red or white cells or platelets, pale skin, palpitations</td></tr>
+<tr><td>General</td><td>Fatigue, weight loss</td></tr>
+<tr><td>Mouth</td><td>Glossitis: a sore, smooth or swollen tongue</td></tr>
+<tr><td>Nerves</td><td>Numbness and tingling in the hands and feet</td></tr>
+<tr><td>Brain</td><td>Memory problems and, in severe or long-standing cases, dementia</td></tr>
+</tbody></table></div>
+<p>Two points matter for vegetarians. First, the NIH notes that <strong>nerve symptoms can occur without anaemia</strong>, so a normal haemoglobin does not rule out low B12. Second, early deficiency is often silent. In a Pune study of 119 young, healthy vegetarian graduates, about half met the definition of B12 deficiency, yet none had clinical signs.</p>
+<h2>What it looks like in Indian patients</h2>
+<p>A study of 220 patients with B12 deficiency at hospitals in Varanasi and Lucknow (2015–2020) gives a clear picture:</p>
+<ul>
+<li>86% were strict vegetarians.</li>
+<li>Tingling or pins and needles (paraesthesia) was reported by 98%.</li>
+<li>Head heaviness or headache affected 95%.</li>
+<li>88% had anaemia, and 38% had skin changes.</li>
+</ul>
+<p>The authors urge doctors to think of B12 when symptoms are vague, especially in pure vegetarians, because most of the damage is reversible if treated early. Older adults are another risk group: at AIIMS Raebareli, 17% of older patients tested had B12 below 200 pg/mL and another 17% were borderline.</p>
+<h2>Who is most at risk</h2>
+<ul>
+<li><strong>Lifelong or strict vegetarians and vegans</strong>, especially with low milk intake.</li>
+<li><strong>Pregnant and breastfeeding women.</strong> In rural Vellore, 55% of pregnant women had B12 below 200 pg/mL. The NIH notes that exclusively breastfed babies of vegan mothers can also become deficient.</li>
+<li><strong>Older adults</strong>, as the AIIMS Raebareli figures above show.</li>
+<li><strong>People taking metformin</strong>, or acid-reducing medicines (proton pump inhibitors such as omeprazole, and H2 blockers), which can reduce absorption.</li>
+</ul>
+<h2>Which tests to ask for</h2>
+<p>A serum B12 test is the usual start, but it is not perfect. The NIH gives these markers:</p>
+<div class="tw"><table><thead><tr><th>Test</th><th>Suggests deficiency</th></tr></thead><tbody>
+<tr><td>Serum vitamin B12</td><td>Below 200–250 pg/mL (148–185 pmol/L) in most labs</td></tr>
+<tr><td>Methylmalonic acid (MMA)</td><td>Above 0.271 micromol/L; the most sensitive marker</td></tr>
+<tr><td>Homocysteine</td><td>Above 15 micromol/L, though other causes exist</td></tr>
+</tbody></table></div>
+<p>If your B12 is in the grey zone (about 150–399 pg/mL), experts suggest checking MMA. The Pune study found that combining B12, holotranscobalamin and homocysteine identified deficiency in Indian vegetarians more accurately than B12 alone.</p>
+<h2>How much B12 do you need, and from where?</h2>
+<p>ICMR-NIN sets the adult requirement at 2.2 mcg a day; the NIH RDA is 2.4 mcg (2.6 mcg in pregnancy, 2.8 mcg when breastfeeding). Vegetarian food sources from the NIH table:</p>
+<div class="tw"><table><thead><tr><th>Food</th><th>B12 per serving</th></tr></thead><tbody>
+<tr><td>Milk, 1 cup</td><td>1.3 mcg</td></tr>
+<tr><td>Plain yoghurt, 6 oz (about 170 g)</td><td>1.0 mcg</td></tr>
+<tr><td>Fortified breakfast cereal, 1 serving</td><td>0.6 mcg (varies by brand)</td></tr>
+<tr><td>Cheddar cheese, 1.5 oz (about 42 g)</td><td>0.5 mcg</td></tr>
+<tr><td>Egg, 1 large</td><td>0.5 mcg</td></tr>
+</tbody></table></div>
+<p>Two cups of milk a day get close to the requirement, but many people drink less. Plant foods are not reliable sources. The NIH says fortified foods and supplements substantially reduce the risk for vegetarians. B12 has no upper limit because of its low toxicity. Absorption is efficient at small doses (about 50% at 1–2 mcg) and falls at high doses (about 1.3% at 1,000 mcg), which is why treatment doses are much larger than daily maintenance doses.</p>
+<p>If a test shows deficiency, your doctor may prescribe high-dose tablets or injections; follow that plan. A daily supplement is for maintenance, not for correcting a deficiency.</p>
+<h2>How the Super Routine Day Pack fits</h2>
+<p>The <a href="/day-pack/">Super Routine Day Pack</a> contains <a href="/ingredients/vitamin-b12-methylcobalamin/">vitamin B12 as methylcobalamin</a>, 2.5 mcg, about 100% of the daily requirement, with folate as L-methylfolate and the other B vitamins in its <a href="/ingredients/multivitamins/">13 multivitamins</a>. It is taken after breakfast. That suits vegetarians who want steady daily cover alongside milk and curd. It is not a treatment for diagnosed deficiency. For timing, read <a href="/science/best-time-to-take-vitamin-d3-and-b12/">the best time to take vitamin D3 and B12</a>, and for the wider picture, our <a href="/science/daily-vitamins-for-women-india/">guide to daily vitamins for women in India</a>. If you take metformin or acid-reducing medicines, mention B12 to your doctor. See the <a href="/faq/">Super Routine FAQ</a> for who should avoid the packs.</p>
+''',
+ "faq": [
+  ("What are the first signs of low B12?", "Tiredness, pale skin, a sore tongue and tingling in the hands or feet are common early signs. Many people, especially young vegetarians, have low B12 on a blood test with no symptoms at all."),
+  ("Can vegetarians get enough B12 without supplements?", "It is possible with enough milk, curd, cheese or eggs, or with fortified foods: a cup of milk gives about 1.3 mcg of the 2.2–2.4 mcg daily need. Many vegetarians fall short, which is why the NIH says fortified foods and supplements reduce risk."),
+  ("Which test is best for B12 deficiency?", "Serum B12 is the usual first test. If it is borderline, methylmalonic acid (MMA) is the most sensitive marker, and homocysteine can help."),
+  ("Does metformin cause low B12?", "The NIH says metformin might reduce vitamin B12 absorption, as can acid-reducing medicines such as proton pump inhibitors and H2 blockers. If you take them long term, ask your doctor whether to check your B12."),
+ ],
+ "sources": [S_B12, S_NIN, S_SINGH_B12, S_NAIK, S_BARNEY, S_BISWAS, S_RIZZO],
+},
+# ---------------------------------------------------------------- OMEGA-3 FOR VEGETARIANS IN INDIA
+{
+ "path": SCI + "omega-3-for-vegetarians-india/", "crumb": "Omega-3 for Vegetarians", "crumbs": SCI_CRUMB,
+ "schema_type": "Article", "published": "2026-10-29", "about": "Omega-3 fatty acids for vegetarians",
+ "blurb": "ALA from flaxseed, chia and walnuts vs EPA and DHA, why conversion is low, what studies show for algal oil, and how vegetarians in India can cover omega-3.",
+ "title": "Omega-3 for Vegetarians in India: Flaxseed, Chia or Algal Oil?",
+ "description": "Omega-3 for vegetarians: why flaxseed, chia and walnuts give ALA but little EPA and DHA, how algal oil compares with fish oil, doses and who should avoid.",
+ "h1": "Omega-3 for vegetarians in India: flaxseed, chia or algal oil?",
+ "answer": "<strong>Vegetarians get omega-3 as ALA from flaxseed, chia seeds, walnuts and soybean or canola oil, but the body converts less than 15% of ALA into EPA and DHA.</strong> Studies show vegetarians have low EPA and DHA levels, and that algal (microalgae) oil, a vegetarian source of DHA, raises them. Fish oil is the other option for those who eat it.",
+ "facts": [("ALA need (NIH AI)", "1.6 g men · 1.1 g women"), ("ALA → EPA/DHA", "Under 15%"), ("Algal oil", "≈100–300 mg DHA/serving"), ("Safe EPA + DHA", "Up to about 5 g/day")],
+ "body": f'''
+<p>Omega-3 is one of the nutrients vegetarians in India most often ask about, because the best-known source, fish, is off the menu. The answer depends on which omega-3 you mean. This guide explains the three types and what the research shows, using the NIH Office of Dietary Supplements (ODS), ICMR-NIN and peer-reviewed studies.</p>
+<h2>ALA, EPA and DHA: three different omega-3s</h2>
+<div class="tw"><table><thead><tr><th>Omega-3</th><th>Main sources</th><th>Vegetarian?</th></tr></thead><tbody>
+<tr><td>ALA (alpha-linolenic acid)</td><td>Flaxseed (alsi), chia, walnuts, soybean and canola oils</td><td>Yes</td></tr>
+<tr><td>EPA (eicosapentaenoic acid)</td><td>Fish, fish oil; some algal oils</td><td>Only from algae</td></tr>
+<tr><td>DHA (docosahexaenoic acid)</td><td>Fish, fish oil, algal oil</td><td>Only from algae</td></tr>
+</tbody></table></div>
+<p>ALA is an essential fat: you must eat it. EPA and DHA are the long-chain forms found mainly in fish and algae. The body can make EPA and DHA from ALA, but the NIH says this conversion is very limited, at less than 15%, so eating EPA and DHA directly is the only practical way to raise their levels.</p>
+<h2>Vegetarian ALA sources and how much you need</h2>
+<p>The NIH Adequate Intake for ALA is 1.6 g a day for men and 1.1 g for women. ICMR-NIN gives a combined target of about 2.2 g of omega-3 fats a day for Indian adults. ALA is easy to get from food:</p>
+<div class="tw"><table><thead><tr><th>Food (NIH data)</th><th>ALA per serving</th></tr></thead><tbody>
+<tr><td>Flaxseed oil, 1 tablespoon</td><td>7.26 g</td></tr>
+<tr><td>Chia seeds, 1 ounce (28 g)</td><td>5.06 g</td></tr>
+<tr><td>Walnuts, 1 ounce (28 g)</td><td>2.57 g</td></tr>
+<tr><td>Whole flaxseed, 1 tablespoon</td><td>2.35 g</td></tr>
+<tr><td>Canola oil, 1 tablespoon</td><td>1.28 g</td></tr>
+<tr><td>Soybean oil, 1 tablespoon</td><td>0.92 g</td></tr>
+</tbody></table></div>
+<p>A tablespoon of ground flaxseed in curd or a roti dough covers the ALA requirement. ICMR-NIN also advises limiting visible fat, for example to about 27 g of cooking oil a day on a 2,000 kcal diet, so add seeds rather than extra oil.</p>
+<h2>Do vegetarians have low EPA and DHA?</h2>
+<p>Yes, according to the studies we found. The omega-3 index measures EPA + DHA in red blood cells; around 8% is often described as desirable. In the Adventist Health Study-2, people who did not take fish oil had these average levels:</p>
+<div class="tw"><table><thead><tr><th>Diet</th><th>Omega-3 index</th><th>EPA + DHA intake</th></tr></thead><tbody>
+<tr><td>Vegan</td><td>3.7%</td><td>10 mg/day</td></tr>
+<tr><td>Lacto-ovo vegetarian</td><td>3.9%</td><td>18 mg/day</td></tr>
+<tr><td>Pesco-vegetarian (eats fish)</td><td>5.7%</td><td>158 mg/day</td></tr>
+<tr><td>Non-vegetarian</td><td>5.0%</td><td>117 mg/day</td></tr>
+</tbody></table></div>
+<p>The authors concluded that vegans and vegetarians were well below recommended targets, and that the most reasonable way to raise levels is an algae-derived EPA and DHA supplement. More ALA did not seem to fix this: a 2021 review of 13 randomised trials found that high-dose flaxseed or echium oil did not raise the omega-3 index, while microalgal oil raised it in every study.</p>
+<h2>Algal oil: the vegetarian source of DHA</h2>
+<p>Algal oil comes from microalgae, the organisms that make the DHA fish later accumulate. The NIH says algal oil supplements usually provide about 100–300 mg of DHA per serving, some with EPA, and a small study found its DHA as bioavailable as DHA from cooked salmon. In a randomised trial in 104 healthy vegetarians, 0.94 g of DHA a day from microalgae oil for 8 weeks raised the omega-3 index from 4.8% to 8.4%, and 69% reached 8% or more; nobody on placebo did.</p>
+<p>When choosing one, check the label for the actual milligrams of DHA and EPA per capsule, not just "1000 mg algal oil", and whether the capsule shell is vegetarian.</p>
+<h2>Safety, side effects and who should be careful</h2>
+<ul>
+<li><strong>Dose:</strong> no upper limit has been set; EFSA and the US FDA consider up to about 5 g a day of EPA + DHA from supplements safe.</li>
+<li><strong>Side effects</strong> are usually mild: an unpleasant taste, bad breath, heartburn, nausea, stomach upset, diarrhoea or headache.</li>
+<li><strong>Blood thinners:</strong> fish oil may prolong clotting time in people taking warfarin, although 3–6 g a day did not significantly change it in studies. Ask your doctor if you take an anticoagulant.</li>
+<li><strong>Heart rhythm:</strong> 4 g a day for several years slightly increased atrial fibrillation risk in people with or at high risk of heart disease.</li>
+<li><strong>Pregnancy:</strong> pregnant vegetarians should ask their doctor whether they need EPA or DHA.</li>
+</ul>
+<h2>How Super Routine fits (and an honest note for vegetarians)</h2>
+<p>The <a href="/night-pack/">Super Routine Night Pack</a> provides 1,000 mg of EPA + DHA from <a href="/ingredients/omega-3-rtg/">deep sea fish oil in rTG form</a>, with magnesium glycinate and ashwagandha KSM-66, taken after dinner. <strong>Because the omega-3 comes from fish, the Night Pack is not vegetarian.</strong> If you are vegetarian, use the food table above for ALA and consider an algal oil supplement for DHA and EPA. The <a href="/day-pack/">Day Pack</a> (13 vitamins, 7 trace minerals, L-theanine and ginseng) contains no fish oil.</p>
+<p>For more on choosing supplements as a vegetarian, see <a href="/science/low-b12-signs-in-vegetarians/">signs of low B12 in vegetarians</a> and our <a href="/science/best-daily-supplements-india/">honest guide to the best daily supplements in India</a>. Questions about the packs are answered in the <a href="/faq/">Super Routine FAQ</a>.</p>
+''',
+ "faq": [
+  ("Is flaxseed enough omega-3 for vegetarians?", "Flaxseed easily covers ALA, the plant omega-3. But the body converts less than 15% of ALA into EPA and DHA, and trials of high-dose flaxseed oil did not raise the omega-3 index. Algal oil is the vegetarian way to get DHA directly."),
+  ("Which omega-3 is best for vegetarians?", "Algal (microalgae) oil, because it provides DHA, and sometimes EPA, directly. In a trial in vegetarians, 0.94 g of algal DHA a day for 8 weeks raised the omega-3 index from 4.8% to 8.4%."),
+  ("How much omega-3 should a vegetarian take daily?", "The NIH Adequate Intake for ALA is 1.6 g a day for men and 1.1 g for women. No official EPA + DHA target is set for vegetarians; algal oil supplements usually give 100–300 mg of DHA per serving."),
+  ("Is Super Routine's Night Pack vegetarian?", "No. Its omega-3 is deep sea fish oil. The Day Pack contains no fish oil."),
+ ],
+ "sources": [S_OM, S_NIN, S_HARRIS_O3, S_LANE_O3, S_GEPPERT],
+},
 # ---------------------------------------------------------------- VITAMIN D 60,000 IU VS 600 IU
 {
  "path": SCI + "vitamin-d-60000-iu-vs-daily-600-iu/", "crumb": "Vitamin D 60,000 IU vs 600 IU", "crumbs": SCI_CRUMB,
