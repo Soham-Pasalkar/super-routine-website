@@ -29,8 +29,7 @@ Responses are intended to be stored in Google Sheets, with the following columns
 3. Each questionnaire response in its own column
 4. Submission timestamp and relevant source metadata
 
-**Google Sheets destination:**  
-https://docs.google.com/spreadsheets/d/1MfYqSSiV5WDnqlEnwz54Qc3GsdC5dOtVHbrc_nbFDZk/edit
+**Google Sheets destination:** kept private. Do not paste the sheet link in this repository, because the repository is public.
 
 **Apps Script Web App endpoint:**  
 https://script.google.com/macros/s/AKfycbyMRQyWq9Ju2evRYLQQa7RuwrSKNQ7B4rOBm8hAWiDkCXG5XeklnPxgoWKFIrxaHajveg/exec
@@ -72,3 +71,9 @@ Configuring the form endpoint does not, by itself, guarantee that submissions ar
 (25-nutrient formula update, 29 Oct 2026) are stored in `tools/synced_pages.json` and take priority over
 `tools/content.py`; rerun `python3 tools/sync_from_html.py` after any direct HTML edit to keep it in sync.
 New articles: add to SCIENCE in content.py as before.
+
+## Security
+
+- Security headers and the Content Security Policy are set in `vercel.json`. If you add a new outside service (analytics, chat, payments), add its domain to the matching line of the policy or the browser will block it.
+- `.vercelignore` keeps `README.txt` and `tools/` off the live site.
+- Never put API keys, passwords or private links in this repository. Keep secrets in Vercel project settings (Environment Variables).

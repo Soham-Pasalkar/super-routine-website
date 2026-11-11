@@ -816,8 +816,9 @@ src="https://www.facebook.com/tr?id=1423332736630133&ev=PageView&noscript=1"
       <!-- Contact -->
       <div class="fstep" data-s="8">
         <h3>Contact Details</h3>
-        <div class="fld"><label for="fname">First name</label><input class="inp" id="fname" type="text" autocomplete="given-name" placeholder="Shubham"></div>
-        <div class="fld"><label for="fphone">WhatsApp number</label><input class="inp" id="fphone" type="tel" autocomplete="tel" inputmode="tel" value="+91 "></div>
+        <div class="fld"><label for="fname">First name</label><input class="inp" id="fname" type="text" autocomplete="given-name" placeholder="Shubham" maxlength="40"></div>
+        <div class="fld"><label for="fphone">WhatsApp number</label><input class="inp" id="fphone" type="tel" autocomplete="tel" inputmode="tel" value="+91 " maxlength="16"></div>
+        <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"><label for="fwebsite">Leave this empty</label><input id="fwebsite" type="text" tabindex="-1" autocomplete="off"></div>
         <p class="fine2">By joining you agree to be contacted about Super Routine on WhatsApp. We never sell your details.</p>
       </div>
 
@@ -1078,6 +1079,8 @@ function show(s){
 $('#backBtn').addEventListener('click',()=>show(step-1));
 $('.formcard').addEventListener('change',update);
 $('.formcard').addEventListener('input',update);
+/* Strip control characters and characters that spreadsheets treat as formulas, and cap length. */
+const clean=(v,n)=>String(v).replace(/[\u0000-\u001F\u007F<>]/g,'').trim().replace(/^[=+\-@\t\r]+/,'').slice(0,n);
 $('#nextBtn').addEventListener('click',async()=>{
   if(!valid(step))return;
   if(step<8){show(step+1);return}
@@ -1086,16 +1089,19 @@ $('#nextBtn').addEventListener('click',async()=>{
     q1_interested_in:picks(),
     q2_supplement_form:sel('q6'), q3_pack_format:sel('q3'), q4_sachet_type:sel('q4'), q5_packaging:sel('q2'),
     q6_price_min_inr:+slider.min.value, q6_price_max_inr:+slider.max.value,
-    first_name:$('#fname').value.trim(),
-    phone:$('#fphone').value.trim(),
+    first_name:clean($('#fname').value,40),
+    phone:$('#fphone').value.replace(/\D/g,'').slice(0,13),
+    hp:$('#fwebsite').value,
     source:document.referrer||'direct', page:location.href
   };
+  if(payload.hp){show(9);return}
+  try{const t=+sessionStorage.getItem('sr_sent')||0;if(Date.now()-t<60000){$('#err').textContent='Your answers were just sent. Please wait a minute before sending again.';return}}catch(e){}
   const btn=$('#nextBtn');btn.disabled=true;btn.textContent='Saving...';
   try{
     if(CONFIG.FORM_ENDPOINT){
       await fetch(CONFIG.FORM_ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)});
     }
-    try{const k='sr_waitlist';const a=JSON.parse(localStorage.getItem(k)||'[]');a.push(payload);localStorage.setItem(k,JSON.stringify(a));const c=(+localStorage.getItem('sr_claimed')||0)+1;localStorage.setItem('sr_claimed',String(c));if(window.__paintCount)window.__paintCount(window.__baseCount+c)}catch(e){}
+    try{sessionStorage.setItem('sr_sent',String(Date.now()));localStorage.removeItem('sr_waitlist');const c=(+localStorage.getItem('sr_claimed')||0)+1;localStorage.setItem('sr_claimed',String(c));if(window.__paintCount)window.__paintCount(window.__baseCount+c)}catch(e){}
   }catch(e){
     btn.disabled=false;btn.innerHTML='Claim Access <span aria-hidden="true">→</span>';
     $('#err').textContent='We could not save your answers. Check your connection and try again.';return;

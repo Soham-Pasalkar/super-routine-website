@@ -1,0 +1,10 @@
+README.txt
+tools/
+*.py
+*.pyc
+__pycache__/
+.gitignore
+.vercelignore
+*.md
+.DS_Store
+.env*
